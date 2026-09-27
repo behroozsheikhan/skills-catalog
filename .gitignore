@@ -3,3 +3,5 @@ dist/
 .astro/
 playwright-report/
 test-results/
+translation-output/
+__pycache__/
