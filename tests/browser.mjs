@@ -191,6 +191,23 @@ try {
   console.log(
     "PASS: search, combined filters, URL persistence, empty state, pagination, theme persistence, bilingual detail, mobile filters, Escape, 320/390px overflow, no JS errors",
   );
+  for (const [path, language] of [
+    ["microsoft/pytest/", "en"],
+    ["anthropic/cocounsel-legal%253Adeep-research/", "en"],
+    ["dontbesilent2025/dbs/", "zh"],
+  ]) {
+    const response = await page.goto(base + "skills/" + path);
+    assert.equal(response.status(), 200);
+    assert.match(
+      await page.locator(".persian-copy").first().textContent(),
+      /[\u0600-\u06ff]/,
+    );
+    assert.equal(await page.locator(".pending-translation").count(), 0);
+    assert.equal(
+      await page.locator(".original-copy p").first().getAttribute("lang"),
+      language,
+    );
+  }
   const nojs = await browser.newContext({ javaScriptEnabled: false });
   const doc = await nojs.newPage();
   await doc.goto(base + "skills/anthropic/frontend-design/");

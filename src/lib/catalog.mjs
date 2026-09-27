@@ -75,6 +75,12 @@ export const skills = read("skills-catalog/skills-index-flat.jsonl")
     return {
       ...s,
       key,
+      sourceLanguage:
+        ((s.what || s.description || "") + (s.use_when || "")).match(
+          /[\u4e00-\u9fff]/g,
+        )?.length > 3
+          ? "zh"
+          : "en",
       topic,
       fa,
       known: known.has(s.author),
@@ -117,6 +123,7 @@ export const shortTopic = (t) => t.replace(/^\S+\s/, "");
 export const searchIndex = skills.map((s) => ({
   key: s.key,
   name: s.name,
+  sourceLanguage: s.sourceLanguage,
   author: s.author,
   path: s.path,
   topic: s.topic,

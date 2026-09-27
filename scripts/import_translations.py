@@ -6,7 +6,7 @@ No generated cache or logs are committed. Existing authored translations win.
 import json
 from pathlib import Path
 import sys
-from bulk_translate import source_hash, protect, PERSIAN
+from bulk_translate import source_hash, protect, valid_cached
 
 root = Path(__file__).resolve().parents[1]
 path = Path(sys.argv[1])
@@ -27,6 +27,8 @@ for key, entry in incoming.items():
         for field in ('what','use_when', 'description'):
             if field == 'description' and row.get('what'): continue
             source = row.get(field,''); target = entry.get(field,'')
+            if not valid_cached(source, target):
+                raise ValueError(f'Untranslated text or missing technical term: {key}/{field}')
             _, tokens = protect(source)
             for token in tokens:
                 if token not in target:

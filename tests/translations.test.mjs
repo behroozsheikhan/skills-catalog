@@ -1,4 +1,5 @@
 import test from "node:test";
+import fs from "node:fs";
 import assert from "node:assert/strict";
 import { translationSourceHash } from "../src/lib/translations.mjs";
 import { skills, searchIndex } from "../src/lib/catalog.mjs";
@@ -34,8 +35,12 @@ test("translations preserve empty fields and do not leak placeholders", () => {
         !/\[\[(?:T\d+|\d{5})\]\]/.test(s.fa[field]),
         `${s.key}: unresolved token`,
       );
-      for (const marker of ['…','...']) {
-        assert.equal(s.fa[field].split(marker).length, (s[field]||'').split(marker).length, `${s.key}: truncation marker mismatch`);
+      for (const marker of ["…", "..."]) {
+        assert.equal(
+          s.fa[field].split(marker).length,
+          (s[field] || "").split(marker).length,
+          `${s.key}: truncation marker mismatch`,
+        );
       }
     }
     if (!s.what && s.description)
@@ -50,4 +55,18 @@ test("Persian descriptions are used in search summaries", () => {
       s.fa.what || s.fa.description || s.what || s.description || "",
     );
   }
+});
+
+test("the current catalog has complete Persian coverage and an accurate report", () => {
+  const report = JSON.parse(
+    fs.readFileSync("data/translation-report.json", "utf8"),
+  );
+  assert.equal(report.total, skills.length);
+  assert.equal(report.translated, skills.filter((s) => s.fa).length);
+  assert.equal(report.pending, 0);
+  assert.equal(report.humanReviewed, false);
+  assert.equal(skills.filter((s) => s.fa).length, skills.length);
+  assert.ok(
+    skills.every((s) => s.sourceLanguage === "en" || s.sourceLanguage === "zh"),
+  );
 });

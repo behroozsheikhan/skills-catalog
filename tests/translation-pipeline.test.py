@@ -30,6 +30,19 @@ class TranslationPipeline(unittest.TestCase):
         self.assertEqual(' '.join(rebuilt.split()), ' '.join(text.split()))
         for part,separator in m.fragments(text):
             self.assertLessEqual(len(m.protect(part)[1]), 6)
+    def test_untranslated_chinese_prose_is_rejected(self):
+        self.assertFalse(m.valid_cached('创建和编辑文档', '创建和编辑文档'))
+        self.assertTrue(m.valid_cached('创建和编辑文档', 'ساخت و ویرایش سند'))
+    def test_stored_machine_drafts_preserve_terms_and_translate_prose(self):
+        import json
+        root=Path(__file__).resolve().parents[1]
+        rows={r['author']+'/'+r['name']:r for r in map(json.loads,(root/'skills-catalog/skills-index-flat.jsonl').read_text().splitlines())}
+        for key,entry in json.loads((root/'data/fa.json').read_text()).items():
+            if entry.get('method') != 'machine':continue
+            row=rows[key]
+            for field in ('what','use_when','description'):
+                if field=='description' and row.get('what'):continue
+                self.assertTrue(m.valid_cached(row.get(field,''),entry.get(field,'')), key+'/'+field)
     def test_fallback_changes_invalidate_translation(self):
         a={'what':'','use_when':'When needed','description':'First'}
         b={**a,'description':'Second'}

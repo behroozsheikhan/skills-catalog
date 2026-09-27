@@ -1,8 +1,8 @@
 {
   "total": 7764,
-  "translated": 7724,
-  "pending": 40,
-  "uniqueTranslationRecords": 7229,
+  "translated": 7764,
+  "pending": 0,
+  "uniqueTranslationRecords": 7269,
   "machineTranslationRecords": 7165,
   "humanReviewed": false,
   "status": "draft",

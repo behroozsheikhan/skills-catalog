@@ -17,6 +17,7 @@ export interface Skill {
   what: string;
   use_when: string;
   key: string;
+  sourceLanguage: "en" | "zh";
   topic: string;
   fa?: Translation;
   known: boolean;

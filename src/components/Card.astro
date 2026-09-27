@@ -51,7 +51,7 @@ const color = colors[s.author.length % 4];
     <p
       class:list={["card-description", !s.fa && "english"]}
       dir={s.fa ? "rtl" : "ltr"}
-      lang={s.fa ? "fa" : "en"}
+      lang={s.fa ? "fa" : s.sourceLanguage}
     >
       {s.fa?.what ||
         s.fa?.description ||
@@ -61,7 +61,11 @@ const color = colors[s.author.length % 4];
     </p>
     <div class="card-bottom">
       <span class="topic-tag">{shortTopic(s.topic)}</span>
-      <span class="language-tag">{s.fa ? "FA / EN" : "EN"}</span>
+      <span class="language-tag">
+        {s.fa
+          ? "FA / " + s.sourceLanguage.toUpperCase()
+          : s.sourceLanguage.toUpperCase()}
+      </span>
     </div>
   </a>
 </div>

@@ -166,7 +166,8 @@ def main():
     for key, translation in existing.items():
         row = by_key.get(key)
         if row and translation['sourceHash'] == source_hash(row):
-            for field in ('what', 'use_when'):
+            for field in ('what', 'use_when', 'description'):
+                if field == 'description' and row.get('what'): continue
                 if row.get(field) and translation.get(field) and (translation.get('method') != 'machine' or valid_cached(row[field],translation[field])): cache[row[field]] = translation[field]
     unique = dict.fromkeys(text for row in rows for text in [row.get('what',''),row.get('use_when',''),row.get('description','') if not row.get('what') else ''] if text)
     pending = [text for text in unique if text not in cache and int(hashlib.sha256(text.encode()).hexdigest(),16) % args.shard_count == args.shard_index]

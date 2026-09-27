@@ -65814,5 +65814,367 @@
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
+  },
+  "modelstudioai/bailian-cli": {
+    "title": "",
+    "what": "مدیریت منابع Aliyun Bailian / DashScope و مرکز CLI ابزار `bl`: فراخوانی اپلیکیشن (bl app)، حافظهٔ اپلیکیشن، جستجوی پایگاه دانش، کاتالوگ / فهرست مدل‌ها، مصرف / اعتبار / سهمیه، اعتبار رایگان، workspace، بازار MCP، pipeline، آپلود فایل، console API، ورود، احراز هویت و پیکربندی؛ و نصب، فهرست‌کردن، به‌روزرسانی و حذف اسکیل ایجنت با bl skill add|list|update|remove در registry اسکیل‌های Bailian. وقتی کاربر Bailian / DashScope / `bl` را نام می‌برد یا workflow موجود `bl` را ادامه می‌دهد، مستقیماً استفاده شود. پروتکل مشترک رضایت کاربر، بررسی نسخه، احراز هویت و گزارش خطا در bailian-protocol است؛ نصب رسمی: `npx skills add modelstudioai/cli --all -g`. مسیریابی خانواده: تولید تصویر، ویدیو، voiceover، گفتار و رونویسی به bailian-gen؛ fine-tune، آموزش و dataset به bailian-finetune؛ و Agent مدیریت‌شده با agents.yaml به bailian-managed-agent.…",
+    "use_when": "",
+    "sourceHash": "1cf185bf77bfec3683cd1a3740b3bf2275e86dd135b92fae4d3d7c3fd3e2ef74",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "modelstudioai/bailian-gen": {
+    "title": "",
+    "what": "ورودی تولید تصویر، ویدیو و صوت در Aliyun Bailian؛ اسکیل پیش‌فرض تولید. برای ساخت تصویر، نقاشی، عکس، AI art، پوستر، آواتار، تصویرسازی، text-to-image، image-to-image، ویرایش و ترکیب چند تصویر، تولید و ویرایش ویدیو از متن، تصویر یا مرجع، تغییر سبک، voiceover، TTS، خواندن متن، رونویسی و ASR از `bl image` / `bl video` / `bl speech` استفاده می‌کند. فایل صوتی یا ویدیویی که host قادر به پخش آن نیست با `bl omni` فهمیده می‌شود. اگر کاربر سرویس‌دهنده را تعیین نکرده باشد، تولید به‌طور پیش‌فرض با این اسکیل انجام می‌شود. تصویر و صوت هم‌زمان بازمی‌گردند و محلی ذخیره می‌شوند؛ ویدیو job ناهم‌زمان است و با `--download` یا polling دریافت می‌شود. مسیر فایل محلی مستقیماً داده می‌شود و CLI آن را آپلود می‌کند. برای درک تصویرِ قابل‌انجام توسط host، پرسش‌وپاسخ عادی، برنامه‌نویسی، نوشتن یا ترجمه نیست؛ اپلیکیشن، پایگاه دانش، مصرف و اعتبار Bailian به bailian-cli و fine-tune به bailian-finetune هدایت می‌شوند. نصب رسمی: `npx skills add modelstudioai/cli --all -g`، همراه با bailian-protocol.",
+    "use_when": "",
+    "sourceHash": "11b8b690a3b94d09accd14969d9844b70e1e6bbf1b5431167c41faefa8f0d702",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs": {
+    "title": "",
+    "what": "ورودی اصلی جعبه‌ابزار کسب‌وکار dontbesilent با دو حالت: مسیریابی پیش از کار برای انتخاب اسکیل مناسب مسئله، و راهنمایی پس از کار برای تعیین قدم بعد از تشخیص. فراخوانی‌ها: /dbs، /商业، \"help me take a look\" و \"what should I do next\".",
+    "use_when": "فراخوانی‌ها: /dbs, \"help me with my business\", \"what's next\"",
+    "sourceHash": "6258a9e117d1b21280a2e45e2cc15cb00889b08e76498a243b95992134eec43c",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-action": {
+    "title": "",
+    "what": "تشخیص مانع اقدام در dontbesilent با چارچوب روان‌شناسی آدلر؛ بررسی علت واقعی اینکه می‌دانید چه کاری باید انجام دهید اما انجامش نمی‌دهید. فراخوانی‌ها: /dbs-action، /action، \"I know what to do but do not do it\" و \"why do I always procrastinate\".",
+    "use_when": "فراخوانی‌ها: /dbs-action, \"I know what to do but can't do it\", \"why do I procrastinate\"",
+    "sourceHash": "4fbe1e255c4cb76c9d67a2095d35b35a54fd44d2b8214299d3018414da413dca",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-agent-migration": {
+    "title": "",
+    "what": "مهاجرت workspace ایجنت؛ تبدیل هر پروژه به محیطی یکپارچه و قابل‌نگهداری در بلندمدت برای Claude Code / Codex / Grok / ایجنت‌های عمومی در ~/.agents/skills، با ممیزی فایل‌های قواعد، شناسایی منبع حقیقت، یکسان‌سازی نام‌ها و تولید bridge. فراخوانی‌ها: /dbs-agent-migration، /agent迁移، \"migrate to Codex\"، \"migrate to Claude Code\"، \"migrate to Grok\"، \"migrate to Doubao\"، \"unify AGENTS.md\"، \"organize skill bridges\"، \"my agent workspace is messy\" و \"unify Claude, Codex, Grok and Doubao\".",
+    "use_when": "",
+    "sourceHash": "080214d2c0fd714d567f48d22fd87eb6d7b9c869d8b740c5ec7109c324e8ba22",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-ai-check": {
+    "title": "",
+    "what": "شناسایی نشانه‌های نوشتار AI در dontbesilent؛ بررسی متن برای یافتن الگوهای تولیدشده با AI و ارائهٔ گزارش تشخیصی. به‌طور پیش‌فرض فقط تشخیص می‌دهد و متن را تغییر نمی‌دهد. فراخوانی‌ها: /dbs-ai-check، /AI检测، \"check whether this sounds like AI\" و \"detect AI writing patterns\".",
+    "use_when": "فراخوانی‌ها: /dbs-ai-check, \"check for AI writing\", \"does this sound like AI\"",
+    "sourceHash": "714d4bb002d5674a356aa18e96d4ecdb5d2cb5db3e8177612dcd8f529ff266fd",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-benchmark": {
+    "title": "",
+    "what": "تحلیل الگوی مرجع در dontbesilent با روش پنج‌فیلتر؛ یافتن نمونه‌های شایستهٔ الگوبرداری و کنارگذاشتن حاشیه‌های مربوط به «من». فراخوانی‌ها: /dbs-benchmark، /对标، \"find me a benchmark\" و \"who should I emulate\".",
+    "use_when": "فراخوانی‌ها: /dbs-benchmark, \"find me a benchmark\", \"who should I copy\"",
+    "sourceHash": "94bf0ddef8e6db6fe9312b2862ef713e30973a5f72b0857c1cfef7b8b41fc746",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-bridge": {
+    "title": "",
+    "what": "زیرساخت ایجنت برای اتصال هر پوشهٔ اسکیل یا مجموعهٔ اسکیل به Claude Code در ~/.claude/skills، Codex در ~/.codex/skills، ایجنت‌های عمومی در ~/.agents/skills که Doubao Mac App / Trae Solo / Codex می‌خوانند، و Grok در ~/.grok/skills. پشتیبانی از اسکیل‌های مخزن dbskill و مسیر مطلق اسکیل خارجی. برای Claude / Codex / ایجنت عمومی از symlink و برای Grok از bridge کم‌حجم با user_invocable: true استفاده می‌کند. اتصال تکی یا گروهی با نام اسکیل، مسیر نسبی، مسیر مطلق یا پوشهٔ skills، قطع اتصال و مشاهدهٔ وضعیت را پشتیبانی می‌کند. فراخوانی‌ها: /dbs-bridge، /bridge، \"bridge this skill\"، \"bridge the entire skills directory\"، \"connect this skill to Claude Code, Codex, Doubao and Grok\"، \"let multiple agents invoke this skill\"، \"remove the bridge\" و \"show bridge status\". اتصال هر پوشهٔ اسکیل یا…",
+    "use_when": "",
+    "sourceHash": "e77cc52cfa63a2cdaa476ef9afb20cd953f4f56439b3da73fd8d32bafb82b0b6",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-chatroom": {
+    "title": "",
+    "what": "اتاق گفت‌وگوی هدفمند: پیشنهاد متخصص بر اساس موضوع یا پذیرش متخصص تعیین‌شده توسط کاربر و شبیه‌سازی گفت‌وگوی چندنقشی. فراخوانی‌ها: /dbs-chatroom، /定向聊天室 و \"targeted chatroom\".",
+    "use_when": "",
+    "sourceHash": "e0425744c854d9bd160ec4d12ebe5dd4223110f4e1a5eb6d0659d8cdcc75ec3e",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-chatroom-austrian": {
+    "title": "",
+    "what": "گفت‌وگوی سه‌نفرهٔ Hayek × Mises × Claude و بحث چندنقشی از دیدگاه مکتب اقتصاد اتریش. فراخوانی‌ها: /dbs-chatroom-austrian، /chatroom-austrian، /奥派 و \"Austrian economics chatroom\".",
+    "use_when": "فراخوانی‌ها: /dbs-chatroom-austrian, /chatroom-austrian, /奥派, \"Austrian chat\"",
+    "sourceHash": "a5472b4d852bd01f1210d8e665e4f429a4a3ce81609b19fe5f163ddc6a397adc",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-content": {
+    "title": "",
+    "what": "تشخیص و بررسی تولید محتوا در dontbesilent؛ پس از تأیید موضوع، بررسی می‌کند چگونه آن را به محتوای خوب تبدیل کنید. فراخوانی‌ها: /dbs-content، /内容诊断، \"how should I create this content\" و \"review this copy\".",
+    "use_when": "فراخوانی‌ها: /dbs-content, \"how should I create this content\", \"review my copy\"",
+    "sourceHash": "52022501a5e2b74d305b57bec287d2050ae390db74e6dae7c11bbbf5d2a34841",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-content-system": {
+    "title": "",
+    "what": "سیستم ساختاردهی محتوا در dontbesilent؛ تبدیل حجم زیادی از نوشته‌ها، توییت‌ها، موضوع‌ها، نمونه‌ها و متن دوره‌های محلی به پروژهٔ ساختارمندِ قابل‌رشد. ابتدا اندازه و محدودهٔ محتوا بررسی می‌شود، سپس پروژهٔ جدید ساخته، مواد اولیه کپی، واحدهای محتوا استخراج و نقشهٔ موضوعی و پیش‌نویس‌های ترکیبی تولید می‌شوند. فراخوانی‌ها: /dbs-content-system، /内容结构化系统، \"turn my content into a structured system\"، \"make my local material reusable\"، \"build a content asset project\" و \"turn old content into reusable assets\".",
+    "use_when": "فراخوانی‌ها: /dbs-content-system, \"build a content structuring system\", \"turn my archive into reusable assets\"",
+    "sourceHash": "a16b740d3ef7444d1e39f29febbabeb7b87acc616c3c83d1d80da62ff57c1d39",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-decision": {
+    "title": "",
+    "what": "سیستم تصمیم‌گیری شخصی dontbesilent؛ تبدیل هر حوزهٔ نیازمند پیگیری بلندمدت، مانند کسب‌وکار، روابط، سلامت، شغل، یادگیری و سرمایه‌گذاری……، به پروژهٔ دانش محلی با ساختار چهارلایه، برچسب منبع، snapshotهای تغییرناپذیر پس از ثبت و کتابخانهٔ مفاهیم برای استخراج الگوها. فراخوانی‌ها: /dbs-decision، /决策系统، /决策立案، /结果回填 و /状态画像.",
+    "use_when": "فراخوانی‌ها: /dbs-decision, /决策系统, /决策立案, /结果回填, /状态画像",
+    "sourceHash": "681baa4005f15cefdac3a8b3ff02fe4265deb9a35f0ae2581a29a4779f4f4bfc",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-deconstruct": {
+    "title": "",
+    "what": "واکاوی مفهوم در dontbesilent؛ تجزیهٔ مفاهیم مبهم کسب‌وکار تا اجزای بنیادی با روش Wittgenstein و مکتب اقتصاد اتریش. فراخوانی‌ها: /dbs-deconstruct، /拆概念، \"deconstruct this concept\" و \"what does this word really mean\".",
+    "use_when": "فراخوانی‌ها: /dbs-deconstruct, \"deconstruct this concept\", \"what does this really mean\"",
+    "sourceHash": "382a8a6da5fb71fd7f7e70aecb2070c1d0ffc2fd617d6434b829faf30b4baa75",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-diagnosis": {
+    "title": "",
+    "what": "تشخیص مدل کسب‌وکار با چارچوب هستی‌شناختی dontbesilent؛ دو حالت مشاوره برای روشن‌کردن مسئله و معاینه برای تحلیل مدل کسب‌وکار. فراخوانی‌ها: /dbs-diagnosis، /问诊، \"review my business model\"، \"diagnose my business\" و \"I have a business question\".",
+    "use_when": "فراخوانی‌ها: /dbs-diagnosis, \"diagnose my business model\", \"I have a business question\"",
+    "sourceHash": "28ce18b570800167e21478f35b70e99172aa9971e2f19929486b29a44878c6a0",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-goal": {
+    "title": "",
+    "what": "شفاف‌سازی هدف در dontbesilent با فلسفهٔ زبان Wittgenstein؛ تبدیل هدف مبهم به خروجی قابل‌بررسی. فراخوانی‌ها: /dbs-goal، /目标، \"help me clarify my goal\"، \"I want to build a personal brand\"، \"my goal is to become...\" و \"I want to become more...\".",
+    "use_when": "فراخوانی‌ها: /dbs-goal, \"help me clarify my goal\", \"I want to become...\", \"my goal is...\"",
+    "sourceHash": "06d8165cc78a14f8c02cd13fca800deeaf45f94241be9a0fff1a8ec242adc0d5",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-good-question": {
+    "title": "",
+    "what": "تولید سؤال مناسب در dontbesilent؛ بازنویسی مسئلهٔ مبهم به شرح مسئله‌ای که ایجنت بتواند درباره‌اش استدلال کند، نقدش کند و آن را بیازماید، همراه با ارزیابی میزان امکان حل خودکار آن. فراخوانی‌ها: /dbs-good-question، /好问题، /问题说明书، /Agent可解性، \"can this problem be solved automatically\" و \"help me clarify the problem\".",
+    "use_when": "فراخوانی‌ها: /dbs-good-question, \"clarify this problem\", \"can an agent solve this\"",
+    "sourceHash": "3cbe096ce6733dd2fe74ff6b1065871ad8d6d6f7990a57c87df586a43f35f5eb",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-hook": {
+    "title": "",
+    "what": "بهینه‌سازی شروع ویدیوی کوتاه در dontbesilent با تشخیص مشکل آغاز و ارائهٔ راه‌حل بهبود. فراخوانی‌ها: /dbs-hook، /hook، \"optimize my opening\" و \"how should I write the opening\".",
+    "use_when": "فراخوانی‌ها: /dbs-hook, \"optimize my opening\", \"how to write opening\"",
+    "sourceHash": "50546a3438f4442f0d4956eb5419dcd8d9a20dd38cdca27a06d80a8cb28374f5",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-learning": {
+    "title": "",
+    "what": "یادگیری تعاملی در dontbesilent؛ تقسیم یک موضوع به دنباله‌ای از مقاله‌های آموزشی و تنظیم عمق، زاویه و آهنگ مقالهٔ بعدی بر اساس بازخورد کاربر دربارهٔ قبلی. فراخوانی‌ها: /dbs-learning، /dbs-learn، /交互式学习، \"teach me a topic\"، \"continue the next article\" و \"write the next article based on my feedback\".",
+    "use_when": "فراخوانی‌ها: /dbs-learning, /dbs-learn, \"teach me a topic\", \"continue the next lesson\"",
+    "sourceHash": "f6db9837c6594a3b0379f46787317f652c7a95dc628f9795f657beda3afa20ed",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-report": {
+    "title": "",
+    "what": "ادغام وضعیت‌های تشخیصی ذخیره‌شده در چند اجرای dbs-save و تولید یک گزارش markdown قابل‌ارائه. فراخوانی‌ها: /dbs-report، /出报告، \"package this up\"، \"organize a report\" و \"prepare this for my partner\".",
+    "use_when": "فراخوانی‌ها: /dbs-report, \"package this up\", \"make me a report\"",
+    "sourceHash": "e537923fa69e34e74d8f3ce28faaca94e51039dc07f2fc6a67c381e301016536",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-resonate": {
+    "title": "",
+    "what": "بررسی اثرگذاری عاطفی پیش‌نویس: وقتی متن آماده است اما از میزان بازدید، ارتباط آن با مخاطب یا نرخ تماشای کامل مطمئن نیستید. متن را با چارچوب روان‌شناسی ارتباطات بررسی می‌کند تا میزان همدلی، محل مشکل و اصلاح مشخص را تعیین کند. فراخوانی‌ها: /dbs-resonate، \"does this draft connect with people\"، \"check whether this is ready to publish\"، \"will the completion rate be low\" و \"will this draft attract views\".",
+    "use_when": "فراخوانی‌ها: /dbs-resonate, \"will this resonate\", \"check my draft\", \"will people watch this\"",
+    "sourceHash": "278c3a918b774e1152039546f6bba6ceff1488d16a6ec305324d05f2e2d6c7ec",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-restore": {
+    "title": "",
+    "what": "بازیابی وضعیت آخرین تشخیص برای ادامهٔ کار، در کنار dbs-save. فراخوانی‌ها: /dbs-restore، /续上، \"continue from last time\"، \"show the previous conclusions\" و \"where did the previous diagnosis stop\".",
+    "use_when": "فراخوانی‌ها: /dbs-restore, \"continue from last time\", \"where did we leave off\"",
+    "sourceHash": "f45902613dead28057cc4152c7b4b881775a37c9a296d242a0fdcc5841acad40",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-save": {
+    "title": "",
+    "what": "ذخیرهٔ محلی وضعیت کلیدی تشخیص فعلی، برای ادامهٔ استفاده در جلسهٔ بعد. فراخوانی‌ها: /dbs-save، /存档، \"save this diagnosis\"، \"write this down\" و \"keep this conclusion\".",
+    "use_when": "فراخوانی‌ها: /dbs-save, \"save this diagnosis\", \"remember this\"",
+    "sourceHash": "6ca2ab8135de16be0c0e805a96da2101476ca2bae8489fb3a7e2ca2871e92684",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-script-flow": {
+    "title": "",
+    "what": "بررسی پیوستگی منطقی متن دقیق ویدیوی کوتاه برای یافتن نقاطی که ممکن است مخاطب ویدیو را رد کند: ارتباط منطقی پاراگراف‌ها، تراکم اطلاعات در هر پاراگراف و روانی بیان شفاهی جمله‌ها. پس از تشخیص، به‌طور پیش‌فرض می‌پرسد آیا متن را با علامت‌گذاری اصلاح کند. فراخوانی‌ها: /dbs-script-flow، /逻辑延续، \"check logical continuity\"، \"check for breaks in logic\"، \"check whether this script flows\" و \"where would viewers swipe away\".",
+    "use_when": "",
+    "sourceHash": "c021b77bc2326c0bc8fe653e2fd10d8c76d74b4e67bf2af6290eebf7a82ef3a8",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-slowisfast": {
+    "title": "",
+    "what": "رویکرد «آهسته، سریع است» در dontbesilent؛ کمک به کارآفرین برای یافتن روش‌هایی که ظاهراً آهسته‌ترند اما در بلندمدت سریع‌تر پیش می‌روند و از اصطکاک، دارایی می‌سازند. فراخوانی‌ها: /dbs-slowisfast، /慢就是快، \"is there a slower way\" و \"am I going too fast\".",
+    "use_when": "فراخوانی‌ها: /dbs-slowisfast, \"is there a slower way\", \"am I going too fast\"",
+    "sourceHash": "9e232ea8f4fa4cc8a9e87ad1127a130aa307ad6434837d04a00aad2119ef58d4",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-spread": {
+    "title": "",
+    "what": "رمزگشایی روان‌شناسی انتشار محتوا؛ تحلیل علت ارتباط عاطفی محتوا با مخاطب با پنج نظریهٔ کلاسیک ارتباطات، شناسایی زیربنای احساسی و موضع مؤثر و تعیین جهت بحث اتاق گفت‌وگو. فراخوانی‌ها: /dbs-spread، \"decode the psychology of this content\"، \"why can this go viral\"، \"what does the audience want to hear\" و \"what emotion does this content touch\".",
+    "use_when": "فراخوانی‌ها: /dbs-spread, \"why does this resonate\", \"what emotion does this hit\", \"decode this content\"",
+    "sourceHash": "a31e4c016475167e613f9b5889ef77f1fe7908fb3ae2259c837621a3fd67a2cf",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-wechat-html": {
+    "title": "",
+    "what": "تولید HTML برای WeChat Official Account؛ تبدیل Markdown به HTML قابل‌چسباندن در پنل حساب رسمی WeChat، با ۱۵ سبک آماده برگرفته از رسانه‌های کلاسیک، محصولات فناوری و حساب‌های رسمی چینی. فراخوانی‌ها: /dbs-wechat-html، /公众号HTML، \"generate official-account HTML\"، \"make a WeChat version\" و \"format this for WeChat\".",
+    "use_when": "",
+    "sourceHash": "a9b1a4922d03506b3cbdcb8e418c79dd1ad6b7f07723a72b17a39604e93cf5db",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "dontbesilent2025/dbs-xhs-title": {
+    "title": "",
+    "what": "ابزار فرمول عنوان Xiaohongshu؛ کمک به انتخاب و استفادهٔ درست از ۷۵ الگوی موفقِ آزموده‌شده و فهم دلیل انتخاب آن‌ها. فراخوانی‌ها: /dbs-xhs-title، /小红书标题، \"write a Xiaohongshu title\" و \"Xiaohongshu title formulas\".",
+    "use_when": "فراخوانی‌ها: /dbs-xhs-title, \"xiaohongshu title\", \"RED title formula\"",
+    "sourceHash": "21609ff5f8f71a9be4f8ae3b851b079719d712f45fad057eb09b8abddae9dd47",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "op7418/guizang-ppt-skill": {
+    "title": "",
+    "what": "تولید ارائهٔ وب با ورق‌زدن افقی در یک فایل HTML، همراه با قالب‌های پس‌زمینهٔ WebGL، صفحهٔ آغاز فصل، نمایش درشت داده و شبکهٔ تصاویر. دو سبک: «مجلهٔ دیجیتال × جوهر الکترونیکی» با serif، پس‌زمینهٔ سیال و رنگ گرم؛ و «سبک بین‌المللی سوئیسی» با sans-serif، شبکهٔ نقطه‌ای و تأکیدهای IKB، زرد لیمویی، سبز لیمویی یا نارنجی ایمنی. برای ارائهٔ وب مناسب اشتراک‌گذاری، سخنرانی یا رونمایی، یا اشاره به \"magazine-style PPT\"، \"Swiss-style PPT\"، \"Swiss Style\" و \"horizontal swipe deck\".",
+    "use_when": "",
+    "sourceHash": "833f45bf41f2a2456ef6de36fac159c355d252a6ef7a389624ba26a90cb11db4",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "alchaincyf/huashu-design": {
+    "title": "",
+    "what": "Huashu Design: ساخت prototype با وفاداری بالا، demo تعاملی، اسلاید و انیمیشن با HTML؛ کاوش نسخه‌های طراحی، مشاورهٔ مسیر طراحی و ارزیابی تخصصی. متناسب با کار، نقش متخصص UX، انیماتور، طراح اسلاید یا prototype را می‌گیرد و از کلیشه‌های طراحی وب دوری می‌کند. عبارت‌های فعال‌سازی: \"make a prototype\"، \"interactive prototype\"، \"HTML demo\"، \"animation demo\"، \"design variants\"، \"hi-fi design\"، \"UI mockup\"، \"prototype\"، \"make an HTML page\"، \"make a visualization\"، \"app prototype\"، \"iOS prototype\"، \"export MP4/GIF\"، \"60fps video\"، \"design style\"، \"design direction\"، \"color palette\"، \"recommend a style\"، \"choose a style\"، \"make it beautiful\"، \"review\"، \"does it look good\"، \"review this design\"، \"narrated animation\"، \"narrated video\"، \"long educational video\"، \"voiceover\"، \"narration\" و \"explain what XX is in five minutes\". برای نیاز مبهم، وارد مشاورهٔ مسیر طراحی می‌شود: سه منطق موازی، سه نسخهٔ بصری واقعی، با کتابخانهٔ ۴۰ سبک HTML شامل بیش از ۲۰ سبک وب و ۲۰ سبک ارائه. همچنین شامل پروتکل assetهای برند، مقابله با AI slop، workflow موسوم به Junior، نسخه‌های Tweaks، خروجی انیمیشن به MP4/GIF، pipeline ویدیوی بلندِ روایت‌شده و ارزیابی پنج‌بُعدی است.",
+    "use_when": "",
+    "sourceHash": "86fc1e69649ea324d4cd64a6f17d310ad6011446338e73ebd3f49c5a6e6da926",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "op7418/humanizer-zh": {
+    "title": "",
+    "what": "حذف نشانه‌های متن تولیدشده با AI برای ویرایش یا بازبینی متنی که طبیعی‌تر و شبیه نوشتار انسان به نظر برسد، بر پایهٔ راهنمای جامع ویکی‌پدیا دربارهٔ ویژگی‌های نوشتار AI. شناسایی و اصلاح معناپردازی نمادین اغراق‌آمیز، زبان تبلیغاتی، تحلیل سطحی با عبارت‌های منتهی به ‎-ing، انتساب مبهم، استفادهٔ افراطی از dash، الگوی سه‌بخشی، واژگان AI، تقارن منفی و عبارت‌های ربطیِ بیش‌ازحد.",
+    "use_when": "",
+    "sourceHash": "38e04a5d7edcc1831e4b1fdbaf251f2e010ba406c65c3282239e67774fc092b9",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "klingai-tech/kling-cli": {
+    "title": "",
+    "what": "اسکیل استفاده از CLI رسمی Kling AI برای text-to-image، تولید تصویر از تصویر مرجع، text-to-video و image-to-video. CLI از طریق MCP به Kling متصل می‌شود و text_to_image / image_to_image / text_to_video / image_to_video را فراخوانی می‌کند؛ مشخصات مدل و پارامترها به‌صورت پویا با who_am_i اعلام می‌شوند. پس از دریافت generationId با query_tasks وضعیت را polling می‌کند و در پایان works[].url را برای نمایش به کاربر استخراج می‌کند. دستورها alias ندارند. کلیدواژه‌ها: Kling، تولید تصویر از متن یا مرجع، تولید ویدیو از متن یا تصویر، Omni، omni، MCP، generationId، generation_id، polling، اعتبار تولید، text_to_image، image_to_image، text_to_video، image_to_video، query_tasks، who_am_i، file_upload، image generation، video generation، دستور kling، .credentials، سایت داخلی یا بین‌المللی، global، نسخهٔ خارجی، منطقه، region، نصب و install.",
+    "use_when": "",
+    "sourceHash": "a985b091611c2021f894b2ecd8729fc2ec69ca7fb88565d3b830484b29d81649",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-approval": {
+    "title": "",
+    "what": "API تأیید درخواست در Lark برای مدیریت نمونه‌های فرایند تأیید و وظایف تأیید.",
+    "use_when": "",
+    "sourceHash": "33c6b0d15b26466b2d3dcb3c14526d64c7cabdeb0ef484be240324905bfa7b49",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-apps": {
+    "title": "",
+    "what": "deploy فایل یا پوشهٔ HTML محلی روی Miaoda در Lark و تولید اپلیکیشن و URL قابل‌دسترسی از اینترنت. برای ساخت HTML یا انتشار HTML، سایت استاتیک یا demo وب به‌شکل لینک عمومی / قابل‌اشتراک، تنظیم دامنهٔ اشتراک اپلیکیشن یا اشاره به Miaoda استفاده می‌شود. هر خروجی HTML مستقل می‌تواند مقصد این اسکیل باشد؛ تصمیم دربارهٔ deploy واقعی با پروتکل داخلی اسکیل است. برای آپلود فایل عادی به فضای ابری از lark-drive، برای ویرایش محتوای سند ابری از lark-doc و برای ساخت اسلاید / ارائهٔ native در Lark از lark-slides استفاده شود.",
+    "use_when": "",
+    "sourceHash": "2121345b07df5c6ad6894f4c5df9490e44c552e294f287a1a11c1c20f6330466",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-base": {
+    "title": "",
+    "what": "هنگام کار با جدول چندبُعدی Base در Lark از طریق lark-cli: جستجوی Base، ساخت جدول، مدیریت فیلد، خواندن و نوشتن رکورد، لینک اشتراک رکورد، پیکربندی view، جستجوی تاریخچه و مدیریت role، form، dashboard و workflow. همچنین برای تبدیل دستورهای قدیمی +table / +field / +record به ساختار فعلی. در طراحی فیلد، فیلد فرمول، lookup، محاسبهٔ میان جدول‌ها، شاخص مشتق‌شده در سطح ردیف و نیازهای تحلیل داده نیز باید از این اسکیل استفاده شود.",
+    "use_when": "",
+    "sourceHash": "a42a8e4bd8e6e7d89ddf7ef92310962b163d4f3f261af1eb80e924c43dbbb9e5",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-contact": {
+    "title": "",
+    "what": "دفتر مخاطبان Lark برای تبدیل نام / ایمیل کارمند به open_id و یافتن نام، واحد، ایمیل و اطلاعات تماس از روی open_id. وقتی کاربر شخصی را نام می‌برد و قدم بعدی ارسال پیام، افزودن به گروه یا زمان‌بندی است، ابتدا نام با این اسکیل به ID تبدیل می‌شود. همچنین برای نمایش نام به‌جای open_id در خروجی یا پاسخ به پرسش مستقیم دربارهٔ واحد، ایمیل یا تماس فرد. پیمایش درخت واحدها، فهرست کارکنان هر واحد و نمودار سازمانی بر عهدهٔ این اسکیل نیست و باید از OpenAPI اصلی استفاده شود.",
+    "use_when": "",
+    "sourceHash": "8d17bc83386a70506fb5bcd89f8e2a86ab3dcda53274b9875c03596c49f343a1",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-doc": {
+    "title": "",
+    "what": "اسناد ابری Lark / Docx / اسناد Wiki نسخهٔ v2: ساخت، بازکردن، خواندن، دریافت، مشاهده، خلاصه‌سازی، مرتب‌سازی، بازنویسی، ترجمه، بازبینی و ویرایش محتوا. وقتی کاربر URL/token سند را می‌دهد یا مشاهده، خواندن، بازکردن، استخراج، خلاصه‌سازی، ساخت سند، افزودن، جایگزینی، حذف یا جابه‌جایی محتوا، تغییر قالب، درج یا دانلود تصویر، پیوست، asset یا thumbnail تخته را می‌خواهد. برای spreadsheet یا Base تعبیه‌شده، تبدیل اطلاعات مهم به تخته از جمله SVG، و بلوک مرجع یا همگام نیز ابتدا از این اسکیل برای خواندن و استخراج token استفاده می‌شود و سپس کار به اسکیل مربوطه می‌رود. دستورهای docs +create، docs +fetch و docs +update باید --api-version v2 داشته باشند؛ پیش‌فرض DocxXML است و Markdown نیز پشتیبانی می‌شود.",
+    "use_when": "",
+    "sourceHash": "d79b135516b26b1220168f15f3ec7283a2ed6e3d530f61163e75fa14b64681e6",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "larksuite/lark-slides": {
+    "title": "",
+    "what": "ساخت و ویرایش اسلاید Lark: ایجاد ارائه، خواندن محتوای اسلاید و مدیریت صفحه‌ها شامل ساخت، حذف، خواندن و جایگزینی بخشی از صفحه. برای ساخت یا ویرایش اسلاید و خواندن یا تغییر یک صفحه استفاده می‌شود. URL/token با مسیر /slides/ در doubao.com نیز مستقیماً به همین اسکیل می‌رود؛ صرف غیر-Lark بودن دامنه نباید باعث بازگشت به WebFetch شود. مسیریابی بر اساس الگوی مسیر URL و token است، نه دامنه. ویرایش سند ابری به lark-doc، شیء تختهٔ مستقل در سند به lark-whiteboard، و آپلود یا دانلود فایل عادی به lark-drive می‌رود؛ flowchart یا نمودار معماریِ داخل اسلاید همچنان متعلق به این اسکیل است.",
+    "use_when": "",
+    "sourceHash": "beb12d24dcfed8b7f2cd2a92f0798d82034781bc9bbd7f55b3acc9fadf8391ff",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source"
+  },
+  "okx/okx-dex-market": {
+    "title": "",
+    "what": "",
+    "use_when": "ممنوعیت قطعی: هرگز برای پرس‌وجوی prediction-market / Polymarket UpDown از این اسکیل استفاده نشود. در این حالت‌ها به okx-dapp-discovery هدایت کنید: (الف) نام DApp مانند Polymarket/Aave/Hyperliquid/PancakeSwap/Morpho با هر بازهٔ زمانی آمده باشد؛ یا (ب) عبارت افزایش/کاهش، updown یا 'up or down' برای BTC/ETH/SOL/XRP/BNB/DOGE/HYPE آمده باشد؛ مانند 'up/down market'، '5-minute up/down' یا 'BTC up or down'. نمونه: 'BTC 5-minute up/down market' → okx-dapp-discovery، نه K-line. این‌ها بازار پیش‌بینی Polymarket هستند، نه پرس‌وجوی قیمت on-chain.",
+    "sourceHash": "3a5b938378c46a73c60f82725006e358d7f8b3ace6ae524d2ead4ff5f2b544dc",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source",
+    "description": "ممنوعیت قطعی: هرگز برای پرس‌وجوی prediction-market / Polymarket UpDown از این اسکیل استفاده نشود. در این حالت‌ها به okx-dapp-discovery هدایت کنید: (الف) نام DApp مانند Polymarket/Aave/Hyperliquid/PancakeSwap/Morpho با هر بازهٔ زمانی آمده باشد؛ یا (ب) عبارت افزایش/کاهش، updown یا 'up or down' برای BTC/ETH/SOL/XRP/BNB/DOGE/HYPE آمده باشد؛ مانند 'up/down market'، '5-minute up/down' یا 'BTC up or down'. نمونه: 'BTC 5-minute up/down market' → okx-dapp-discovery، نه K-line. این‌ها بازار پیش‌بینی Polymarket هستند، نه پرس‌وجوی قیمت on-chain. از این اسکیل استفاده کنید برای..."
+  },
+  "okx/okx-dex-signal": {
+    "title": "",
+    "what": "",
+    "use_when": "برای ردیابی فعالیت smart-money، whale، KOL یا دارندگان بزرگ، هشدار تجمیعیِ سیگنال خرید و رتبه‌بندی leaderboard. شامل: (۱) ردیاب آدرس با feed خام تراکنش DEX برای smart money، KOL یا آدرس کیف‌پول دلخواه؛ (۲) هشدار تجمیعی صرفاً خرید، برای tokenهای خریداری‌شده به‌صورت جمعی توسط smart money/KOL/whaleها؛ (۳) leaderboard معامله‌گران برتر بر اساس PnL، نرخ برد، حجم یا ROI.",
+    "sourceHash": "f6f30810381299b3edde7256b41ba9bf7952ba72089dd71fa0d03c661adde70b",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original multilingual source",
+    "description": "برای ردیابی فعالیت smart-money، whale، KOL یا دارندگان بزرگ، هشدار تجمیعیِ سیگنال خرید و رتبه‌بندی leaderboard. شامل: (۱) ردیاب آدرس با feed خام تراکنش DEX برای smart money، KOL یا آدرس کیف‌پول دلخواه؛ (۲) هشدار تجمیعی صرفاً خرید، برای tokenهای خریداری‌شده به‌صورت جمعی توسط smart money/KOL/whaleها؛ (۳) leaderboard معامله‌گران برتر بر اساس PnL، نرخ برد، حجم یا ROI. وقتی کاربر می‌پرسد 'what are smart money buying'، 'latest smart-money trades'، 'KOL trading activity'، 'track smart money' یا 'track address..."
   }
 }

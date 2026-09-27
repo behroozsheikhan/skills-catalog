@@ -3,6 +3,7 @@ import { syncFavoriteButtons } from "./favorites";
 import { searchRows } from "../lib/search.mjs";
 type Row = {
   key: string;
+  sourceLanguage: "en" | "zh";
   path: string;
   name: string;
   author: string;
@@ -111,11 +112,17 @@ function createCard(r: Row) {
     r.summary,
   );
   description.dir = r.fa ? "rtl" : "ltr";
-  description.lang = r.fa ? "fa" : "en";
+  description.lang = r.fa ? "fa" : r.sourceLanguage;
   const bottom = el("div", "card-bottom");
   bottom.append(
     el("span", "topic-tag", r.topic.replace(/^\S+\s/, "")),
-    el("span", "language-tag", r.fa ? "FA / EN" : "EN"),
+    el(
+      "span",
+      "language-tag",
+      r.fa
+        ? "FA / " + r.sourceLanguage.toUpperCase()
+        : r.sourceLanguage.toUpperCase(),
+    ),
   );
   a.append(description, bottom);
   const shell = el("div", "skill-card-shell");

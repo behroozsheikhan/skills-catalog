@@ -77,7 +77,9 @@ const incomplete = /…|\.\.\./.test(
         {s.fa?.title && <p>{s.fa.title}</p>}
       </div>
       <span class="detail-language">
-        {s.fa ? "فارسی + English" : "English · ترجمه در انتظار"}
+        {s.fa
+          ? "فارسی + " + (s.sourceLanguage === "zh" ? "چینی" : "English")
+          : "متن اصلی · ترجمه در انتظار"}
       </span>
     </div>
     <div class="detail-layout">
@@ -100,7 +102,7 @@ const incomplete = /…|\.\.\./.test(
           )}
           <div class="original-copy">
             <span class="english-label">ORIGINAL DESCRIPTION</span>
-            <p dir="ltr" lang="en">
+            <p dir="ltr" lang={s.sourceLanguage}>
               {s.what || s.description || "No description provided."}
             </p>
           </div>
@@ -120,7 +122,7 @@ const incomplete = /…|\.\.\./.test(
               )}
               <div class="original-copy">
                 <span class="english-label">WHEN TO USE</span>
-                <p dir="ltr" lang="en">
+                <p dir="ltr" lang={s.sourceLanguage}>
                   {s.use_when}
                 </p>
               </div>
