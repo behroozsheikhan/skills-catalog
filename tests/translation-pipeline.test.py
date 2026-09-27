@@ -24,6 +24,12 @@ class TranslationPipeline(unittest.TestCase):
         with self.assertRaises(ValueError):m.restore('استفاده', ['CLI'],'Use the CLI')
     def test_duplicated_placeholder_rejected(self):
         with self.assertRaises(ValueError):m.restore('[[T0]] [[T0]]', ['CLI'],'Use the CLI')
+    def test_fragmentation_does_not_remove_source_content(self):
+        text='Use NVIDIA CUDA GPU API SDK CLI tools for CPU and TPU, then run "improve this copy" with React; keep Next.js…'
+        rebuilt=''.join(part+separator for part,separator in m.fragments(text))
+        self.assertEqual(' '.join(rebuilt.split()), ' '.join(text.split()))
+        for part,separator in m.fragments(text):
+            self.assertLessEqual(len(m.protect(part)[1]), 6)
     def test_fallback_changes_invalidate_translation(self):
         a={'what':'','use_when':'When needed','description':'First'}
         b={**a,'description':'Second'}

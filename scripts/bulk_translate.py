@@ -26,6 +26,7 @@ SINGLE_QUOTED = re.compile(r"(?<![\w])'[^'\n]+(?:'|$)")
 TOKEN = re.compile(r'\[\[T(\d+)\]\]')
 MARKER = re.compile(r'\[{1,2}\s*(\d{5})\s*\]{1,2}')
 PERSIAN = re.compile('[\u0600-\u06ff]')
+CJK = re.compile('[\u4e00-\u9fff]')
 
 
 def source_hash(row):
@@ -66,13 +67,13 @@ def restore(text, tokens, original):
         raise ValueError('Unresolved placeholder')
     # Prose must actually have been translated. Pure tool/code lists may stay English.
     unprotected = TOKEN.sub('', protect(original)[0])
-    if len(re.findall('[A-Za-z]{2,}', unprotected)) >= 3 and not PERSIAN.search(result):
+    if (len(re.findall('[A-Za-z]{2,}', unprotected)) >= 3 or CJK.search(unprotected)) and not PERSIAN.search(result):
         raise ValueError('English prose was not translated')
     return result
 
 
 def request_translation(text):
-    query = urllib.parse.urlencode({'client': 'gtx', 'sl': 'en', 'tl': 'fa', 'dt': 't', 'q': text})
+    query = urllib.parse.urlencode({'client': 'gtx', 'sl': 'zh-CN' if CJK.search(text) else 'en', 'tl': 'fa', 'dt': 't', 'q': text})
     request = urllib.request.Request('https://translate.googleapis.com/translate_a/single?' + query,
                                      headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'})
     with urllib.request.urlopen(request, timeout=60) as response:
@@ -93,7 +94,12 @@ class FieldFailures(ValueError):
 
 
 def valid_cached(text, translated):
-    return all(token in translated for token in protect(text)[1])
+    tokens = protect(text)[1]
+    remaining = translated
+    for token in tokens:
+        if token not in translated: return False
+        remaining = remaining.replace(token, '')
+    return not CJK.search(remaining)
 
 
 def translate_batch(batch):
@@ -171,16 +177,19 @@ def main():
         fragment_map = {text:fragments(text) for text in pending}
         pending = list(dict.fromkeys(piece for parts in fragment_map.values() for piece,separator in parts if piece and piece not in cache))
         for text in pending:
-            if not re.search('[A-Za-z]', TOKEN.sub('',protect(text)[0])):
+            if not re.search('[A-Za-z\u4e00-\u9fff]', TOKEN.sub('',protect(text)[0])):
                 cache[text] = text
         pending = [text for text in pending if text not in cache]
     print(f'{len(rows)} skills; {len(unique)} distinct fields; {len(pending)} fields to translate', flush=True)
+    pending.sort(key=lambda text: bool(CJK.search(TOKEN.sub('',protect(text)[0]))))
     batches, batch, size = [], [], 0
+    previous_language = None
     for text in pending:
         length = len(protect(text)[0]) + 12
-        if batch and (size+length > 3400 or len(batch) >= 24):
+        language = bool(CJK.search(TOKEN.sub('',protect(text)[0])))
+        if batch and (size+length > 3400 or len(batch) >= 24 or previous_language != language):
             batches.append(batch); batch=[]; size=0
-        batch.append(text); size += length
+        batch.append(text); size += length; previous_language = language
     if batch: batches.append(batch)
     failures = []
     consecutive_network_errors = 0

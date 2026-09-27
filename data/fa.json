@@ -65824,5 +65824,168 @@
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
+  },
+  "agentspace-so/ai-video-generation": {
+    "title": "",
+    "what": "تولید ویدیوهای AI روی RunComfy با CLI ابزار `runcomfy`؛ یک مسیریاب هوشمند برای کل کاتالوگ مدل‌های ویدیو: HappyHorse 1.0 (رتبهٔ ۱ Arena، با صدای native در همان مرحله)، Wan-AI Wan 2-7 (با وزن‌های باز و lip-sync مبتنی بر صوت)، ByteDance Seedance v2 / 1-5 / 1-0 (سینمایی و چندوجهی)، Kling 3.0 / 2-6، Google Veo 3-1، MiniMax Hailuo 2-3 و ByteDance Dreamina 3-0. شامل text-to-video (t2v)، image-to-video (i2v) و endpoint مربوط به video-extend در Veo.",
+    "use_when": "",
+    "sourceHash": "61c29845ad0389535e0f455a2f505de8c4ac851a169dd464f5ef851708855f05",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/chrome-extension": {
+    "title": "",
+    "what": "راهنمای جامع ساخت افزونه‌های Chrome با Manifest V3.",
+    "use_when": "هر زمان کاربر به Chrome extension، browser extension، manifest.json، content script، service worker (در زمینهٔ افزونه)، popup، side panel، chrome.runtime، chrome.tabs، chrome.storage، chrome.scripting، background script، MV3، Manifest V3 یا هر API افزونهٔ Chrome اشاره کند. همچنین وقتی کاربر می‌خواهد script به صفحات وب تزریق کند، بین صفحه و background ارتباط برقرار کند، یا CSP را دور بزند از یک",
+    "sourceHash": "12625a3fbff4270f541b89bba28fa62f344d329b160fcbd77e08966114ea3549",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "openai/codex-bug": {
+    "title": "",
+    "what": "عیب‌یابی گزارش‌های باگ GitHub در openai/codex.",
+    "use_when": "وقتی URL یک issue در GitHub از openai/codex داده می‌شود و تصمیم‌گیری دربارهٔ قدم بعدی خواسته می‌شود؛ مانند بررسی در برابر…",
+    "sourceHash": "21ace8de99ddf9abe3c6273cbbbd816d0e698ced86a5291b173af79971847160",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/copilot-sdk": {
+    "title": "",
+    "what": "runtime برنامه‌پذیر ایجنت برای قراردادن workflowهای ایجنتی Copilot در اپلیکیشن‌های Python، TypeScript، Go و .NET.",
+    "use_when": "",
+    "sourceHash": "5b237c854967c48c833fd3e538c94c2101488debdc0da9e2744a812e687a244e",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "nvidia/doca-collectx-deployment": {
+    "title": "",
+    "what": "",
+    "use_when": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده…",
+    "sourceHash": "2fa5fb6a8249d1900b4bb16deca4b6e0b1bd0d73b50900c007ff13d51319c496",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source",
+    "description": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده،…"
+  },
+  "firebase/firebase-firestore-basics": {
+    "title": "",
+    "what": "راهنمای کامل آماده‌سازی، ایمن‌سازی و اتصال Cloud Firestore به اپلیکیشن‌ها. شامل راه‌اندازی در پروژه‌های Firebase و محیط‌های محلی با Firebase CLI؛ راهنمای جامع security rules برای حفاظت از داده و کنترل دسترسی؛ دستورالعمل اتصال SDK به وب‌اپلیکیشن‌ها با modular SDK؛ و ارجاع به مستندات مدیریت index، بهینه‌سازی query و بهترین شیوه‌ها.",
+    "use_when": "",
+    "sourceHash": "5cc637de4f27d9d57f1c332f84b14dbc71d845c886ae9a76a65e67494257a431",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-samber-hot": {
+    "title": "",
+    "what": "caching در حافظه در Golang با samber/hot؛ شامل الگوریتم‌های eviction یعنی LRU، LFU، TinyLFU، W-TinyLFU، S3FIFO، ARC، TwoQueue، SIEVE و FIFO، همچنین TTL، cache loaderها، sharding، stale-while-revalidate، caching کلیدهای ناموجود و metricهای Prometheus. هنگام استفاده یا پذیرش samber/hot، وقتی کد github.com/samber/hot را import می‌کند، یا وقتی پروژه مرتباً منابع یکسان با cardinality متوسط تا پایین را با بسامد بالا بارگذاری می‌کند و باید latency یا فشار backend را کاهش دهد.",
+    "use_when": "",
+    "sourceHash": "8e6fdd77e18160a8ec0103c73473ab49f9dad9d5974dd0960575ee67c62e79a0",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-spf13-viper": {
+    "title": "",
+    "what": "کتابخانهٔ پیکربندی Golang با spf13/viper؛ شامل تقدم لایه‌ای (flag > env > file > KV > default)، BindPFlag/BindPFlags، SetEnvPrefix + SetEnvKeyReplacer + AutomaticEnv، ReadInConfig + ConfigFileNotFoundError، Unmarshal + تگ‌های struct در mapstructure، Sub برای زیرشاخه‌ها، WatchConfig + OnConfigChange برای hot reload، viper.New() برای جداسازی تست‌ها و اتصال KV راه‌دور. هنگام استفاده یا پذیرش spf13/viper، یا وقتی کد `github.com/spf13/viper` را import می‌کند.",
+    "use_when": "",
+    "sourceHash": "17178aa7fb7a3121a5d9c52ef5ed8fb5533adf4e630c3445b43489b13e5f3acd",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-swagger": {
+    "title": "",
+    "what": "مستندسازی OpenAPI/Swagger در Golang با swaggo/swag؛ شامل کامنت‌های annotation یعنی @Summary، @Param، @Success، @Router و @Security، تولید کد با swag init، اتصال به frameworkهای gin، echo، fiber، chi و net/http، تعریف‌های امنیتی Bearer/JWT، OAuth2 و API key، و تگ‌های struct یعنی swaggertype، enums، example و swaggerignore.",
+    "use_when": "",
+    "sourceHash": "02328d547d2d96338d6f8e52e6fdfa2e874eaf7d3138fe49c413a4230371955d",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/image-manipulation-image-magick": {
+    "title": "",
+    "what": "پردازش و ویرایش تصویر با ImageMagick در Windows، Linux و macOS. دریافت metadata، ابعاد و اطلاعات فرمت تصویر با دستور identify؛ تغییر اندازهٔ یک یا چند تصویر با کنترل نسبت ابعاد و تولید thumbnail؛ فیلتر و پردازش تصاویر بر اساس ابعاد یا نوع فایل. به نصب ImageMagick و دسترس‌پذیری دستور magick در PATH نیاز دارد؛ شامل راه‌اندازی ویژهٔ PowerShell در Windows و Bash در Linux/macOS است.",
+    "use_when": "",
+    "sourceHash": "a44326b9055540aca113e8941a020aa55edc0bdc4b3d4c4fb69a11c07246017d",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "remotion-dev/make-pr": {
+    "title": "",
+    "what": "خودکارسازی ساخت pull request با قالب‌بندی commitها و مدیریت branchها. اطمینان از اینکه روی main نیستید و ساخت feature branch در صورت نیاز؛ اجرای قالب‌بندی Oxfmt روی همهٔ packageهای تحت‌تأثیر پیش از commit؛ قالب‌بندی commitها و عنوان PR با نام package از package.json، مانند \" @remotion/shapes : Add heart shape\"؛ و استفاده از gh CLI برای بازکردن خودکار pull request پس از push تغییرات.",
+    "use_when": "",
+    "sourceHash": "931b61fcc73b117f8b3cc50b4940bbf7e8600093cc690d4b53793c46bd885bcc",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/mcp-configure": {
+    "title": "",
+    "what": "پیکربندی محیط Dataverse برای اتصال به MCP server مربوط به GitHub Copilot.",
+    "use_when": "",
+    "sourceHash": "667e3076b0c68664fcea6b4edddc9c4106926f6a5e0e91b0f9eb1944ff794967",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "astronomer/migrating-ai-sdk-to-common-ai": {
+    "title": "",
+    "what": "مهاجرت پروژه‌های Airflow از airflow-ai-sdk به apache-airflow-providers-common-ai 0.1.0+.",
+    "use_when": "وقتی کاربر می‌خواهد airflow-ai-sdk را جایگزین کند با…",
+    "sourceHash": "2288c557faa8cec7015154d45bef79a45bf4d6ac16e8f712e363965e19934f1c",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/remember-interactive-programming": {
+    "title": "",
+    "what": "یک micro-prompt برای تقویت workflowهای برنامه‌نویسی تعاملی با دسترسی زنده به REPL. برای Clojure و اتصال به Copilot از طریق Backseat Driver طراحی شده، اما برای هر سیستم دارای REPL زنده قابل‌تطبیق است. به ایجنت یادآوری می‌کند که REPL را منبع حقیقت برای کاوش و تغییر سیستم بداند. بر توضیح روشن کد ارزیابی‌شده و ترجیح ابزارهای ویرایش ساختاری بر جایگزینی متن تأکید می‌کند. شامل راهنمای نگهداری فهرست کارها در جلسات توسعهٔ تعاملی است.",
+    "use_when": "",
+    "sourceHash": "900df4d3559d864c396ae78dedae9275555d5b734d241cf184a2ee9b58c359a6",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "rivet-dev/rivet-dynamic-apps": {
+    "title": "",
+    "what": "Dynamic Apps: ساخت و deploy یک backend تولیدشده با AI برای هر کاربر.",
+    "use_when": "",
+    "sourceHash": "6452aaa60d54d42490827cbb22a82563decf1a394da55803589ec706657c741f",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "sanity-io/sanity-migration": {
+    "title": "",
+    "what": "برنامه‌ریزی، پیاده‌سازی و بازبینی مهاجرت از سایر CMSها و سیستم‌های محتوا به Sanity.",
+    "use_when": "هنگام مهاجرت یا تغییر پلتفرم به Sanity از AEM، Adobe Experience Manager، Contentful، Strapi، Webflow، WordPress، Payload، Drupal، فایل‌های Markdown/MDX/frontmatter، خروجی‌های WXR/XML، APIهای CMS، dumpهای پایگاه داده یا HTML استاتیک؛ یا هنگام طراحی استخراج، تبدیل، تبدیل به Portable Text، مهاجرت assetها، redirectها، اعتبارسنجی و workflowهای انتقال نهایی.",
+    "sourceHash": "77c5adda1bc8677f1051f6f53734dca84bdb4958e53d8d18ba59909cdf92b89e",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/skill-progressive-disclosure-design": {
+    "title": "",
+    "what": "تصمیم‌گیری دربارهٔ تقسیم محتوای اسکیل میان SKILL.md و فایل‌های مرجع برای استفادهٔ بهینه از context و فعال‌شدن قابل‌اعتماد. هنگام ساخت اسکیل جدید Claude، refactor اسکیل موجود یا افزایش حجم SKILL.md به بیش از ۳۰۰ تا ۴۰۰ خط استفاده شود. همچنین",
+    "use_when": "وقتی کاربر به \"progressive disclosure\"، \"reference files\"، \"splitting skills\"، \"skill bundling\"، \"context window for skills\"، \"SKILL.md too long\"، \"what goes in references/\" یا \"skill structure\" اشاره می‌کند، یا دربارهٔ چیزی ابراز تردید می‌کند در مورد",
+    "sourceHash": "50c62b2f36b11abba410bfd40b964f8f84af9c5f8bd773f040ff4f75cd83ed27",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "anthropic/writing-hookify-rules": {
+    "title": "",
+    "what": "تعریف الگوها و پیام‌هایی که",
+    "use_when": "هشدار یا مسدودسازی Claude را برای اقدامات مشخص ایجنت فعال می‌کنند. پشتیبانی از چهار نوع رویداد: دستورهای bash، ویرایش فایل، توقف ایجنت و promptهای کاربر؛ به‌اضافهٔ حالت فراگیر \"all\"، هرکدام با تطبیق regex یا چندشرطی. قواعد در فایل‌های markdown با YAML frontmatter در .claude/hookify.{name}.local.md ذخیره می‌شوند و تغییرات بلافاصله در استفادهٔ بعدی از ابزار اثر می‌کنند. دو حالت تطبیق: فیلد سادهٔ pattern برای قواعد تک‌شرطی یا آرایهٔ پیشرفتهٔ conditions برای",
+    "sourceHash": "9d450354101270341d9947f3324255bbb0a97d9d147dbdb73d905b5989831a53",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
   }
 }
