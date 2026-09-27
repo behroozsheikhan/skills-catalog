@@ -14,6 +14,12 @@ class TranslationPipeline(unittest.TestCase):
         self.assertTrue(m.restore(translated,tokens,text).endswith('…'))
     def test_persian_word_order_can_move_ellipsis(self):
         self.assertEqual(m.restore('برای [[T0]] استفاده کنید', ['…'], 'Use for…'), 'برای … استفاده کنید')
+    def test_provider_bracket_formatting_is_normalized(self):
+        self.assertEqual(m.restore('دستور [[T0] جدید', ['IR'], 'New IR instruction'), 'دستور IR جدید')
+    def test_single_quoted_commands_are_preserved(self):
+        masked,tokens=m.protect("Use when asked 'improve this copy' or 'check my site…")
+        self.assertIn("'improve this copy'", tokens)
+        self.assertIn("'check my site…", tokens)
     def test_missing_placeholder_rejected(self):
         with self.assertRaises(ValueError):m.restore('استفاده', ['CLI'],'Use the CLI')
     def test_duplicated_placeholder_rejected(self):
