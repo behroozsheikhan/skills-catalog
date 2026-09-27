@@ -366,6 +366,169 @@
     "method": "assisted",
     "provider": "Machine draft with editorial corrections"
   },
+  "agentspace-so/ai-video-generation": {
+    "title": "",
+    "what": "تولید ویدیوهای AI روی RunComfy با CLI ابزار `runcomfy`؛ یک مسیریاب هوشمند برای کل کاتالوگ مدل‌های ویدیو: HappyHorse 1.0 (رتبهٔ ۱ Arena، با صدای native در همان مرحله)، Wan-AI Wan 2-7 (با وزن‌های باز و lip-sync مبتنی بر صوت)، ByteDance Seedance v2 / 1-5 / 1-0 (سینمایی و چندوجهی)، Kling 3.0 / 2-6، Google Veo 3-1، MiniMax Hailuo 2-3 و ByteDance Dreamina 3-0. شامل text-to-video (t2v)، image-to-video (i2v) و endpoint مربوط به video-extend در Veo.",
+    "use_when": "",
+    "sourceHash": "61c29845ad0389535e0f455a2f505de8c4ac851a169dd464f5ef851708855f05",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/chrome-extension": {
+    "title": "",
+    "what": "راهنمای جامع ساخت افزونه‌های Chrome با Manifest V3.",
+    "use_when": "هر زمان کاربر به Chrome extension، browser extension، manifest.json، content script، service worker (در زمینهٔ افزونه)، popup، side panel، chrome.runtime، chrome.tabs، chrome.storage، chrome.scripting، background script، MV3، Manifest V3 یا هر API افزونهٔ Chrome اشاره کند. همچنین وقتی کاربر می‌خواهد script به صفحات وب تزریق کند، بین صفحه و background ارتباط برقرار کند، یا CSP را دور بزند از یک",
+    "sourceHash": "12625a3fbff4270f541b89bba28fa62f344d329b160fcbd77e08966114ea3549",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "openai/codex-bug": {
+    "title": "",
+    "what": "عیب‌یابی گزارش‌های باگ GitHub در openai/codex.",
+    "use_when": "وقتی URL یک issue در GitHub از openai/codex داده می‌شود و تصمیم‌گیری دربارهٔ قدم بعدی خواسته می‌شود؛ مانند بررسی در برابر…",
+    "sourceHash": "21ace8de99ddf9abe3c6273cbbbd816d0e698ced86a5291b173af79971847160",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/copilot-sdk": {
+    "title": "",
+    "what": "runtime برنامه‌پذیر ایجنت برای قراردادن workflowهای ایجنتی Copilot در اپلیکیشن‌های Python، TypeScript، Go و .NET.",
+    "use_when": "",
+    "sourceHash": "5b237c854967c48c833fd3e538c94c2101488debdc0da9e2744a812e687a244e",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "nvidia/doca-collectx-deployment": {
+    "title": "",
+    "what": "",
+    "use_when": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده…",
+    "sourceHash": "2fa5fb6a8249d1900b4bb16deca4b6e0b1bd0d73b50900c007ff13d51319c496",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source",
+    "description": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده،…"
+  },
+  "firebase/firebase-firestore-basics": {
+    "title": "",
+    "what": "راهنمای کامل آماده‌سازی، ایمن‌سازی و اتصال Cloud Firestore به اپلیکیشن‌ها. شامل راه‌اندازی در پروژه‌های Firebase و محیط‌های محلی با Firebase CLI؛ راهنمای جامع security rules برای حفاظت از داده و کنترل دسترسی؛ دستورالعمل اتصال SDK به وب‌اپلیکیشن‌ها با modular SDK؛ و ارجاع به مستندات مدیریت index، بهینه‌سازی query و بهترین شیوه‌ها.",
+    "use_when": "",
+    "sourceHash": "5cc637de4f27d9d57f1c332f84b14dbc71d845c886ae9a76a65e67494257a431",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-samber-hot": {
+    "title": "",
+    "what": "caching در حافظه در Golang با samber/hot؛ شامل الگوریتم‌های eviction یعنی LRU، LFU، TinyLFU، W-TinyLFU، S3FIFO، ARC، TwoQueue، SIEVE و FIFO، همچنین TTL، cache loaderها، sharding، stale-while-revalidate، caching کلیدهای ناموجود و metricهای Prometheus. هنگام استفاده یا پذیرش samber/hot، وقتی کد github.com/samber/hot را import می‌کند، یا وقتی پروژه مرتباً منابع یکسان با cardinality متوسط تا پایین را با بسامد بالا بارگذاری می‌کند و باید latency یا فشار backend را کاهش دهد.",
+    "use_when": "",
+    "sourceHash": "8e6fdd77e18160a8ec0103c73473ab49f9dad9d5974dd0960575ee67c62e79a0",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-spf13-viper": {
+    "title": "",
+    "what": "کتابخانهٔ پیکربندی Golang با spf13/viper؛ شامل تقدم لایه‌ای (flag > env > file > KV > default)، BindPFlag/BindPFlags، SetEnvPrefix + SetEnvKeyReplacer + AutomaticEnv، ReadInConfig + ConfigFileNotFoundError، Unmarshal + تگ‌های struct در mapstructure، Sub برای زیرشاخه‌ها، WatchConfig + OnConfigChange برای hot reload، viper.New() برای جداسازی تست‌ها و اتصال KV راه‌دور. هنگام استفاده یا پذیرش spf13/viper، یا وقتی کد `github.com/spf13/viper` را import می‌کند.",
+    "use_when": "",
+    "sourceHash": "17178aa7fb7a3121a5d9c52ef5ed8fb5533adf4e630c3445b43489b13e5f3acd",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/golang-swagger": {
+    "title": "",
+    "what": "مستندسازی OpenAPI/Swagger در Golang با swaggo/swag؛ شامل کامنت‌های annotation یعنی @Summary، @Param، @Success، @Router و @Security، تولید کد با swag init، اتصال به frameworkهای gin، echo، fiber، chi و net/http، تعریف‌های امنیتی Bearer/JWT، OAuth2 و API key، و تگ‌های struct یعنی swaggertype، enums، example و swaggerignore.",
+    "use_when": "",
+    "sourceHash": "02328d547d2d96338d6f8e52e6fdfa2e874eaf7d3138fe49c413a4230371955d",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/image-manipulation-image-magick": {
+    "title": "",
+    "what": "پردازش و ویرایش تصویر با ImageMagick در Windows، Linux و macOS. دریافت metadata، ابعاد و اطلاعات فرمت تصویر با دستور identify؛ تغییر اندازهٔ یک یا چند تصویر با کنترل نسبت ابعاد و تولید thumbnail؛ فیلتر و پردازش تصاویر بر اساس ابعاد یا نوع فایل. به نصب ImageMagick و دسترس‌پذیری دستور magick در PATH نیاز دارد؛ شامل راه‌اندازی ویژهٔ PowerShell در Windows و Bash در Linux/macOS است.",
+    "use_when": "",
+    "sourceHash": "a44326b9055540aca113e8941a020aa55edc0bdc4b3d4c4fb69a11c07246017d",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "remotion-dev/make-pr": {
+    "title": "",
+    "what": "خودکارسازی ساخت pull request با قالب‌بندی commitها و مدیریت branchها. اطمینان از اینکه روی main نیستید و ساخت feature branch در صورت نیاز؛ اجرای قالب‌بندی Oxfmt روی همهٔ packageهای تحت‌تأثیر پیش از commit؛ قالب‌بندی commitها و عنوان PR با نام package از package.json، مانند \" @remotion/shapes : Add heart shape\"؛ و استفاده از gh CLI برای بازکردن خودکار pull request پس از push تغییرات.",
+    "use_when": "",
+    "sourceHash": "931b61fcc73b117f8b3cc50b4940bbf7e8600093cc690d4b53793c46bd885bcc",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/mcp-configure": {
+    "title": "",
+    "what": "پیکربندی محیط Dataverse برای اتصال به MCP server مربوط به GitHub Copilot.",
+    "use_when": "",
+    "sourceHash": "667e3076b0c68664fcea6b4edddc9c4106926f6a5e0e91b0f9eb1944ff794967",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "astronomer/migrating-ai-sdk-to-common-ai": {
+    "title": "",
+    "what": "مهاجرت پروژه‌های Airflow از airflow-ai-sdk به apache-airflow-providers-common-ai 0.1.0+.",
+    "use_when": "وقتی کاربر می‌خواهد airflow-ai-sdk را جایگزین کند با…",
+    "sourceHash": "2288c557faa8cec7015154d45bef79a45bf4d6ac16e8f712e363965e19934f1c",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "github/remember-interactive-programming": {
+    "title": "",
+    "what": "یک micro-prompt برای تقویت workflowهای برنامه‌نویسی تعاملی با دسترسی زنده به REPL. برای Clojure و اتصال به Copilot از طریق Backseat Driver طراحی شده، اما برای هر سیستم دارای REPL زنده قابل‌تطبیق است. به ایجنت یادآوری می‌کند که REPL را منبع حقیقت برای کاوش و تغییر سیستم بداند. بر توضیح روشن کد ارزیابی‌شده و ترجیح ابزارهای ویرایش ساختاری بر جایگزینی متن تأکید می‌کند. شامل راهنمای نگهداری فهرست کارها در جلسات توسعهٔ تعاملی است.",
+    "use_when": "",
+    "sourceHash": "900df4d3559d864c396ae78dedae9275555d5b734d241cf184a2ee9b58c359a6",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "rivet-dev/rivet-dynamic-apps": {
+    "title": "",
+    "what": "Dynamic Apps: ساخت و deploy یک backend تولیدشده با AI برای هر کاربر.",
+    "use_when": "",
+    "sourceHash": "6452aaa60d54d42490827cbb22a82563decf1a394da55803589ec706657c741f",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "sanity-io/sanity-migration": {
+    "title": "",
+    "what": "برنامه‌ریزی، پیاده‌سازی و بازبینی مهاجرت از سایر CMSها و سیستم‌های محتوا به Sanity.",
+    "use_when": "هنگام مهاجرت یا تغییر پلتفرم به Sanity از AEM، Adobe Experience Manager، Contentful، Strapi، Webflow، WordPress، Payload، Drupal، فایل‌های Markdown/MDX/frontmatter، خروجی‌های WXR/XML، APIهای CMS، dumpهای پایگاه داده یا HTML استاتیک؛ یا هنگام طراحی استخراج، تبدیل، تبدیل به Portable Text، مهاجرت assetها، redirectها، اعتبارسنجی و workflowهای انتقال نهایی.",
+    "sourceHash": "77c5adda1bc8677f1051f6f53734dca84bdb4958e53d8d18ba59909cdf92b89e",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "samber/skill-progressive-disclosure-design": {
+    "title": "",
+    "what": "تصمیم‌گیری دربارهٔ تقسیم محتوای اسکیل میان SKILL.md و فایل‌های مرجع برای استفادهٔ بهینه از context و فعال‌شدن قابل‌اعتماد. هنگام ساخت اسکیل جدید Claude، refactor اسکیل موجود یا افزایش حجم SKILL.md به بیش از ۳۰۰ تا ۴۰۰ خط استفاده شود. همچنین",
+    "use_when": "وقتی کاربر به \"progressive disclosure\"، \"reference files\"، \"splitting skills\"، \"skill bundling\"، \"context window for skills\"، \"SKILL.md too long\"، \"what goes in references/\" یا \"skill structure\" اشاره می‌کند، یا دربارهٔ چیزی ابراز تردید می‌کند در مورد",
+    "sourceHash": "50c62b2f36b11abba410bfd40b964f8f84af9c5f8bd773f040ff4f75cd83ed27",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
+  "anthropic/writing-hookify-rules": {
+    "title": "",
+    "what": "تعریف الگوها و پیام‌هایی که",
+    "use_when": "هشدار یا مسدودسازی Claude را برای اقدامات مشخص ایجنت فعال می‌کنند. پشتیبانی از چهار نوع رویداد: دستورهای bash، ویرایش فایل، توقف ایجنت و promptهای کاربر؛ به‌اضافهٔ حالت فراگیر \"all\"، هرکدام با تطبیق regex یا چندشرطی. قواعد در فایل‌های markdown با YAML frontmatter در .claude/hookify.{name}.local.md ذخیره می‌شوند و تغییرات بلافاصله در استفادهٔ بعدی از ابزار اثر می‌کنند. دو حالت تطبیق: فیلد سادهٔ pattern برای قواعد تک‌شرطی یا آرایهٔ پیشرفتهٔ conditions برای",
+    "sourceHash": "9d450354101270341d9947f3324255bbb0a97d9d147dbdb73d905b5989831a53",
+    "status": "draft",
+    "method": "assisted",
+    "provider": "Editorial translation from original source"
+  },
   "101-skills/agent-tools": {
     "title": "",
     "what": "برنامه‌های AI را از طریق inference.sh CLI اجرا کنید - تولید تصویر، ایجاد ویدیو، LLMs، جستجو، 3 بعدی، Twitter اتوماسیون. مدل‌ها: FLUX، Veo، Gemini، Grok، Claude، Seedance، OmniHuman، Tavily، Exa، OpenRouter، و بسیاری دیگر.",
@@ -16472,150 +16635,6 @@
     "method": "machine",
     "provider": "Google Translate"
   },
-  "dontbesilent2025/dbs": {
-    "title": "",
-    "what": "بی‌ثبات 商业工具箱主入口。双模式：任务前路由（你的问题该用哪个任务后导航（刚做完诊断，下一步该干什么）.触发方式：/dbs、/商业、「帮我看看」、「下一步怎么走」 نقطه ورود اصلی برای جعبه ابزار کسب و کار dontbesilent. حالت دوگانه: pre-task مسیریابی + post-task ناوبری.",
-    "use_when": "ماشه: /dbs، \"help me with my business\"، \"what's next\"",
-    "sourceHash": "6258a9e117d1b21280a2e45e2cc15cb00889b08e76498a243b95992134eec43c",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-agent-migration": {
-    "title": "",
-    "what": "نماینده 工作台迁移。把任意项目整理成 Claude کد / Codex / Grok / 通用نمایندگان（~/.agents/skills）多端一致、可长期维护的 نماینده نام: پل.触发方式：/dbs-agent-migration、/agent迁移、「迁移到 Codex」「迁移到 Claude کد」「迁移到Grok」「迁移到豆包」「统一 AGENTS.md」「整理 skill bridge」「我的 مامور 工作〰很乱」「整理 skill bridge」「我的 Agent 工作〰很乱」 Claude 和 Codex 和 Grok 和豆包」 مهاجرت فضای کاری عامل.",
-    "use_when": "",
-    "sourceHash": "080214d2c0fd714d567f48d22fd87eb6d7b9c869d8b740c5ec7109c324e8ba22",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-benchmark": {
-    "title": "",
-    "what": "dontbesilent对标分析。用五重过滤法帮你找到值得模仿的对标，排除一切关于「我〟触发方式：/dbs-benchmark、/对标、「帮我找对标」「我该模仿谁」 تحلیل معیار با استفاده از روش dontbesilent five-filter.",
-    "use_when": "ماشه: /dbs-benchmark، \"find me a benchmark\"، \"who should I copy\"",
-    "sourceHash": "94bf0ddef8e6db6fe9312b2862ef713e30973a5f72b0857c1cfef7b8b41fc746",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-chatroom": {
-    "title": "",
-    "what": "定向聊天室：根据话题推荐或接受用户指定的专家，模拟多角色对话。触发方式：/dbs-chatroom、/定向聊天室、「定向聊天室」",
-    "use_when": "",
-    "sourceHash": "e0425744c854d9bd160ec4d12ebe5dd4223110f4e1a5eb6d0659d8cdcc75ec3e",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-chatroom-austrian": {
-    "title": "",
-    "what": "哈耶克 × 米塞斯 × Claude 三人对话。奥派经济学视角的多角色讨论。触发方式：/dbs-chatroom-austrian、/chatroom-austrian、/奥派、「奥派聊天室」 اتاق گفتگوی اقتصاد اتریش. هایک × میزس × Claude بحث.",
-    "use_when": "ماشه: /dbs-chatroom-austrian، /chatroom-austrian، /奥派، \"Austrian chat\"",
-    "sourceHash": "a5472b4d852bd01f1210d8e665e4f429a4a3ce81609b19fe5f163ddc6a397adc",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-content": {
-    "title": "",
-    "what": "dontbesilent.触发方式：/dbs-content、/内容诊断、「这个内容怎么做」「帮我看看这个文断、. پس از گذشت موضوع، نحوه تبدیل آن به محتوای خوب را تشخیص دهید.",
-    "use_when": "ماشه: /dbs-content، \"how should I create this content\"، \"review my copy\"",
-    "sourceHash": "52022501a5e2b74d305b57bec287d2050ae390db74e6dae7c11bbbf5d2a34841",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-content-system": {
-    "title": "",
-    "what": "dontbesilent内容结构化系统。把本地大量文稿、推文、选题、案例和课程稿搭成一个可持续生长的内容结构化工عکس:先审计内容规模与边界，再建立新工程、复制素材、抽取内容单元、生成主题地图与选题装配稿。触发方式：/dbs-content-system、/内容结构化系统、「把我的内容做成结构化系统」「把我的内容做成结构化系统」「把本地素材变成可重组系统」「帮我搭内容资产工程」「我想把旧内容容资产工程」「我想把旧内容容资产工程」「我想把旧内容变سیستم ساختار محتوا حجم محتوای محلی را بررسی می‌کند، سپس یک پروژه دانش محتوای قابل استفاده مجدد با واحدها، نقشه‌های موضوعی و پیش‌نویس‌های مونتاژ می‌سازد.",
-    "use_when": "ماشه: /dbs-content-system، \"build a content structuring system\"، \"turn my archive into reusable assets\"",
-    "sourceHash": "a16b740d3ef7444d1e39f29febbabeb7b87acc616c3c83d1d80da62ff57c1d39",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-decision": {
-    "title": "",
-    "what": "dontbesilent个人决策系统。把任何一个需要长期跟踪的领域（业务、关系、健康、职业、学习、投资… …）做成一个本地知识工程：四层结构、来源标签、写完不改的快照、能炼出规律的概念库.触发方式：/dbs-decision、/决策系统、/决策立案、/结果回填、/状态画像 سیستم تصمیم شخصی هر دامنه long-running را به یک پروژه دانش محلی با چهار لایه، برچسب‌های منبع، عکس‌های فوری غیرقابل تغییر و یک کتابخانه مفهومی تبدیل می‌کند که الگوها را در طول زمان یاد می‌گیرد.",
-    "use_when": "ماشه: /dbs-decision، /决策系统، /决策立案، /结果回填، /状态画像",
-    "sourceHash": "681baa4005f15cefdac3a8b3ff02fe4265deb9a35f0ae2581a29a4779f4f4bfc",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-diagnosis": {
-    "title": "",
-    "what": "dontbesilent商业模式诊断。两种模式：问诊（消解你的问题）和体检（拆解你的商伡触发方式：/dbs-diagnosis、/问诊、「帮我看看商业模式」「诊断一下我的业务」「我有个商业问题」 تشخیص مدل کسب و کار با استفاده از چارچوب هستی شناختی dontbesilent. دو حالت: مشاوره (حل سوال شما) و چکاپ (تحلیل مدل کسب و کار خود).",
-    "use_when": "ماشه: /dbs-diagnosis، \"diagnose my business model\"، \"I have a business question\"",
-    "sourceHash": "28ce18b570800167e21478f35b70e99172aa9971e2f19929486b29a44878c6a0",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-goal": {
-    "title": "",
-    "what": "dontbesilent触发方式：/dbs-goal、/目标、「帮我搞清楚目标」「我想做个人IP」「我的目标是成为...」「我想变得更...」 شفاف سازی هدف با استفاده از فلسفه زبان ویتگنشتاین. اهداف فازی را به نتایج قابل بررسی بازرسی می کند.",
-    "use_when": "ماشه: /dbs-goal، \"help me clarify my goal\"، \"I want to become...\"، \"my goal is...\"",
-    "sourceHash": "06d8165cc78a14f8c02cd13fca800deeaf45f94241be9a0fff1a8ec242adc0d5",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-good-question": {
-    "title": "",
-    "what": "dontbesilent 好问题生成器。把模糊问题改写成 نماینده可推理、可批评、可验证的问题说明书，并判断它能被自动化解决到什触发方式：/dbs-good-question、/好问题、/问题说明书、/سن nt可解性、「这个问题能不能自动化解决」「帮我把问题说清楚」 مشکلات فازی را به agent-solvable خلاصه مشکل تبدیل کنید و آمادگی اتوماسیون را ارزیابی کنید.",
-    "use_when": "ماشه: /dbs-good-question، \"clarify this problem\"، \"can an agent solve this\"",
-    "sourceHash": "3cbe096ce6733dd2fe74ff6b1065871ad8d6d6f7990a57c87df586a43f35f5eb",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-learning": {
-    "title": "",
-    "what": "dontbesilent交互式学习。把一个课题拆成连续学习文章，根据用户在上一篇中的反馈调整下一篇的深度、角度和节奏。触发方式：/dbs-learning、/dbs-learn、/交互式学习、 「带我学一个课题」「继续下一篇」「根据我的反馈写下一篇」 یادگیری تعاملی workflow. یک توالی تطبیقی ​​از مقالات یادگیری بر اساس بازخورد کاربر ایجاد می کند.",
-    "use_when": "ماشه: /dbs-learning، /dbs-learn، \"teach me a topic\"، \"continue the next lesson\"",
-    "sourceHash": "f6db9837c6594a3b0379f46787317f652c7a95dc628f9795f657beda3afa20ed",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-resonate": {
-    "title": "",
-    "what": "文稿共鸣诊断。你写完了一段内容但心里没底——怕没流量、怕没戳中观众、怕完播率低。把文稿给这个مهارت، مهارت، مهارت، مهارت، مهارت触发方式：/dbs-resonate、「这个文稿有没有戳中人」「帮我看看能不能发」「这个完播率会不会低」「文稿发出去有没有流量」 تشخیص رزونانس پیش نویس. شما یک پیش نویس را تمام کردید اما مطمئن نیستید connect. مشکلات تشدید روانی را تشخیص می دهد و راه حل های خاصی را ارائه می دهد.",
-    "use_when": "ماشه: /dbs-resonate، \"will this resonate\"، \"check my draft\"، \"will people watch this\"",
-    "sourceHash": "278c3a918b774e1152039546f6bba6ceff1488d16a6ec305324d05f2e2d6c7ec",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-restore": {
-    "title": "",
-    "what": "把上次诊断的状态拉出来，接着用。配合 dbs-save 使用。触发方式：/dbs-restore、/续上、「接着上次」「之前的结论」「上次诊断到哪 restore آخرین تشخیص dbs-save.",
-    "use_when": "ماشه: /dbs-restore، \"continue from last time\"، \"where did we leave off\"",
-    "sourceHash": "f45902613dead28057cc4152c7b4b881775a37c9a296d242a0fdcc5841acad40",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-script-flow": {
-    "title": "",
-    "what": "短视频逐字稿逻辑延续检查。找出「观众会在哪一秒划走」的风险点：段辑衔接、段落内信息密度、句子口播流畅度。诊断完默认主动问是否标触发方式：/dbs-script-flow、/逻辑延续、「检查逻辑延续」「看看逻辑有没有断」「帮我看看这个稿子顺不顺」「哪里会划走」",
-    "use_when": "",
-    "sourceHash": "c021b77bc2326c0bc8fe653e2fd10d8c76d74b4e67bf2af6290eebf7a82ef3a8",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "dontbesilent2025/dbs-spread": {
-    "title": "",
-    "what": "传播心理解码。给定一段内容，用 5个经典传播学理论解码它为什么能引起受众共鸣，分析受众情绪底层和有效立场，输出聊天室的讨论方向。触发方式：/dbs-spread、「传播心理解码」、「为什么这个能火」、「受众想听什么」、「这个内容打中了什么情绪」 رمزگشا روانشناسی انتقال. با توجه به یک محتوا، مکانیسم روانشناختی را که باعث طنین‌اندازی آن می‌شود، تجزیه و تحلیل کنید، هسته عاطفی و موضع مؤثر و جهت خروجی را برای بحث اتاق گفتگو شناسایی کنید.",
-    "use_when": "ماشه: /dbs-spread، \"why does this resonate\"، \"what emotion does this hit\"، \"decode this content\"",
-    "sourceHash": "a31e4c016475167e613f9b5889ef77f1fe7908fb3ae2259c837621a3fd67a2cf",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "elevenlabs/agents": {
     "title": "",
     "what": "با ElevenLabs عوامل صوتی AI بسازید.",
@@ -29641,15 +29660,6 @@
     "method": "machine",
     "provider": "Google Translate"
   },
-  "klingai-tech/kling-cli": {
-    "title": "",
-    "what": "可灵 AI（Kling）官方 CLI 的使用技能：文生图 / 参考图生图 / 文碟图生视频。CLI 通过 MCP 服务与可灵交互： 调用 text_to_image / image_to_image / text_to_video / image_to_video（模型与参数规格由 who_am_i 动态声明）， 返回 نسلId 后用 query_tasks 数规格由展示给用户。命令无别名。触发词：可灵、Kling、文生图、参考图生图、文生视频、图生视频、Omni、 omni、MCP、generationId、generation_id、轮询、灵感值、 text_to_image、image_to_image、text_to_video、image_to_video、query_tasks、who_am_i、file_upload، تولید تصویر، تولید ویدئو، kling 倽令国内站、海外站、global、海外版、区域、منطقه、安装、نصب.",
-    "use_when": "",
-    "sourceHash": "a985b091611c2021f894b2ecd8729fc2ec69ca7fb88565d3b830484b29d81649",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "kotlin/ci-cd-containerization-advisor": {
     "title": "",
     "what": "طراحی ساخت، تصویر، و استقرار قابل تکرار pipelines برای Kotlin به علاوه Spring برنامه‌ها، از جمله تأیید CI، کانتینرهای لایه‌ای، ایمنی عرضه…",
@@ -30975,54 +30985,27 @@
     "method": "machine",
     "provider": "Google Translate"
   },
-  "larksuite/lark-approval": {
-    "title": "",
-    "what": "飞书审批 API：审批实例、审批任务管理。",
-    "use_when": "",
-    "sourceHash": "33c6b0d15b26466b2d3dcb3c14526d64c7cabdeb0ef484be240324905bfa7b49",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "larksuite/lark-attendance": {
     "title": "",
-    "what": "飞书考勤打卡：查询自己的考勤打卡记录",
+    "what": "ورود فیشو به حضور و غیاب: سوابق حضور و غیاب خود را جویا شوید",
     "use_when": "",
     "sourceHash": "c9fe03c3f442d90b0a3d240371b5442c37743eb7c8be9c5e377c70e71fe2ea67",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
-  "larksuite/lark-base": {
-    "title": "",
-    "what": "当需要用 lark-cli 操作飞书多维表格（Base）时调用：搜索پایگاه、建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的+ جدول / + فیلد / + رکورد写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本مهارت.",
-    "use_when": "",
-    "sourceHash": "a42a8e4bd8e6e7d89ddf7ef92310962b163d4f3f261af1eb80e924c43dbbb9e5",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "larksuite/lark-calendar": {
     "title": "",
-    "what": "飞书日历：管理日历日程和会议室。查看/搜索日程、创建/更新日程、管理参会人、查询忙闲和推荐时段、预定会议室。当用户需要查看日程安排、创建/修改会议、查询/预定会议室时使用。不负责：查询过去的视频会议记录（走lark-vc）、待办任务（走 lark-task）.",
+    "what": "تقویم فیشو: برنامه‌های تقویم و اتاق‌های جلسه را مدیریت کنید. مشاهده/جستجوی برنامه‌ها، ایجاد/به‌روزرسانی برنامه‌ها، مدیریت شرکت‌کنندگان، بررسی زمان‌های شلوغ و توصیه‌شده، و رزرو اتاق‌های کنفرانس. زمانی استفاده می‌شود که کاربران نیاز به مشاهده برنامه‌ها، ایجاد/تغییر جلسات، و درخواست/رزرو کردن اتاق‌های جلسه دارند. پاسخگو نیست: سوابق کنفرانس ویدیویی گذشته را جستجو کنید (به lark-vc بروید)، وظایف کاری (به lark-task بروید).",
     "use_when": "",
     "sourceHash": "f775787a167cfa576a4554eb38ff365533d9ae2ca85b049bc68422b6b5d2753d",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
-  "larksuite/lark-doc": {
-    "title": "",
-    "what": "飞书云文档 / Docx / 知识库 ویکی文档 (v2)：创建、改写、翻译、审阅和编辑飞书文档内容。当用户给出飞书文档URL/token，或说查看/读取/打开某个文档、提取文档内容、总结文档、生成/创建文档、追加/替换/删除/移动内容、调整排版、插入或下载文档图片/附件/素材/画板缩略图时使用。文档内容中出现嵌入电子表格、多维表格、需要将重要信息可视化为画板（吐SVG 画板）、引用或同步块时，也先用本 skill مهارت 时, Docs +create, Docs + Fetch, Docs + Update 必须携带 --api-version v2；默认使用 DocxXML,也支持 Markdown",
-    "use_when": "",
-    "sourceHash": "d79b135516b26b1220168f15f3ec7283a2ed6e3d530f61163e75fa14b64681e6",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "larksuite/lark-drive": {
     "title": "",
-    "what": "飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、态态folder、蜴蜊台） Word/Markdown/Excel/CSV پایگاه 以及快照（.base）导入为飞书在线云文档(docx、برگ 、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论叏更事件，或要把本地文件导入成新版文档、电子表格、多维表格/پایه时使用.",
+    "what": "Feishu Cloud Space: فایل‌ها و پوشه‌ها را در فضای ابری مدیریت کنید. آپلود و دانلود فایل‌ها، ایجاد پوشه‌ها، کپی/انتقال/حذف فایل‌ها، مشاهده فراداده فایل، مدیریت نظرات سند، مدیریت مجوزهای سند، اشتراک در رویدادهای تغییر نظرات کاربر، تغییر عنوان فایل (docx، برگه، bitable، فایل، پوشه، ویکی). همچنین مسئول وارد کردن عکس‌های فوری محلی Word/Markdown/Excel/CSV و Base (.base) به اسناد ابری آنلاین Feishu (docx، برگه، bitable) است. زمانی که کاربران نیاز به آپلود یا دانلود فایل‌ها، سازماندهی فهرست‌های فضای ابری، مشاهده جزئیات فایل، مدیریت نظرات، مدیریت مجوزهای سند، اصلاح عناوین فایل، اشتراک در رویدادهای تغییر نظرات کاربر، یا وارد کردن فایل‌های محلی به نسخه‌های جدید اسناد، صفحات گسترده، و جداول/پایه چند بعدی دارند، استفاده می‌شود.",
     "use_when": "",
     "sourceHash": "3c788b45b5f7839d1481a3e4ddb36af6efcea37a83bb4b2c7dc77aa2d0f9eb0f",
     "status": "draft",
@@ -31040,7 +31023,7 @@
   },
   "larksuite/lark-im": {
     "title": "",
-    "what": "飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据时使用。",
+    "what": "پیام‌رسانی فوری فیشو: پیام‌ها را ارسال و دریافت کنید و چت‌های گروهی را مدیریت کنید. ارسال و پاسخ به پیام‌ها، جستجوی سوابق چت، مدیریت اعضای چت گروهی، آپلود و دانلود تصاویر و فایل‌ها (پشتیبانی از دانلود تقسیم‌بندی شده فایل‌های بزرگ)، و مدیریت پاسخ‌های شکلک. زمانی استفاده می‌شود که کاربران نیاز به ارسال پیام، مشاهده یا جستجوی سوابق چت، دانلود فایل‌ها در چت، مشاهده اعضای گروه، گروه‌های جستجو، ایجاد چت‌های گروهی یا گروه‌های موضوعی و مدیریت داده‌های برچسب‌گذاری شده دارند.",
     "use_when": "",
     "sourceHash": "2752d178b9f5ae119c3c44f173b82229c5d63bc9c9a3948dda2edcef67db66c5",
     "status": "draft",
@@ -31049,27 +31032,54 @@
   },
   "larksuite/lark-mail": {
     "title": "",
-    "what": "飞书邮箱 - پیش‌نویس، نوشتن، ارسال، پاسخ، ارسال، خواندن و جستجوی ایمیل‌ها. پیش نویس ها، پوشه ها، برچسب ها، مخاطبین، پیوست ها و قوانین نامه را مدیریت کنید.",
-    "use_when": "هنگامی که کاربر 起草邮件، 写一封邮件، 拟邮件، 草稿، 发通知邮件، 发送邮仂، 发送邮仂،回复邮件، 转发邮件، 查看邮件، 看邮件، 读邮件، 搜索邮件، 查邮件، 收件، 查邮件، 收件编辑草稿، 管理草稿، 下载附件، 邮件文件夹، 邮件标签، 邮件联泻人، 监听收信规则، 邮件规则، پیش نویس، نوشتن، ارسال ایمیل، پاسخ، فوروارد، صندوق ورودی، نامه thread، قوانین نامه",
+    "what": "صندوق پستی فیشو — پیش نویس, نوشتن, ارسال کنید, پاسخ, رو به جلو, خوانده شود, و ایمیل ها را جستجو کنید; پیش نویس ها را مدیریت کنید, پوشه, برچسب ها, مخاطبین, پیوست, و قوانین پستی.",
+    "use_when": "زمانی که کاربر از نوشتن ایمیل نام می برد, یک ایمیل بنویسید, پست کاذب, پیش نویس, ایمیل اعلان ارسال کنید, ارسال ایمیل, ارسال ایمیل, پاسخ به ایمیل, ارسال نامه, ایمیل را بررسی کنید, ایمیل را بخوانید, نامه را بخوانید, ایمیل را جستجو کنید, ایمیل را بررسی کنید, صندوق ورودی, مکالمه ایمیل, ویرایش پیش نویس, پیش‌نویس‌ها را مدیریت کنید, پیوست را دانلود کنید, پوشه نامه, برچسب ایمیل, تماس با ایمیل, به ایمیل‌های جدید گوش دهید, قوانین دریافت, قوانین ایمیل, پیش نویس, نوشتن, ایمیل ارسال کنید, پاسخ, رو به جلو, صندوق ورودی, ایمیل thread, قوانین پست الکترونیکی",
     "sourceHash": "f993fb0773938b66d4bf64e12a3de30208a07d6420e62348a329f1316127bde1",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
+  "larksuite/lark-markdown": {
+    "title": "",
+    "what": "Feishu Markdown: مشاهده، ایجاد، آپلود، ویرایش و مقایسه فایل‌های Markdown. زمانی استفاده می‌شود که کاربر نیاز به ایجاد یا ویرایش فایل Markdown، خواندن، اصلاح، اصلاح جزئی یا مقایسه تفاوت‌ها داشته باشد. مسئولیتی در قبال وارد کردن Markdown به اسناد آنلاین فیشو، و همچنین مسئولیت عملیات مدیریت فضای ابری مانند جستجوی فایل، مجوزها، نظرات، جابجایی و حذف ندارد.",
+    "use_when": "",
+    "sourceHash": "e599bdd9e40f9249bb4cf5c21899c724952a3a10a63bad7bdb83c1eca54c63d5",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
   "larksuite/lark-minutes": {
     "title": "",
-    "what": "飞书妙记：搜索妙记列表、查看妙记基础信息、下载妙记音视频文件、上传音视频生成妙记、更新妙记标题、替换说话人。当需要获取、操作或者生成妙记时使用。也支持将本地音视频文件转成纪要和逐字稿（优先使用本skill，不要用 ffmpeg/whisper 本地转写）。不负责：获取会议关联妙记，或仅按自然诇获取会议关联妙记，或仅按自然诇",
+    "what": "Feishu Miaoji: فهرست Miaoji را جستجو کنید، اطلاعات اولیه Miaoji را مشاهده کنید، فایل‌های صوتی و تصویری Miaoji را دانلود کنید، صدا و تصویر را برای تولید Miaoji آپلود کنید، عنوان Miaoji را به‌روزرسانی کنید، و بلندگو را جایگزین کنید. زمانی که نیاز به به دست آوردن، کار کردن یا ایجاد یادداشت های فوق العاده دارید از آن استفاده کنید. همچنین از تبدیل فایل‌های صوتی و تصویری محلی به دقیقه و رونوشت‌های کلمه به کلمه پشتیبانی می‌کند (اول از این مهارت استفاده کنید، از ffmpeg/whisper برای رونویسی محلی استفاده نکنید). مسئولیت پذیر نیست: یادداشت های مربوطه را در مورد جلسه دریافت کنید، یا صورتجلسات را فقط بر اساس عنوان زبان طبیعی قرار دهید",
     "use_when": "",
     "sourceHash": "3cf3fc72af5c90357ac68e09de2b9d53b95c20bdf103a0b4a8a36d599588c4cd",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
+  "larksuite/lark-note": {
+    "title": "",
+    "what": "بررسی مستقیم صورتجلسه فیشو (توجه): هنگامی که note_id شناخته شد، جزئیات دقیقه، نوع نمایش، و نشانه سند مرتبط را پرس و جو کنید، و رکورد اصلی یکپارچه کلمه به کلمه را بخوانید. زمانی استفاده می شود که کاربر قبلاً note_id را نگه داشته باشد، یا note_id به صراحت vc-node-id از سند به دست آمده باشد. مسئولیتی در قبال محل جلسه/برنامه/یادداشت، جستجوی عنوان سند، یا خواندن متن Docx ندارد.",
+    "use_when": "",
+    "sourceHash": "e8ac93ec7bd2753cdc87190f2c062f52ff0f6b8033f8e274e00bb934b4ed891b",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
   "larksuite/lark-okr": {
     "title": "",
-    "what": "飞书 OKR：管理目标与关键结果。查看和编辑 OKR周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需蜀要OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估",
+    "what": "فیشو OKR: اهداف مدیریت و نتایج کلیدی. چرخه‌ها، اهداف، نتایج کلیدی، ترازها، معیارهای کمی و سوابق پیشرفت OKR را مشاهده و ویرایش کنید. زمانی استفاده می‌شود که کاربران نیاز به مشاهده یا ایجاد OKR، مدیریت اهداف و نتایج کلیدی و مشاهده روابط هم‌ترازی دارند. مسئولیتی در قبال: مدیریت وظایف (lark-task)، ترتیبات برنامه/جلسه (lark-calendar)، ارزیابی عملکرد",
     "use_when": "",
     "sourceHash": "b60b09302247eb78bec1dbfbd12990d2be93c1e2f52df443ea064f91dbd404ac",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
+  "larksuite/lark-openapi-explorer": {
+    "title": "",
+    "what": "کاوش OpenAPI بومی Feishu/Lark: استخراج رابط‌های OpenAPI بومی بدون کپسوله‌سازی CLI از کتابخانه رسمی اسناد. زمانی استفاده می‌شود که نیازهای کاربر با مهارت‌های lark-* موجود یا دستورات ثبت‌شده lark-cli برآورده نشود و آنها باید OpenAPI بومی Feishu را پیدا کرده و فراخوانی کنند.",
+    "use_when": "",
+    "sourceHash": "6dd4bcb0c73b2c2f478c01b6859e3835bcef2c7e2f5801af2c5b7a2151df0837",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
@@ -31086,7 +31096,7 @@
   },
   "larksuite/lark-sheets": {
     "title": "",
-    "what": "飞书电子表格：创建和操作电子表格。支持创建表格、创建/复制/删除/更新工作表、读写单元格、追加行数据、查找内容、导出文件。当用户霜建电子表格、管理工作表、批量读写数据、在已知表格中查找内容、寖凇载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，词lark-doc 的 Docs +جستجو 先定位资源。",
+    "what": "صفحه گسترده فیشو: صفحات گسترده ایجاد و اجرا کنید. پشتیبانی از ایجاد جداول، ایجاد/کپی/حذف/به‌روزرسانی کاربرگ‌ها، خواندن و نوشتن سلول‌ها، الحاق داده‌های ردیف، جستجوی محتوا و صادرات فایل‌ها. هنگامی که کاربران نیاز به ایجاد صفحات گسترده، مدیریت کاربرگ ها، خواندن و نوشتن داده ها به صورت دسته ای، یافتن محتوا در جداول شناخته شده، صادرات یا دانلود جداول دارند، از آن استفاده کنید. اگر کاربر می‌خواهد فایل‌های جدول را در فضای ابری با نام یا کلمات کلیدی جستجو کند، لطفاً ابتدا از اسناد lark-doc برای مکان یابی منبع استفاده کنید.",
     "use_when": "",
     "sourceHash": "ccbfc1f528a17f5d6e83c8cb64882a2ddbc48286deed862d60085ba1310c21e1",
     "status": "draft",
@@ -31095,25 +31105,16 @@
   },
   "larksuite/lark-skill-maker": {
     "title": "",
-    "what": "创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用API 或编排多步流程）时使用.",
+    "what": "یک مهارت سفارشی برای lark-cli ایجاد کنید. زمانی استفاده می‌شود که کاربران نیاز دارند عملیات Feishu API را در مهارت‌های قابل استفاده مجدد (بسته‌بندی اتم‌ها API یا ترتیب فرآیندهای چند مرحله‌ای) کپسوله کنند.",
     "use_when": "",
     "sourceHash": "6006ea3b2b497383d98b1caa93e727d10fef00c10549502cf53150bfbb61e423",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
-  "larksuite/lark-slides": {
-    "title": "",
-    "what": "飞书幻灯片：创建和编辑幻灯片。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。当用户给出doubao.com 的 /slides/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而困逌WebFetch；路由依据是 URL توکن lark-doc）、云文档里的独立画板对象（走 lark-whiteboard，注意 اسلاید 内嵌的流程图/曾构对象مهارت）、上传或下载普通文件（走 lark-drive）.",
-    "use_when": "",
-    "sourceHash": "beb12d24dcfed8b7f2cd2a92f0798d82034781bc9bbd7f55b3acc9fadf8391ff",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "larksuite/lark-task": {
     "title": "",
-    "what": "飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。",
+    "what": "وظایف فیشو: وظایف، فهرست‌ها و عوامل وظیفه را مدیریت کنید. وظایف کاری را ایجاد کنید، وضعیت کار را مشاهده و به‌روزرسانی کنید، وظایف فرعی را تقسیم کنید، فهرست‌های وظایف را سازماندهی کنید، اعضای همکاری را تعیین کنید، پیوست‌های کار را آپلود کنید، عوامل وظیفه را ثبت کنید یا از آن خارج شوید، داده‌های صفحه اصلی عامل وظیفه را به‌روزرسانی کنید، و سوابق وظایف عامل را بنویسید. زمانی استفاده می‌شود که کاربران نیاز به ایجاد موارد انجام کار، مشاهده لیست وظایف، پیگیری پیشرفت کار، مدیریت فهرست‌های پروژه یا تخصیص وظایف به دیگران، آپلود فایل‌های پیوست برای وظایف، ثبت نام و خروج از کارگزاران، به‌روزرسانی داده‌های صفحه اصلی عامل، و نوشتن سوابق کار دارند.",
     "use_when": "",
     "sourceHash": "84683a8d912f0a6632e7fb9661425758570b7d8f9d6f9cd187d507b15ec4099b",
     "status": "draft",
@@ -31122,7 +31123,7 @@
   },
   "larksuite/lark-vc": {
     "title": "",
-    "what": "飞书视频会议：搜索历史会议、查询会议纪要产物（总结、待办、章节、逐字稿）、查询会议参会人快照。1. 查询已经结束的会议数量或详情时使用本技能（如历史日期｜昨天｜上周｜今天已经开过的会议等场景），查询未开始的会议日程使用lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议室等筛选条件搜索会3. 获取或整理会议纪要、逐字稿、录制产物时使用本技能。4. 查询\"谁参加过某会议\"\"参会人列表\"等参会人快照信息用 vc جلسه دریافت --with-participants（任意时点可查，含已结束会议）。注意：**نماینده真实入会/离会、感知正在进行中会议的实时事件**请使用 lark-vc-agent技能，本技能不覆盖写操作和会中事件流。",
+    "what": "کنفرانس ویدیویی فیشو: جلسات تاریخی را جستجو کنید، محصولات مربوط به صورتجلسه پرس و جو (خلاصه، کارهای انجام شده، فصل ها، پیش نویس های کلمه به کلمه)، و عکس های فوری شرکت کنندگان در جلسه پرس و جو. 1. از این مهارت برای جستجو در تعداد یا جزئیات جلساتی که به پایان رسیده اند (مانند تاریخ های تاریخی | دیروز | هفته گذشته | جلساتی که امروز برگزار شده اند و غیره) استفاده کنید. از مهارت lark-calendar برای پرس و جو از برنامه جلساتی که شروع نشده اند استفاده کنید. 2. از جستجوی جلسات با فیلتر کردن شرایطی مانند کلمات کلیدی، محدوده زمانی، سازمان‌دهندگان، شرکت‌کنندگان، اتاق‌های کنفرانس و غیره پشتیبانی می‌کند.. هنگام جمع‌آوری یا سازمان‌دهی صورتجلسات، پیش‌نویس‌ها و محصولات ضبط‌شده از این مهارت استفاده کنید. 4. برای پرس و جو از اطلاعات عکس فوری شرکت کننده مانند \"چه کسی در یک جلسه شرکت کرده است\"، \"فهرست شرکت کنندگان\"، و غیره، از جلسه vc get --with-participants (در هر مقطع زمانی، از جمله جلسات پایان یافته قابل استعلام است). توجه: ** نماینده در واقع به جلسه می‌پیوندد/از جلسه خارج می‌شود و رویدادهای لحظه‌ای جلسه جاری را حس می‌کند** لطفاً از مهارت lark-vc-agent استفاده کنید. این مهارت شامل عملیات نوشتن و جریان رویداد در طول جلسه نمی شود.",
     "use_when": "",
     "sourceHash": "ce750eabbfae1724f1060fc4515ac0520ae3a400e0b365f01b46e4c9c8732c64",
     "status": "draft",
@@ -31131,16 +31132,25 @@
   },
   "larksuite/lark-vc-agent": {
     "title": "",
-    "what": "飞书视频会议：让机器人代当前用户加入/离开正在进行的会议，并读取会议期间的实时事件（参会人加入与离开、发言、聊天、屏幕共享等）。1. 用户提供 9 位会议号、要求代为入会或离会时使用 +meeting-join / +meeting-leave——会真实产生入会/离会记录。2. 会议进行中用户想知道\"谁加入了\"\"谁离开了\"\"谁在发言\"\"有人共享屏幕吗\"等会中动态时，机器人入会后用+meeting-events 读取事件时间线。3. لطفاً己参会过且仍在进行中的会议的事件；查询已结束会议的参会名单、纪要或逐字稿请使用lark-vc 技能.",
+    "what": "کنفرانس ویدیویی فیشو: به ربات اجازه دهید از طرف کاربر فعلی به کنفرانس جاری بپیوندد/ترک شود، و رویدادهای زمان واقعی را در طول کنفرانس بخواند (شرکت کنندگان در حال پیوستن و خروج، صحبت کردن، چت کردن، اشتراک گذاری صفحه و غیره). 1. هنگامی که کاربر یک شماره کنفرانس 9 رقمی ارائه می‌کند و از شخصی می‌خواهد به جلسه بپیوندد یا آن را ترک کند، از +meeting-join / +meeting-leave استفاده کنید - رکورد پیوستن/خروج در واقع ایجاد می‌شود. 2. هنگامی که کاربر می خواهد بداند \"چه کسی پیوسته است\"، \"چه کسی رفته است\"، \"چه کسی صحبت می کند\"، \"آیا کسی صفحه را به اشتراک می گذارد\" و سایر به روز رسانی ها در طول جلسه، از +meeting-events برای خواندن جدول زمانی رویداد پس از پیوستن ربات به جلسه استفاده کنید. 3. سناریوهای معمولی: ربات‌ها در جلسات شرکت می‌کنند، دستیاران در طول جلسات، از طرف دیگران مشاهده می‌کنند و از طرف دیگران در جلسات شرکت می‌کنند. پیش نیاز: ربات فقط می تواند رویدادهای جلساتی را که در آن شرکت کرده و هنوز در حال انجام است بخواند. لطفاً از مهارت lark-vc برای پرس و جو از لیست شرکت کنندگان، صورتجلسات یا رونوشت های کلمه به کلمه جلسه پایان یافته استفاده کنید.",
     "use_when": "",
     "sourceHash": "5db529152e42d79acf090bf55c2e1a067e73c2fc30991b55bca50768e73426cf",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
+  "larksuite/lark-whiteboard": {
+    "title": "",
+    "what": "تابلوی طراحی فیشو: تابلوهای طراحی را در اسناد Feishu Cloud جستجو و ویرایش کنید. از صادرات تابلوهای هنری به عنوان تصاویر پیش‌نمایش، صادرات ساختارهای اصلی و به‌روزرسانی محتوای آرت‌برد با استفاده از فرمت‌های مختلف پشتیبانی می‌کند. این مهارت زمانی استفاده می‌شود که کاربران نیاز به مشاهده محتوای آرت‌بورد، صادرات تصاویر آرت‌بورد و ویرایش تابلوهای هنری دارند. مسئولیتی در قبال: ویرایش محتوای سند فیشیون (lark-doc)، صفحه گسترده/پایه جاسازی شده سند (lark-sheets / lark-base) ندارد.",
+    "use_when": "",
+    "sourceHash": "7fe832e17f2b5c42a9fe2adf1bc2726865551ead7d0561b92a572b52464cc80e",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
   "larksuite/lark-wiki": {
     "title": "",
-    "what": "飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。",
+    "what": "پایگاه دانش Feishu: فضای دانش، اعضای فضا و گره‌های سند را مدیریت می‌کند. ایجاد و جستجوی فضاهای دانش، مشاهده و مدیریت اعضای فضا، مدیریت سلسله مراتب گره ها، سازماندهی اسناد و میانبرها در پایگاه دانش. زمانی استفاده می شود که کاربران نیاز به یافتن یا ایجاد اسناد در پایگاه دانش، مرور ساختار فضای دانش، مشاهده یا مدیریت اعضای فضا، جابجایی یا کپی گره ها دارند.",
     "use_when": "",
     "sourceHash": "cb2322e388aca40e6aa7da17e5855579f445ba1ffac7bb9e0b066f8d58ecc6ed",
     "status": "draft",
@@ -31149,7 +31159,7 @@
   },
   "larksuite/lark-workflow-meeting-summary": {
     "title": "",
-    "what": "会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时作",
+    "what": "گردش کار مرتب‌سازی دقایق جلسه: خلاصه کردن دقایق جلسه در محدوده زمانی مشخص و ایجاد یک گزارش ساختاریافته. زمانی استفاده می شود که کاربران نیاز به سازماندهی صورتجلسات، تولید گزارش هفتگی جلسات و بررسی محتوای جلسه در یک دوره زمانی دارند.",
     "use_when": "",
     "sourceHash": "0dc31e7f4280c692df882b5530fb3770dd879efbc67656a9840639401fcbb664",
     "status": "draft",
@@ -31158,7 +31168,7 @@
   },
   "larksuite/lark-workflow-standup-report": {
     "title": "",
-    "what": "日程待办摘要：编排 تقویم + دستور کار 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本",
+    "what": "خلاصه وظایف تقویم: تقویم + دستور کار و کار + get-my-tasks را ترتیب دهید تا خلاصه ای از برنامه و کارهای ناتمام در تاریخ مشخص شده ایجاد شود. برای درک برنامه امروز / فردا / این هفته مناسب است.",
     "use_when": "",
     "sourceHash": "eb69696559cba11b3d8cd904265f2aba8c99860b9a72a1389d1cb086f6cc63bf",
     "status": "draft",
@@ -36576,7 +36586,7 @@
   },
   "microsoft/error-handling": {
     "title": "",
-    "what": "统一错误处理系统。在添加 API 端点、修改错误处理、添加前端] API调用、编写错误相关测试时使用.",
+    "what": "سیستم یکپارچه رسیدگی به خطا. هنگام افزودن نقاط پایانی API، اصلاح مدیریت خطا، افزودن تماس‌های API front-end و نوشتن تست‌های مرتبط با خطا استفاده می‌شود.",
     "use_when": "",
     "sourceHash": "e257ed0ce44f103b4d1c696a4136870848ffbb1890a0bd2e4ff453060e925380",
     "status": "draft",
@@ -37431,7 +37441,7 @@
   },
   "microsoft/language-injection": {
     "title": "",
-    "what": "LLM نماینده 多语言注入规范。在修改 نماینده 提示词、添加新的 نماینده端点、处理用户可见的后端消息（message_code）时使用。",
+    "what": "LLM مشخصات تزریق چند زبانه عامل. هنگام اصلاح کلمات اعلان Agent، افزودن نقاط پایانی عامل جدید، و پردازش پیام‌های پشتیبان قابل مشاهده توسط کاربر (message_code) استفاده می‌شود.",
     "use_when": "",
     "sourceHash": "c30c3f75aeae2b0c4dd172a356220ce764b0170d1c57a56ec8f201ea683bd74a",
     "status": "draft",
@@ -37967,7 +37977,7 @@
   },
   "microsoft/path-safety": {
     "title": "",
-    "what": "服务端路径安全与文件访问编码规范。在编写文件下载路由、عامل工具（文件读取/目录列出）、数据连接器/Loader、Workspace 路径操作、沙箱配置",
+    "what": "امنیت مسیر سرور و مشخصات رمزگذاری دسترسی به فایل. هنگام نوشتن مسیرهای دانلود فایل، ابزارهای عامل (خواندن فایل/فهرست فهرست دایرکتوری)، اتصال دهنده های داده/لودرها، عملیات مسیر فضای کاری، و پیکربندی جعبه شنی استفاده می شود.",
     "use_when": "",
     "sourceHash": "54b21f2a0792a1446fda40da35c7ce44754c8554d7ce2c397233a20eb35a90ec",
     "status": "draft",
@@ -40031,27 +40041,27 @@
     "method": "machine",
     "provider": "Google Translate"
   },
-  "modelstudioai/bailian-cli": {
+  "modelstudioai/bailian-finetune": {
     "title": "",
-    "what": "阿里云百炼 / علیون بایلیان / DashScope 资源管理与 `bl` CLI مرکز: 应用调用（bl برنامه）、应用记忆、知识库检索、模型目录/模型列表、用量/额度/配颺、免贴工作空间、MCP 市场、pipeline、文件上传、کنسول API、登录鉴权与配置、 مهارت عامل安装/列表/更新/卸载（bl مهارت افزودن|فهرست|به روز رسانی|حذف，百炼 ثبت مهارت）。 用户点名百炼 / DashScope / `bl`，或继续既有 `bl` 工作流时直接使用。 共享协议（رضایت / 版本预检 / / 鉴错误上报）在 bailian-protocol；官方安装 `npx skills add modelstudioai/cli --all -g`。 家族路由：生图/生视频/配音/语音合合bailian-gen；精调/微调/训练/数据集 → bailian-finetune； agents.yaml 托管 نماینده → bailian-managed-agent。…",
+    "what": "تنظیمات دقیق و ورودی آموزش مدل Alibaba Cloud Bailian: کاربران باید مدل‌های خود را تنظیم، تنظیم و آموزش دهند (fine-tune، پشتیبانی از SFT / SFT-LoRA / DPO / DPO-LoRA / CPT، متن، صدا، تصویر را پوشش می‌دهد، مجموعه داده‌های آموزشی را تأیید یا آپلود کنید، پیشرفت آموزش و گزارش‌ها را مشاهده کنید، نقاط بازرسی را انتخاب کنید، محصولات تنظیم‌شده را صادر کنید، از `bl dataset` / `bl finetune` / `bl deploy` در هنگام استقرار مدل‌های اختصاصی استفاده کنید. پیوند برای تأیید داده ها تأیید می شود → برای دریافت آپلود کنید file-id → تنظیم دقیق برای ایجاد کار → تماشا برای دیدن پیشرفت → صادرات به صادرات → استقرار آنلاین می شود و به کلید API نیاز دارد. ابتدا از `--dry-run` برای پیش نمایش عملیات نوشتن استفاده کنید. ضد ماشه: کاربران بدون استفاده از این مهارت، تنظیم دقیق Ark/ark Volcano را نام می‌برند. فقط انتخاب کنید از کدام مدل استفاده کنید bailian-model-recommend. استفاده از مدل های آماده برای ایجاد عکس و فیلم bailian-gen. Bailian مدیریت منابع دیگر برای استفاده از bailian-cli. نصب رسمی: `npx skills add modelstudioai/cli --all -g` (با توافقنامه اشتراک …",
     "use_when": "",
-    "sourceHash": "1cf185bf77bfec3683cd1a3740b3bf2275e86dd135b92fae4d3d7c3fd3e2ef74",
+    "sourceHash": "110bbd55bc48d44385816853e0adc58c8c904634f9cef10d1d754f7b63429d4c",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
-  "modelstudioai/bailian-gen": {
+  "modelstudioai/bailian-managed-agent": {
     "title": "",
-    "what": "阿里云百炼图片/视频/语音生成入口（**默认生成技能**）：用户要生图、画图、生成照片、生成图片、AI 绘画、海报、头像、插画、 文生图（text-to-image）、图生图、改图、修图、多图合成、生成视频、文生视频、图生视频、参考生视频、视频编辑、风格转换、 配音、语音合成（TTS）、朗读、转写、语音识别（ASR）时使用 `bl image` / `bl video` / `bl speech`； 宿主放不了的音视频文件用 `bl omni` 理解。 **默认行为：用户未指定服务商时默认走本技能生成。** 图片和语音同步返回并落地本地文件，视频是异步任务、用 `--download` 或轮询取回；本地文件直接传路径，CLI 自动上传。 反触发：宿主自己能做的图片理解、普通问答、编程、写作、翻译不走本技能；百炼应用/知识库/用量/额度走 bailian-cli； 精调训练走 bailian-finetune。 官方安装：`npx skills add modelstudioai/cli --all -g`（与共享协议 bailian-protocol 同装）。",
+    "what": "ورودی زیرساخت اعلامی عامل میزبانی بایلیان ابری علی‌بابا: از `bl managed-agent` استفاده کنید زمانی که کاربران می‌خواهند یک عامل ایجاد کنند، agents.yaml را مقداردهی اولیه کنند، تغییرات پیکربندی عامل را تأیید یا پیش‌نمایش کنند، نماینده میزبان میزبانی بایلیان را ایجاد/به‌روزرسانی/از بین ببرند، یا بتوانند تاریخچه‌ای از رویداد میزبانی شده را بررسی کنند، یا بتوانند تاریخچه‌ای را که میزبانی شده است را بررسی کنند. از agents.yaml به عنوان تنها منبع حقیقت برای IaC استفاده کنید: init برای ساخت داربست، اعتبارسنجی برای تأیید آفلاین، برنامه‌ریزی برای پیش‌نمایش تفاوت، اعمال/نابودی برای تغییر منابع راه دور، و `--yes` باید گنجانده شود. قبل از اینکه به کاربر اجازه دهید تأیید کند، حتماً برنامه ریزی کرده و تفاوت را به او نشان دهید. ضد ماشه: با برنامه/عامل آنلاین Bailian تماس بگیرید تا به bailian-app-call یا `bl app` بروید. حافظه، مهارت ها و عوامل فرعی خود عامل میزبان از این مهارت استفاده نمی کنند. از نقشه برای تولید ویدیو استفاده کنید bailian-gen. نصب رسمی: `npx skills add modelstudioai/cli --all -g` (نصب شده با پروتکل مشترک bailian-protocol).",
     "use_when": "",
-    "sourceHash": "11b8b690a3b94d09accd14969d9844b70e1e6bbf1b5431167c41faefa8f0d702",
+    "sourceHash": "2622a4c3c2a7f878a7817b63b30ea47315c16a61c4abf584fe7ab52b992c798a",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
   },
   "modelstudioai/bailian-protocol": {
     "title": "",
-    "what": "阿里云百炼 `bl` 家族共享执行协议（رضایت确认、版本预检、鉴权/安装、错误上报、本地文件与输出约定）。不是面向用户意图的业务入口；当任一 bailian-* 业务 مهارت（bailian-cli / bailian-gen / bailian-finetune / bailian-managed-agent）执行前需要公共上下文，或用户首次安装/鉴权/`bl` 报错需上报skill官方安装为整包：`npx skills add modelstudioai/cli --all -g`（与业务 skill 同装）；Agent Skills / `npx skills` 不会按 فراداده",
+    "what": "خانواده Alibaba Cloud Bailian `bl` پروتکل اجرای مشترک (تأیید رضایت، پیش‌بررسی نسخه، احراز هویت/نصب، گزارش خطا، فایل محلی و قرارداد خروجی). این یک ورودی تجاری برای قصد کاربر نیست. این مهارت زمانی خوانده می‌شود که هر مهارت تجاری bailian-* (bailian-cli / bailian-gen / bailian-finetune / bailian-managed-agent) قبل از اجرا به یک زمینه عمومی نیاز دارد، یا زمانی که کاربر برای اولین بار نصب/تأیید هویت/`bl` یک خطا باید گزارش شود. به طور رسمی به عنوان یک بسته کامل نصب شده است: `npx skills add modelstudioai/cli --all -g` (نصب شده با مهارت های تجاری). Agent Skills / `npx skills` به طور خودکار وابستگی ها را بر اساس ابرداده نمی کشد.",
     "use_when": "",
     "sourceHash": "016b1ccdb7eb45c91f9bc32669b7f77b9337b23ba7bc5ef0456d2d44412a2f0a",
     "status": "draft",
@@ -47903,8 +47913,8 @@
   },
   "okx/okx-agent-identity": {
     "title": "",
-    "what": "ERC-8004 on-chain هویت عامل در XLayer: ثبت / ایجاد / به‌روزرسانی / فعال کردن / غیرفعال کردن / جستجوی عوامل. مشاهده رتبه بندی ها خدمات نماینده لیست؛ تنظیم آواتار نقش ها: کاربر (کاربر / نماینده کاربر / خریدار / مشتری / 用户 / 买家 / 买方)، asp (ASP / ارائه دهنده / نماینده ارائه دهنده / فروشنده / بازرگان / 提供者 / 商家 / 服御务卖方)، ارزیاب (Evaluator / Evaluator Agent / 仲裁者 / 评估者).",
-    "use_when": "برای: 注册 نماینده / 注册ASP / 注册کاربر / 注册用户 / 注册买家 / 注册卖家 / 注册服 /务注册仲裁者 / 创建用户 / 创建买家 / 创建卖家 / 我的 عامل / 我的ASP / 改 عامل / 更新عامل",
+    "what": "ERC-8004 on-chain هویت عامل در XLayer: ثبت / ایجاد / به‌روزرسانی / فعال کردن / غیرفعال کردن / جستجوی عوامل; رتبه‌بندی‌ها را مشاهده کنید; لیست خدمات نماینده; آواتار را تنظیم کنید. نقش ها: کاربر (کاربر / نماینده کاربر / خریدار / مشتری / کاربر / خریدار / خریدار), asp (ASP / ارائه دهنده / نماینده ارائه دهنده / فروشنده / تاجر / ارائه دهنده / تاجر / ارائه دهنده خدمات / فروشنده / فروشنده), ارزیاب (ارزیابی کننده / نماینده ارزیاب / داور / ارزیاب).",
+    "use_when": "برای: ثبت نماینده / ثبت نام ASP / ثبت نام کاربر / ثبت نام کاربر / ثبت نام خریدار / ثبت فروشنده / ثبت ارائه دهنده خدمات / ثبت نام داور / ایجاد کاربر / ایجاد خریدار / ایجاد فروشنده / نماینده من / ASP من / تغییر نماینده / عامل به روز رسانی",
     "sourceHash": "6b674fcdb91fbb681ab0e06f398a6d354a4012f5e84b9e9cb33c35e1745e1186",
     "status": "draft",
     "method": "machine",
@@ -47940,7 +47950,7 @@
   },
   "okx/okx-ai": {
     "title": "",
-    "what": "ERC-8004 هویت عامل: 注册/更新/上架/下架/搜索عامل، register/update/activate/deactivate/search — User/ASP/Evaluator(买家/卖家/仲裁); 我的 عامل/ASP، 找做X的ASP/agent有什么服务/endpoint怎么填/查口碑/传头像. + بازار کار: 发布/创建任务/接单/协商/验收/deliver/dispute/仲裁/拒绝/stake/unstake/change provider/change budget/修改卖家/修改预算/draft/草稿/我的任务/my tasks/what آیا در بازار on/关闭/取消任务/决策列表/decision list/指定服务商/browse کار می‌کنم. + ساعت کار: 监听任务进展/历史消息/未读消息/未决策/تصمیمات برجسته. + okx-a2a missing/uninitialized.",
+    "what": "ERC-8004 شناسه عامل: ثبت/به‌روزرسانی/افزودن/حذف/جستجوی عامل, register/update/activate/deactivate/search — User/ASP/Evaluator(خریدار/فروشنده/داور); نماینده من/ASP, یک ASP را پیدا کنید که X/agent有什么服务/endpoint怎么填/查口碑/传头像. + Task Marketplace: انتشار/ایجاد وظیفه/دریافت سفارش/مذاکره/پذیرش/deliver/dispute/仲裁/拒绝/stake/unstake/change provider/change budget/修改卖家/修改预算/draft/草稿/我的任务/my tasks/what آیا من کار می کنم on/关闭/取消任务/决策列表/decision list/指定服务商/browse بازار. + تماشای کار: نظارت بر پیشرفت کار/پیام‌های تاریخچه/پیام‌های خوانده نشده/تصمیم‌ناپذیر/تصمیمات برجسته. + okx-a2a missing/uninitialized.",
     "use_when": "",
     "sourceHash": "fa4a37eea84d54e54dc1770c9abf2756efffa9cae4473521b11731dc1b6f6793",
     "status": "draft",
@@ -47950,7 +47960,7 @@
   "okx/okx-ai-guide": {
     "title": "",
     "what": "OKX.AI (سیستم اقتصادی عامل) مقدمه و ورودی ورود. استفاده کنید",
-    "use_when": "هر زمان که کاربر بپرسد OKX چیست.AI چیست., کاری که می تواند انجام دهد, نحوه استفاده یا شروع با آن, یک OKX می‌خواهد.AI آموزش / شروع سریع / راهنما, یا نام محصول را در هر گونه املایی / فاصله / حروف کوچک / اشتباه تایپی تایپ کنید (OKXAI, okx ai, okx-ai, حروف کوچک okx.ai, mis-typed چینی مانند 啥是okxai) — e.g. OKX چیست.AI / OKX.AI 是什么 / 怎么用 OKX.AI / OKX.AI 快速开始, و هر تعبیری به هر زبانی. پلت فرم runtime را تشخیص می دهد, را معرفی می کند",
+    "use_when": "هر زمان که کاربر بپرسد OKX چیست.AI چیست., کاری که می تواند انجام دهد, نحوه استفاده یا شروع با آن, یک OKX می‌خواهد.AI آموزش / شروع سریع / راهنما, یا نام محصول را در هر گونه املایی / فاصله / حروف کوچک / اشتباه تایپی تایپ کنید (OKXAI, okx ai, okx-ai, حروف کوچک okx.ai, mis-typed چینی مانند What is okxai) — e.g. OKX چیست.AI / OKX.AI / نحوه استفاده از OKX.AI / OKX. AI شروع سریع, و هر تعبیری به هر زبانی. پلت فرم runtime را تشخیص می دهد, را معرفی می کند",
     "sourceHash": "5eb63558ce1bf15b1bfcfe441bef529d7faf8680edbf329e4025aeaf1767c936",
     "status": "draft",
     "method": "machine",
@@ -47968,8 +47978,8 @@
   "okx/okx-audit-log": {
     "title": "",
     "what": "",
-    "use_when": "هنگامی که کاربر درخواست صادر کردن گزارش های حسابرسی، یافتن مکان گزارش حسابرسی، مشاهده تاریخچه فرمان،命令历史. از NOT برای موجودی کیف پول، جستجوی توکن، مبادله یا هر عملیات دیگر on-chain استفاده کنید — به جای آن از مهارت مربوطه استفاده کنید.",
-    "description": "هنگامی که کاربر درخواست صادر کردن گزارش های حسابرسی، یافتن مکان گزارش حسابرسی، مشاهده تاریخچه فرمان،命令历史. از NOT برای موجودی کیف پول، جستجوی توکن، مبادله یا هر عملیات دیگر on-chain استفاده کنید — به جای آن از مهارت مربوطه استفاده کنید.",
+    "use_when": "هنگامی که کاربر درخواست صادر کردن گزارش های حسابرسی را می کند، از این مهارت استفاده کنید, مکان گزارش حسابرسی را پیدا کنید, تاریخچه فرمان را مشاهده کنید, گزارش صادرات, مشاهده گزارش, مسیر ورود, سابقه عملیات, سابقه تماس, تاریخچه فرمان. برای موجودی کیف پول از NOT استفاده کنید, جستجوی نشانه, تعویض, یا هر عملیات دیگر on-chain — به جای آن از مهارت مربوطه استفاده کنید.",
+    "description": "هنگامی که کاربر درخواست صادر کردن گزارش های حسابرسی را می کند، از این مهارت استفاده کنید, مکان گزارش حسابرسی را پیدا کنید, تاریخچه فرمان را مشاهده کنید, گزارش صادرات, مشاهده گزارش, مسیر ورود, سابقه عملیات, سابقه تماس, تاریخچه فرمان. برای موجودی کیف پول از NOT استفاده کنید, جستجوی نشانه, تعویض, یا هر عملیات دیگر on-chain — به جای آن از مهارت مربوطه استفاده کنید.",
     "sourceHash": "1514a6cd6e0a073b2399ed2215a036c7c2b1ca91d9f12acf5542e16adc36b112",
     "status": "draft",
     "method": "machine",
@@ -48022,26 +48032,6 @@
     "method": "machine",
     "provider": "Google Translate"
   },
-  "okx/okx-dex-market": {
-    "title": "",
-    "what": "",
-    "use_when": "HARD BLOCK - NEVER از این مهارت برای جستجوهای prediction-market / Polymarket UpDown استفاده کنید. مسیر به okx-dapp-discovery زمانی که (الف) یک عبارت با نام DApp (Polymarket/Aave/Hyperliquid/PancakeSwap/Morpho) با هر بازه زمانی ظاهر می‌شود، OR (ب) هر عبارت 涨跌 / بالا پایین / 'up or down' برای BTC/ETH/SOL/XRP/BNB/DOGE/HYPE (e.g. ' 涨跌市场'، '5 分钟涨跌'، 'BTC up or down'). مثال: 'BTC 5 分钟涨跌市场' → okx-dapp-discovery (NOT K-line). اینها بازارهای پیش بینی پلی مارکت هستند، نه on-chain پرس و جوهای قیمت.",
-    "description": "HARD BLOCK - NEVER از این مهارت برای جستجوهای prediction-market / Polymarket UpDown استفاده کنید. مسیر به okx-dapp-discovery زمانی که (الف) یک عبارت با نام DApp (Polymarket/Aave/Hyperliquid/PancakeSwap/Morpho) با هر بازه زمانی ظاهر می‌شود، OR (ب) هر عبارت 涨跌 / بالا پایین / 'up or down' برای BTC/ETH/SOL/XRP/BNB/DOGE/HYPE (e.g. ' 涨跌市场'، '5 分钟涨跌'، 'BTC up or down'). مثال: 'BTC 5 分钟涨跌市场' → okx-dapp-discovery (NOT K-line). اینها بازارهای پیش بینی پلی مارکت هستند، نه on-chain پرس و جوهای قیمت. استفاده از مهارت THIS برای ...",
-    "sourceHash": "3a5b938378c46a73c60f82725006e358d7f8b3ace6ae524d2ead4ff5f2b544dc",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "okx/okx-dex-signal": {
-    "title": "",
-    "what": "",
-    "use_when": "از این مهارت برای ردیابی فعالیت smart-money/whale/KOL/大户، هشدارهای خرید انبوه signal/信号 و رتبه‌بندی leaderboard/牛人榜 استفاده کنید. پوشش‌ها: (1) ردیاب آدرس - فید تراکنش خام DEX برای پول هوشمند، KOL یا آدرس‌های کیف پول سفارشی. (2) تجمیع هشدارهای سیگنال buy-only - توکن‌هایی که به طور جمعی توسط هوشمند money/KOL/whales خریداری می‌شوند. (3) تابلوی امتیازات - معامله گران برتر بر اساس PnL، نرخ برد، حجم، یا ROI.",
-    "description": "از این مهارت برای ردیابی فعالیت smart-money/whale/KOL/大户، هشدارهای خرید انبوه signal/信号 و رتبه‌بندی leaderboard/牛人榜 استفاده کنید. پوشش‌ها: (1) ردیاب آدرس - فید تراکنش خام DEX برای پول هوشمند، KOL یا آدرس‌های کیف پول سفارشی. (2) تجمیع هشدارهای سیگنال buy-only - توکن‌هایی که به طور جمعی توسط هوشمند money/KOL/whales خریداری می‌شوند. (3) تابلوی امتیازات - معامله گران برتر بر اساس PnL، نرخ برد، حجم، یا ROI. هنگامی که کاربر از 'what are smart money buying'، '聪明钱最新交易'، 'KOL交易动态'، '追踪聪明钱'، 'track address... می‌پرسد استفاده کنید.",
-    "sourceHash": "f6f30810381299b3edde7256b41ba9bf7952ba72089dd71fa0d03c661adde70b",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
   "okx/okx-dex-social": {
     "title": "",
     "what": "سطوح social-layer سیگنال برای بازارهای رمزنگاری.",
@@ -48073,8 +48063,8 @@
   "okx/okx-dex-token": {
     "title": "",
     "what": "",
-    "use_when": "از این مهارت برای داده‌های token-level استفاده کنید: توکن‌های جستجو، نشانه‌های trending/hot (热门، 代币榜单)، استخرهای نقدینگی، توزیع دارندگان (whale/巨鲸، تک تیرانداز، bundler-tagged دارنده %)، توکن‌های ریسک، توکن‌های کنترل آمار، suspicious/bundle درصد نگهداری از طریق advanced-info، فعالیت اخیر buy/sell، معاملات feed/逐笔成交/每笔交易/stream معاملات، آدرس‌های سود برتر، تاریخچه تجارت رمز، اطلاعات دقیق قیمت با حجم نقدینگی بازار cap و تعداد دارندگان (price-info)، یا تجزیه و تحلیل خوشه دارندگان…",
-    "description": "از این مهارت برای داده‌های token-level استفاده کنید: نشانه‌های جستجو، نشانه‌های trending/hot (热门، 代币榜单)، استخرهای نقدینگی، توزیع دارندگان (whale/巨鲸، تک‌تیرانداز، bundler-tagged دارنده %)، توکن‌های ریسک، توکن‌ها آمار، suspicious/bundle درصد نگهداری از طریق advanced-info، فعالیت اخیر buy/sell، معاملات feed/逐笔成交/每笔交易/stream معاملات، آدرس‌های سود برتر، تاریخچه تجارت رمز، اطلاعات دقیق قیمت با حجم نقدینگی بازار cap و تعداد دارندگان (price-info)، یا تجزیه و تحلیل خوشه دارندگان...",
+    "use_when": "از این مهارت برای داده‌های token-level استفاده کنید: نشانه‌های جستجو, trending/hot نشانه (محبوب, فهرست نشانه‌ها), استخرهای نقدینگی, توزیع دارنده (whale/巨鲸, تک تیرانداز, bundler-tagged دارنده ٪, ابرداده ریسک نشانه (riskControlLevel, برچسب های توکن, آمار توسعه دهنده, suspicious/bundle نگه داشتن % از طریق advanced-info), فعالیت اخیر buy/sell, تجارت feed/逐笔成交/每笔交易/stream معامله کرد, آدرس های سود برتر, تاریخچه تجارت توکن, اطلاعات دقیق قیمت با حجم نقدینگی بازار cap و تعداد دارندگان (price-info), یا تجزیه و تحلیل خوشه دارنده…",
+    "description": "از این مهارت برای داده‌های token-level استفاده کنید: نشانه‌های جستجو, trending/hot نشانه (محبوب, فهرست نشانه), استخرهای نقدینگی, توزیع دارنده (whale/巨鲸, تک تیرانداز, bundler-tagged دارنده ٪, ابرداده ریسک نشانه (riskControlLevel, برچسب های توکن, آمار توسعه دهنده, suspicious/bundle نگه داشتن % از طریق advanced-info), فعالیت اخیر buy/sell, تجارت feed/逐笔成交/每笔交易/stream داد و ستد, آدرس های سود برتر, تاریخچه تجارت توکن, اطلاعات دقیق قیمت با حجم نقدینگی بازار cap و تعداد دارندگان (price-info), یا تجزیه و تحلیل خوشه دارنده...",
     "sourceHash": "bae3cc01679ad64077cf8d4d752d62b48526416e2cad10e6c4faf8baa175ae9f",
     "status": "draft",
     "method": "machine",
@@ -48083,7 +48073,7 @@
   "okx/okx-dex-trenches": {
     "title": "",
     "what": "Read-only on-chain تحقیق برای pump.fun و دیگر meme-token سکوهای پرتاب (Solana / BSC / X Layer / TRON). MUST فراخوانی (ترجیح بر WebFetch / MCP ابزار قیمت)",
-    "use_when": "هنگامی که کاربر در مورد: راه اندازی الگوهای رفتاری جدید / 新盘 / 扫链 / 打狗 می پرسد. شهرت توسعه دهنده / تاریخچه فرش / تعداد راه اندازی / 开发者信息; تشخیص دسته یا تک تیرانداز (اسم تحلیلی، NOT فعل) / 捆绑狙击者; پیشرفت منحنی پیوند / 已迁移出 منحنی پیوند; توکن های مشابه توسط همان توسعه دهنده / 相似代币; co-investor / who-aped / کیف پول 同车; یا 'pump.fun alpha'. همچنین",
+    "use_when": "هنگامی که کاربر در مورد: راه اندازی الگوهای رفتاری جدید / دیسک جدید / زنجیره جارو / سگ مبارزه می پرسد; شهرت توسعه دهنده / تاریخچه فرش / تعداد راه اندازی / اطلاعات توسعه دهنده; تشخیص دسته یا تک تیرانداز (اسم تحلیلی, NOT فعل) / تک تیرانداز را ببند; پیشرفت منحنی پیوند / منحنی پیوند منتقل شده است; نشانه‌های مشابه توسط همان توسعه‌دهنده / توکن‌های مشابه; co-investor / who-aped / همان کیف پول ماشین; یا 'pump.fun alpha'. همچنین",
     "sourceHash": "e75828be69346f6817adbd4d4b9b249772ae96fad75e05789f6b4a8a8c958c25",
     "status": "draft",
     "method": "machine",
@@ -48147,7 +48137,7 @@
   },
   "okx/okx-task-watch": {
     "title": "",
-    "what": "监听任务进展 / 帮我盯着任务 / 任务有动静告诉我 / 历史消息 / 未读 /待决策 / 继续监听 / تماشای وظیفه / تماشای کاربر / نظارت بر پیشرفت کار / من را در کارها / تصمیمات برجسته — OKX A2A user-session task-notification مانیتور: زنده long-poll از طریق `okx-a2a user watch` (همچنین ذخیره‌های موجود را تخلیه می‌کند past/missed/unread رویداد هنگام ورود) به علاوه un-replied decision_request فهرست از طریق `okx-a2a user outdated-list`. برای کیف پول / گاز / task-list / جستجوهای وضعیت نیست.",
+    "what": "پیشرفت کار را نظارت کنید / به من کمک کنید تا کار را زیر نظر داشته باشم / به من بگویید آیا حرکتی در کار وجود دارد / پیام های تاریخی / پیام های خوانده نشده / بلاتکلیف / تصمیم در انتظار / ادامه نظارت / تماشای کار / تماشای کار / نظارت بر پیشرفت کار / پیگیری من در وظایف / تصمیمات برجسته — OKX A2A user-session task-notification مانیتور: زنده long-poll از طریق `okx-a2a user watch` (همچنین ذخیره‌های موجود را تخلیه می‌کند past/missed/unread رویداد هنگام ورود) به علاوه un-replied decision_request فهرست از طریق `okx-a2a user outdated-list`. برای کیف پول / گاز / task-list / جستجوهای وضعیت نیست.",
     "use_when": "",
     "sourceHash": "70c0d58d75610ded7eae6fcecda28bc8a5c85c30cbdbe7b34f4168d4e4ae4d09",
     "status": "draft",
@@ -48159,24 +48149,6 @@
     "what": "Public-address جستجوی نمونه کارها در XLayer، Solana، Ethereum، Base، BSC، Arbitrum، Polygon و بیش از 20 زنجیره. فراخوانی کنید",
     "use_when": "زمانی که کاربر یک آدرس کیف پول ارائه می‌کند و آن را می‌خواهد: موجودی، موجودی توکن، ارزش کل پورتفولیو یا DeFi موقعیت‌ها (e.g. 'check balance of 0xAbc'، 'what tokens does 0xAbc hold'، 'portfolio value of this address'). به یک آدرس صریح نیاز دارد — برای کیف پول logged-in خود کاربر بدون استفاده از آدرس okx-agentic-wallet",
     "sourceHash": "2eab4370b4286e067a9741663fe17cf538f49206a7a098b9f2dc69fbfc86e53e",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "op7418/guizang-ppt-skill": {
-    "title": "",
-    "what": "生成横向翻页网页 PPT（单 HTML 文件），含 WebGL 背景、章节幕封、数据大字报、图片网格等模板。提供两种风格：① \"电子杂志 × 电子墨水\"（衬线 + 流体背景 + 暖色） ② \"瑞士国际主义\"（无衬线 + 网格点阵 + IKB/柠檬黄/柠檬绿/安全橙高亮）。当用户需要制作分享 / 演讲 / 发布会风格的网页 PPT，或提到\"杂志风 PPT\"、\"瑞士风 PPT\"、\"Swiss Style\"、\"horizontal swipe deck\"时使用。",
-    "use_when": "",
-    "sourceHash": "833f45bf41f2a2456ef6de36fac159c355d252a6ef7a389624ba26a90cb11db4",
-    "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
-  },
-  "op7418/humanizer-zh": {
-    "title": "",
-    "what": "去除文本中的 AI生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写、基于维基百科的\"AI 写作特征\"综合指南。检测并修复以下模式：夸大的象征意乭指南-ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、 AI词汇、否定式排比、过多的连接性短语。",
-    "use_when": "",
-    "sourceHash": "38e04a5d7edcc1831e4b1fdbaf251f2e010ba406c65c3282239e67774fc092b9",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
@@ -61926,7 +61898,7 @@
   },
   "tencent/weread-skills": {
     "title": "",
-    "what": "微信读书助手 -搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推蹍奿",
+    "what": "دستیار خواندن ویچت — جستجوی کتاب‌ها، مدیریت قفسه کتاب، مشاهده یادداشت‌های خط‌دار، مرور کتاب‌ها، خواندن آمار، کشف کتاب‌های توصیه‌شده",
     "use_when": "",
     "sourceHash": "1282b615e0475464ccb9abf5d21d95153f0a1cfa4528e677eeb810454b700b12",
     "status": "draft",
@@ -62477,7 +62449,7 @@
   "tw93/health": {
     "title": "",
     "what": "budget-aware agent-assisted ممیزی سلامت مهندسی برای instruction/config رانش، hooks/MCP، سطوح تأییدکننده، و AI قابلیت نگهداری را اجرا می‌کند.",
-    "use_when": "هنگامی که کاربران از 检查claude/检查codex/检查pi/配置检查/健康度 می پرسند یا گزارش می دهند که عوامل دستورالعمل ها را نادیده می گیرند، اعتبارسنجی را از دست می دهند، یا نگهداری کد را سخت می کند. نه برای اشکال زدایی کد یا بازبینی PRs",
+    "use_when": "هنگامی که کاربران از check claude/check codex/check pi/config check/Health می پرسند یا عوامل را گزارش می دهند که دستورالعمل ها را نادیده می گیرند, اعتبارسنجی وجود ندارد, یا نگهداری کد سخت می شود. برای اشکال زدایی کد یا بازبینی PRs نیست.",
     "sourceHash": "2bc53f85024715e78ed4b979eab707412ab041df1615ca641378ea027b87242c",
     "status": "draft",
     "method": "machine",
@@ -62486,8 +62458,17 @@
   "tw93/hunt": {
     "title": "",
     "what": "قبل از اعمال اصلاحات برای خطاها، خرابی‌ها، رگرسیون‌ها، تست‌های ناموفق، رفتار شکسته، و نقص‌های screenshot-reported root را پیدا می‌کند.",
-    "use_when": "وقتی کاربران از 排查/报错/崩溃/不工作/回归/判断为什么报错 می پرسند، یا می گویند چیزی قبلا کار می کرد و اکنون ناموفق است. نه برای بررسی کد یا ویژگی های جدید",
+    "use_when": "هنگامی که کاربران می پرسند عیب یابی / گزارش خطا / خرابی / کار نمی کند / پسرفت / تعیین اینکه چرا یک خطا گزارش شده است, یا بگویید قبلاً چیزی کار می کرد و اکنون ناموفق است. برای بررسی کد یا ویژگی‌های جدید نیست",
     "sourceHash": "c588cf14a4a0b92702afbbd9704072ee94d38992b9e9a4248fd612c4c49872cf",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
+  "tw93/think": {
+    "title": "",
+    "what": "ایده‌های خشن را قبل از کدنویسی به طرح‌های decision-complete با ساختار معتبر تبدیل می‌کند.",
+    "use_when": "وقتی کاربران می‌پرسند طرحی پیشنهاد دهید/طرحی بدهید/تحلیل عمیق/نحوه طراحی/آیا لازم است/آیا ارزشش را دارد/برنامه‌ریزی کنید this/how اگر I/should این را برای ویژگی‌ها نگه داریم, معماری, یا قضاوت های ارزشی. برای رفع اشکال یا ویرایش های کوچک نیست",
+    "sourceHash": "b85fcceb746f2592d8966e4aaabddb3656d803644ba210b1fd6baa83073c7c46",
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
@@ -65043,9 +65024,18 @@
     "method": "machine",
     "provider": "Google Translate"
   },
+  "wind-information-co-ltd/wind-find-finance-skill": {
+    "title": "",
+    "what": "کشف قابلیت مالی باد و نصب درگاه مسیریابی. برای کارهایی مانند داده های مالی، پرس و جو بازار، تجزیه و تحلیل بازار، بازار امروز، خطوط اصلی بازار، چرخش بخش، جریان سرمایه، ارزش گذاری، انتخاب سهام، بررسی، موقعیت ها، طرح های معاملاتی، آزمایش های برگشتی و سایر وظایف استفاده می شود. کاتالوگ باید ابتدا خوانده شود تا مهارت داده/مهارت گردش کار لازم مشخص شود. در صورت عدم وجود، گزینه نصب باید نمایش داده شود و AI پس از تأیید کاربر مستقیماً آن را نصب خواهد کرد. نه تنها باید دستور داده شود یا با یک تحلیل کلی جایگزین شود.",
+    "use_when": "",
+    "sourceHash": "d6a1a4707ea4b3cb7eeff914a15e9f2f60cfcbdc65bcfc2b8d68134b275dd542",
+    "status": "draft",
+    "method": "machine",
+    "provider": "Google Translate"
+  },
   "wind-information-co-ltd/wind-mcp-skill": {
     "title": "",
-    "what": "用户查询金融数据时触发：A 股选股筛选、行情快照、K线、分钟行情、财务基本面、股东、事件、技术和风险；港股/美股选股筛选、行情和基本面；基金/ETF/LOF基金筛选、行情、净值、规模、档案、持仓和业绩；指数/板块行情与基本面；债券档案与估值；上市公司公告、财经新闻、宏观经济和行业指标。不用于欧股、日股、汇率、期货盘口、加密货币或非金融数据。",
+    "what": "هنگامی که کاربر اطلاعات مالی را جستجو می‌کند فعال می‌شود: غربالگری انتخاب سهام A-share، عکس‌های فوری بازار، K-line، بازار دقیقه، اصول مالی، سهامداران، رویدادها، فناوری و ریسک‌ها. غربالگری انتخاب سهام هنگ کنگ/آمریکا، قیمت‌های بازار و اصول. Fund/ETF/LOF غربالگری صندوق، قیمت‌های بازار، ارزش خالص، اندازه، فایل‌ها، موقعیت‌ها و عملکرد. بازار شاخص/بخش و اصول؛ پرونده های اوراق قرضه و ارزش گذاری؛ اعلامیه های شرکت فهرست شده، اخبار مالی، شاخص های کلان اقتصادی و صنعتی. برای سهام اروپا، سهام ژاپن، نرخ ارز، بازارهای آتی، ارزهای دیجیتال یا داده های غیر مالی استفاده نمی شود.",
     "use_when": "",
     "sourceHash": "2eeedbd4c4b2a2c5b69a663892c7fc80f688954c7329de291c12bb395265d048",
     "status": "draft",
@@ -65824,168 +65814,5 @@
     "status": "draft",
     "method": "machine",
     "provider": "Google Translate"
-  },
-  "agentspace-so/ai-video-generation": {
-    "title": "",
-    "what": "تولید ویدیوهای AI روی RunComfy با CLI ابزار `runcomfy`؛ یک مسیریاب هوشمند برای کل کاتالوگ مدل‌های ویدیو: HappyHorse 1.0 (رتبهٔ ۱ Arena، با صدای native در همان مرحله)، Wan-AI Wan 2-7 (با وزن‌های باز و lip-sync مبتنی بر صوت)، ByteDance Seedance v2 / 1-5 / 1-0 (سینمایی و چندوجهی)، Kling 3.0 / 2-6، Google Veo 3-1، MiniMax Hailuo 2-3 و ByteDance Dreamina 3-0. شامل text-to-video (t2v)، image-to-video (i2v) و endpoint مربوط به video-extend در Veo.",
-    "use_when": "",
-    "sourceHash": "61c29845ad0389535e0f455a2f505de8c4ac851a169dd464f5ef851708855f05",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "samber/chrome-extension": {
-    "title": "",
-    "what": "راهنمای جامع ساخت افزونه‌های Chrome با Manifest V3.",
-    "use_when": "هر زمان کاربر به Chrome extension، browser extension، manifest.json، content script، service worker (در زمینهٔ افزونه)، popup، side panel، chrome.runtime، chrome.tabs، chrome.storage، chrome.scripting، background script، MV3، Manifest V3 یا هر API افزونهٔ Chrome اشاره کند. همچنین وقتی کاربر می‌خواهد script به صفحات وب تزریق کند، بین صفحه و background ارتباط برقرار کند، یا CSP را دور بزند از یک",
-    "sourceHash": "12625a3fbff4270f541b89bba28fa62f344d329b160fcbd77e08966114ea3549",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "openai/codex-bug": {
-    "title": "",
-    "what": "عیب‌یابی گزارش‌های باگ GitHub در openai/codex.",
-    "use_when": "وقتی URL یک issue در GitHub از openai/codex داده می‌شود و تصمیم‌گیری دربارهٔ قدم بعدی خواسته می‌شود؛ مانند بررسی در برابر…",
-    "sourceHash": "21ace8de99ddf9abe3c6273cbbbd816d0e698ced86a5291b173af79971847160",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "github/copilot-sdk": {
-    "title": "",
-    "what": "runtime برنامه‌پذیر ایجنت برای قراردادن workflowهای ایجنتی Copilot در اپلیکیشن‌های Python، TypeScript، Go و .NET.",
-    "use_when": "",
-    "sourceHash": "5b237c854967c48c833fd3e538c94c2101488debdc0da9e2744a812e687a244e",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "nvidia/doca-collectx-deployment": {
-    "title": "",
-    "what": "",
-    "use_when": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده…",
-    "sourceHash": "2fa5fb6a8249d1900b4bb16deca4b6e0b1bd0d73b50900c007ff13d51319c496",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source",
-    "description": "استفاده از این اسکیل برای deploy و راهبری گردآورندهٔ telemetry مربوط به DOCA بر پایهٔ CollectX (clx)، روی host یا BlueField؛ اتصال providerها / counterها به گردآورنده،…"
-  },
-  "firebase/firebase-firestore-basics": {
-    "title": "",
-    "what": "راهنمای کامل آماده‌سازی، ایمن‌سازی و اتصال Cloud Firestore به اپلیکیشن‌ها. شامل راه‌اندازی در پروژه‌های Firebase و محیط‌های محلی با Firebase CLI؛ راهنمای جامع security rules برای حفاظت از داده و کنترل دسترسی؛ دستورالعمل اتصال SDK به وب‌اپلیکیشن‌ها با modular SDK؛ و ارجاع به مستندات مدیریت index، بهینه‌سازی query و بهترین شیوه‌ها.",
-    "use_when": "",
-    "sourceHash": "5cc637de4f27d9d57f1c332f84b14dbc71d845c886ae9a76a65e67494257a431",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "samber/golang-samber-hot": {
-    "title": "",
-    "what": "caching در حافظه در Golang با samber/hot؛ شامل الگوریتم‌های eviction یعنی LRU، LFU، TinyLFU، W-TinyLFU، S3FIFO، ARC، TwoQueue، SIEVE و FIFO، همچنین TTL، cache loaderها، sharding، stale-while-revalidate، caching کلیدهای ناموجود و metricهای Prometheus. هنگام استفاده یا پذیرش samber/hot، وقتی کد github.com/samber/hot را import می‌کند، یا وقتی پروژه مرتباً منابع یکسان با cardinality متوسط تا پایین را با بسامد بالا بارگذاری می‌کند و باید latency یا فشار backend را کاهش دهد.",
-    "use_when": "",
-    "sourceHash": "8e6fdd77e18160a8ec0103c73473ab49f9dad9d5974dd0960575ee67c62e79a0",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "samber/golang-spf13-viper": {
-    "title": "",
-    "what": "کتابخانهٔ پیکربندی Golang با spf13/viper؛ شامل تقدم لایه‌ای (flag > env > file > KV > default)، BindPFlag/BindPFlags، SetEnvPrefix + SetEnvKeyReplacer + AutomaticEnv، ReadInConfig + ConfigFileNotFoundError، Unmarshal + تگ‌های struct در mapstructure، Sub برای زیرشاخه‌ها، WatchConfig + OnConfigChange برای hot reload، viper.New() برای جداسازی تست‌ها و اتصال KV راه‌دور. هنگام استفاده یا پذیرش spf13/viper، یا وقتی کد `github.com/spf13/viper` را import می‌کند.",
-    "use_when": "",
-    "sourceHash": "17178aa7fb7a3121a5d9c52ef5ed8fb5533adf4e630c3445b43489b13e5f3acd",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "samber/golang-swagger": {
-    "title": "",
-    "what": "مستندسازی OpenAPI/Swagger در Golang با swaggo/swag؛ شامل کامنت‌های annotation یعنی @Summary، @Param، @Success، @Router و @Security، تولید کد با swag init، اتصال به frameworkهای gin، echo، fiber، chi و net/http، تعریف‌های امنیتی Bearer/JWT، OAuth2 و API key، و تگ‌های struct یعنی swaggertype، enums، example و swaggerignore.",
-    "use_when": "",
-    "sourceHash": "02328d547d2d96338d6f8e52e6fdfa2e874eaf7d3138fe49c413a4230371955d",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "github/image-manipulation-image-magick": {
-    "title": "",
-    "what": "پردازش و ویرایش تصویر با ImageMagick در Windows، Linux و macOS. دریافت metadata، ابعاد و اطلاعات فرمت تصویر با دستور identify؛ تغییر اندازهٔ یک یا چند تصویر با کنترل نسبت ابعاد و تولید thumbnail؛ فیلتر و پردازش تصاویر بر اساس ابعاد یا نوع فایل. به نصب ImageMagick و دسترس‌پذیری دستور magick در PATH نیاز دارد؛ شامل راه‌اندازی ویژهٔ PowerShell در Windows و Bash در Linux/macOS است.",
-    "use_when": "",
-    "sourceHash": "a44326b9055540aca113e8941a020aa55edc0bdc4b3d4c4fb69a11c07246017d",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "remotion-dev/make-pr": {
-    "title": "",
-    "what": "خودکارسازی ساخت pull request با قالب‌بندی commitها و مدیریت branchها. اطمینان از اینکه روی main نیستید و ساخت feature branch در صورت نیاز؛ اجرای قالب‌بندی Oxfmt روی همهٔ packageهای تحت‌تأثیر پیش از commit؛ قالب‌بندی commitها و عنوان PR با نام package از package.json، مانند \" @remotion/shapes : Add heart shape\"؛ و استفاده از gh CLI برای بازکردن خودکار pull request پس از push تغییرات.",
-    "use_when": "",
-    "sourceHash": "931b61fcc73b117f8b3cc50b4940bbf7e8600093cc690d4b53793c46bd885bcc",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "github/mcp-configure": {
-    "title": "",
-    "what": "پیکربندی محیط Dataverse برای اتصال به MCP server مربوط به GitHub Copilot.",
-    "use_when": "",
-    "sourceHash": "667e3076b0c68664fcea6b4edddc9c4106926f6a5e0e91b0f9eb1944ff794967",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "astronomer/migrating-ai-sdk-to-common-ai": {
-    "title": "",
-    "what": "مهاجرت پروژه‌های Airflow از airflow-ai-sdk به apache-airflow-providers-common-ai 0.1.0+.",
-    "use_when": "وقتی کاربر می‌خواهد airflow-ai-sdk را جایگزین کند با…",
-    "sourceHash": "2288c557faa8cec7015154d45bef79a45bf4d6ac16e8f712e363965e19934f1c",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "github/remember-interactive-programming": {
-    "title": "",
-    "what": "یک micro-prompt برای تقویت workflowهای برنامه‌نویسی تعاملی با دسترسی زنده به REPL. برای Clojure و اتصال به Copilot از طریق Backseat Driver طراحی شده، اما برای هر سیستم دارای REPL زنده قابل‌تطبیق است. به ایجنت یادآوری می‌کند که REPL را منبع حقیقت برای کاوش و تغییر سیستم بداند. بر توضیح روشن کد ارزیابی‌شده و ترجیح ابزارهای ویرایش ساختاری بر جایگزینی متن تأکید می‌کند. شامل راهنمای نگهداری فهرست کارها در جلسات توسعهٔ تعاملی است.",
-    "use_when": "",
-    "sourceHash": "900df4d3559d864c396ae78dedae9275555d5b734d241cf184a2ee9b58c359a6",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "rivet-dev/rivet-dynamic-apps": {
-    "title": "",
-    "what": "Dynamic Apps: ساخت و deploy یک backend تولیدشده با AI برای هر کاربر.",
-    "use_when": "",
-    "sourceHash": "6452aaa60d54d42490827cbb22a82563decf1a394da55803589ec706657c741f",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "sanity-io/sanity-migration": {
-    "title": "",
-    "what": "برنامه‌ریزی، پیاده‌سازی و بازبینی مهاجرت از سایر CMSها و سیستم‌های محتوا به Sanity.",
-    "use_when": "هنگام مهاجرت یا تغییر پلتفرم به Sanity از AEM، Adobe Experience Manager، Contentful، Strapi، Webflow، WordPress، Payload، Drupal، فایل‌های Markdown/MDX/frontmatter، خروجی‌های WXR/XML، APIهای CMS، dumpهای پایگاه داده یا HTML استاتیک؛ یا هنگام طراحی استخراج، تبدیل، تبدیل به Portable Text، مهاجرت assetها، redirectها، اعتبارسنجی و workflowهای انتقال نهایی.",
-    "sourceHash": "77c5adda1bc8677f1051f6f53734dca84bdb4958e53d8d18ba59909cdf92b89e",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "samber/skill-progressive-disclosure-design": {
-    "title": "",
-    "what": "تصمیم‌گیری دربارهٔ تقسیم محتوای اسکیل میان SKILL.md و فایل‌های مرجع برای استفادهٔ بهینه از context و فعال‌شدن قابل‌اعتماد. هنگام ساخت اسکیل جدید Claude، refactor اسکیل موجود یا افزایش حجم SKILL.md به بیش از ۳۰۰ تا ۴۰۰ خط استفاده شود. همچنین",
-    "use_when": "وقتی کاربر به \"progressive disclosure\"، \"reference files\"، \"splitting skills\"، \"skill bundling\"، \"context window for skills\"، \"SKILL.md too long\"، \"what goes in references/\" یا \"skill structure\" اشاره می‌کند، یا دربارهٔ چیزی ابراز تردید می‌کند در مورد",
-    "sourceHash": "50c62b2f36b11abba410bfd40b964f8f84af9c5f8bd773f040ff4f75cd83ed27",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
-  },
-  "anthropic/writing-hookify-rules": {
-    "title": "",
-    "what": "تعریف الگوها و پیام‌هایی که",
-    "use_when": "هشدار یا مسدودسازی Claude را برای اقدامات مشخص ایجنت فعال می‌کنند. پشتیبانی از چهار نوع رویداد: دستورهای bash، ویرایش فایل، توقف ایجنت و promptهای کاربر؛ به‌اضافهٔ حالت فراگیر \"all\"، هرکدام با تطبیق regex یا چندشرطی. قواعد در فایل‌های markdown با YAML frontmatter در .claude/hookify.{name}.local.md ذخیره می‌شوند و تغییرات بلافاصله در استفادهٔ بعدی از ابزار اثر می‌کنند. دو حالت تطبیق: فیلد سادهٔ pattern برای قواعد تک‌شرطی یا آرایهٔ پیشرفتهٔ conditions برای",
-    "sourceHash": "9d450354101270341d9947f3324255bbb0a97d9d147dbdb73d905b5989831a53",
-    "status": "draft",
-    "method": "assisted",
-    "provider": "Editorial translation from original source"
   }
 }
