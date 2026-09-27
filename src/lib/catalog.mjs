@@ -1,9 +1,12 @@
 import fs from "node:fs";
-import crypto from "node:crypto";
+import { translationSourceHash } from "./translations.mjs";
 import { normalize, tasks } from "./search.mjs";
 const read = (p) =>
   fs.readFileSync(new URL(p, `file://${process.cwd()}/`), "utf8");
 const translations = JSON.parse(read("data/fa.json"));
+const translationsByHash = new Map(
+  Object.values(translations).map((t) => [t.sourceHash, t]),
+);
 const topicMap = new Map();
 Object.entries(JSON.parse(read("skills-catalog/topics.json"))).forEach(
   ([topic, keys]) => keys.forEach((k) => topicMap.set(k, topic)),
@@ -56,16 +59,10 @@ export const skills = read("skills-catalog/skills-index-flat.jsonl")
   })
   .map((s) => {
     const key = `${s.author}/${s.name}`;
-    const hash = crypto
-      .createHash("sha256")
-      .update((s.what || "") + "\n" + (s.use_when || ""))
-      .digest("hex");
+    const hash = translationSourceHash(s);
     const own = translations[key];
-    // Reuse only an exact match of both original fields. Changed originals invalidate translations.
-    const fa =
-      own?.sourceHash === hash
-        ? own
-        : Object.values(translations).find((t) => t.sourceHash === hash);
+    // Exact source match only; hash lookup is O(1), even for a fully translated catalog.
+    const fa = own?.sourceHash === hash ? own : translationsByHash.get(hash);
     const topic = topicMap.get(key) || "📦 سایر / عمومی";
     const haystack = normalize(`${s.name} ${s.what} ${s.use_when}`);
     const labels = tasks
@@ -128,16 +125,16 @@ export const searchIndex = skills.map((s) => ({
   known: s.known,
   fa: !!s.fa,
   title: s.fa?.title || "",
-  summary: s.fa?.what || s.what || s.description || "",
+  summary: s.fa?.what || s.fa?.description || s.what || s.description || "",
   search: normalize(
     [
       s.name,
       s.author,
-      s.what,
+      s.what || s.description,
       s.use_when,
       s.topic,
       s.fa?.title || "",
-      s.fa?.what || "",
+      s.fa?.what || s.fa?.description || "",
       s.fa?.use_when || "",
     ].join(" "),
   ),

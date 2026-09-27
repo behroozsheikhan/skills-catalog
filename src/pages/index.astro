@@ -10,6 +10,7 @@ import {
   shortTopic,
 } from "../lib/catalog.mjs";
 import { tasks } from "../lib/search.mjs";
+const translationComplete = skills.every((s) => s.fa);
 const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 ---
 
@@ -208,8 +209,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
         <div class="translation-note">
           <span class="status-dot"></span>
           <p>
-            فارسی، در کنار زبان اصلی. ترجمه‌ها در حال تکمیل‌اند؛ موارد بدون
-            ترجمه با نشان <b dir="ltr">EN</b> مشخص شده‌اند.
+            {translationComplete
+              ? "فارسی، در کنار زبان اصلی. ترجمه‌های خودکار پیش‌نویس‌اند و ممکن است خطا داشته باشند."
+              : "فارسی، در کنار زبان اصلی. ترجمه‌ها در حال تکمیل‌اند؛ موارد بدون ترجمه با نشان EN مشخص شده‌اند."}
           </p>
           <a href={base + "about/#translations"}>
             شفافیت محتوا <span>↗</span>

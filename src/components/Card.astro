@@ -47,13 +47,17 @@ const color = colors[s.author.length % 4];
     <h3 dir="ltr" lang="en">
       {s.name}
     </h3>
-    {s.fa && <p class="card-title">{s.fa.title}</p>}
+    {s.fa?.title && <p class="card-title">{s.fa.title}</p>}
     <p
       class:list={["card-description", !s.fa && "english"]}
       dir={s.fa ? "rtl" : "ltr"}
       lang={s.fa ? "fa" : "en"}
     >
-      {s.fa?.what || s.what || s.description || "توضیحی در منبع ثبت نشده است."}
+      {s.fa?.what ||
+        s.fa?.description ||
+        s.what ||
+        s.description ||
+        "توضیحی در منبع ثبت نشده است."}
     </p>
     <div class="card-bottom">
       <span class="topic-tag">{shortTopic(s.topic)}</span>

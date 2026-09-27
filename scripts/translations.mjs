@@ -1,21 +1,19 @@
 /** Export only source fields, with hashes, for a reviewed translation workflow. */
 import fs from "node:fs";
-import crypto from "node:crypto";
+import { translationSourceHash } from "../src/lib/translations.mjs";
 import { skills } from "../src/lib/catalog.mjs";
 const missing = skills.filter((s) => !s.fa);
 if (process.argv.includes("--export")) {
   const unique = new Map();
   for (const s of missing) {
-    const sourceHash = crypto
-      .createHash("sha256")
-      .update(s.what + "\n" + s.use_when)
-      .digest("hex");
+    const sourceHash = translationSourceHash(s);
     if (!unique.has(sourceHash))
       unique.set(sourceHash, {
         key: s.key,
         sourceHash,
         what: s.what,
         use_when: s.use_when,
+        ...(!s.what ? { description: s.description } : {}),
       });
   }
   const path = process.argv[process.argv.indexOf("--export") + 1];

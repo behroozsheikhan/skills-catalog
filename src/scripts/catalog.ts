@@ -104,7 +104,7 @@ function createCard(r: Row) {
   name.dir = "ltr";
   name.lang = "en";
   a.append(top, name);
-  if (r.fa) a.append(el("p", "card-title", r.title));
+  if (r.title) a.append(el("p", "card-title", r.title));
   const description = el(
     "p",
     "card-description" + (!r.fa ? " english" : ""),

@@ -2,6 +2,9 @@ export interface Translation {
   title: string;
   what: string;
   use_when: string;
+  description?: string;
+  method?: "machine";
+  provider?: string;
   sourceHash: string;
   status: "draft" | "reviewed";
 }

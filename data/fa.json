@@ -156,7 +156,7 @@
   "openai/web-design-guidelines": {
     "title": "بازبینی رابط کاربری",
     "what": "بازبینی کد UI برای بررسی انطباق با Web Interface Guidelines.",
-    "use_when": "وقتی درخواست «review my UI»، «check accessibility»، «audit design»، «review UX» یا «check my site…» مطرح می‌شود.",
+    "use_when": "وقتی درخواست «review my UI»، «check accessibility»، «audit design»، «review UX» یا «check my site…",
     "sourceHash": "a92a6b5f2d9075a8c519a6ced52eaa094f5e8c59488edeb805ab8b0e4a9cb7ed",
     "status": "draft"
   },

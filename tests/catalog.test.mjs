@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import crypto from "node:crypto";
+import { translationSourceHash } from "../src/lib/translations.mjs";
 import { skills, searchIndex, related } from "../src/lib/catalog.mjs";
 import { normalize, searchRows } from "../src/lib/search.mjs";
 test("all source skills have unique routes and valid links", () => {
@@ -67,13 +67,7 @@ test("translation hashes match original fields", () => {
   for (const [key, t] of Object.entries(entries)) {
     const s = skills.find((s) => s.key === key);
     assert.ok(s, key);
-    assert.equal(
-      t.sourceHash,
-      crypto
-        .createHash("sha256")
-        .update(s.what + "\n" + s.use_when)
-        .digest("hex"),
-    );
+    assert.equal(t.sourceHash, translationSourceHash(s));
     assert.equal(t.status, "draft");
   }
 });

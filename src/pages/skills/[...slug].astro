@@ -20,11 +20,14 @@ const similar = related(s);
 const title = s.fa?.title || s.name;
 const description = (
   s.fa?.what ||
+  s.fa?.description ||
   s.what ||
   s.description ||
   "مشخصات و لینک‌های اسکیل " + s.name
 ).slice(0, 160);
-const incomplete = /…|\.\.\./.test(s.what + " " + s.use_when);
+const incomplete = /…|\.\.\./.test(
+  (s.what || s.description) + " " + s.use_when,
+);
 ---
 
 <Layout
@@ -71,7 +74,7 @@ const incomplete = /…|\.\.\./.test(s.what + " " + s.use_when);
         <h1 dir="ltr" lang="en">
           {s.name}
         </h1>
-        {s.fa && <p>{s.fa.title}</p>}
+        {s.fa?.title && <p>{s.fa.title}</p>}
       </div>
       <span class="detail-language">
         {s.fa ? "فارسی + English" : "English · ترجمه در انتظار"}
@@ -84,7 +87,11 @@ const incomplete = /…|\.\.\./.test(s.what + " " + s.use_when);
             <Icon name="book" /> این اسکیل چه می‌کند؟
           </h2>
           {s.fa ? (
-            <p class="persian-copy">{s.fa.what}</p>
+            <p class="persian-copy">
+              {s.fa.what ||
+                s.fa.description ||
+                "توضیحی در دادهٔ اصلی ثبت نشده است."}
+            </p>
           ) : (
             <p class="pending-translation">
               ترجمهٔ فارسی این توضیح هنوز آماده نشده است؛ متن اصلی را در ادامه
