@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { skills, number } from "../../lib/catalog.mjs";
+export function getStaticPaths() {
+  return Array.from({ length: Math.ceil(skills.length / 100) }, (_, i) => ({
+    params: { page: String(i + 1) },
+    props: { page: i + 1 },
+  }));
+}
+const { page } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+---
+
+<Layout title={`فهرست اسکیل‌ها، صفحهٔ ${number(page)} | اسکیل کاتالوگ`}>
+  <section class="directory-page">
+    <h1>فهرست اسکیل‌ها — صفحهٔ {number(page)}</h1>
+    <p>
+      فهرست قابل مرور بدون JavaScript. برای جستجو و فیلتر به{" "}
+      <a href={base}>کاتالوگ</a> بروید.
+    </p>
+    <ul>
+      {skills.slice((page - 1) * 100, page * 100).map((s) => (
+        <li>
+          <a href={base + s.path}>
+            <b dir="ltr">
+              {s.author}/{s.name}
+            </b>
+            <span>{s.fa?.title || s.topic}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <nav class="pagination" aria-label="صفحه‌های فهرست">
+      {page > 1 && <a href={base + `directory/${page - 1}/`}>صفحهٔ قبلی</a>}
+      <span>{number(page)}</span>
+      {page < Math.ceil(skills.length / 100) && (
+        <a href={base + `directory/${page + 1}/`}>صفحهٔ بعدی</a>
+      )}
+    </nav>
+  </section>
+</Layout>

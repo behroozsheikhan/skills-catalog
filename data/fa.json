@@ -1,0 +1,170 @@
+{
+  "anthropic/frontend-design": {
+    "title": "طراحی رابط کاربری",
+    "what": "ساخت رابط‌های frontend متمایز و آمادهٔ استفاده در محصول، بدون ظاهر کلیشه‌ای طرح‌های تولیدشده با AI.",
+    "use_when": "",
+    "sourceHash": "f09da66b70b29abec43ccd734ff5c0473d46d1bf4e2295d8076e588c518fde0f",
+    "status": "draft"
+  },
+  "anthropic/pdf": {
+    "title": "کار با فایل‌های PDF",
+    "what": "مجموعه‌ابزار جامع PDF برای استخراج متن و جدول، ساخت PDF، ادغام و تفکیک اسناد و کار با فرم‌ها. برای زمانی که Claude باید فرم PDF را پر کند یا اسناد PDF را در مقیاس بالا به‌صورت برنامه‌نویسی پردازش، تولید یا تحلیل کند. مجوز: اختصاصی؛ شرایط کامل در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "3d6dffb0ef94c0651823d9c3a14bfe41043238de6d34ac539d0fb9ec80f2542f",
+    "status": "draft"
+  },
+  "anthropic/docx": {
+    "title": "ساخت و ویرایش اسناد Word",
+    "what": "ساخت، ویرایش و تحلیل اسناد با پشتیبانی از tracked changes، کامنت‌ها، حفظ قالب‌بندی و استخراج متن. برای کار Claude با اسناد حرفه‌ای (.docx): ساخت سند، ویرایش محتوا، کار با tracked changes، افزودن کامنت و سایر کارهای اسناد. مجوز: اختصاصی؛ شرایط کامل در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "face6d599fc79aa40c37f077059ace0c26f238b2267843a469d3de921fcad379",
+    "status": "draft"
+  },
+  "anthropic/xlsx": {
+    "title": "تحلیل و ویرایش spreadsheet",
+    "what": "ساخت، ویرایش و تحلیل spreadsheet با پشتیبانی از فرمول‌ها، قالب‌بندی، تحلیل و مصورسازی داده. برای کار Claude با فایل‌های .xlsx، .xlsm، .csv، .tsv و مانند آن: ساخت فایل با فرمول و قالب‌بندی، خواندن یا تحلیل داده، ویرایش با حفظ فرمول‌ها، تحلیل و مصورسازی داده و محاسبهٔ مجدد فرمول‌ها. مجوز: اختصاصی؛ شرایط کامل در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "c5021feb2fc26fc97e0b12a1003273095600fe2db678c1b9fcfe4a2e2b9fa3e6",
+    "status": "draft"
+  },
+  "anthropic/pptx": {
+    "title": "ساخت و ویرایش ارائه",
+    "what": "ساخت، ویرایش و تحلیل ارائه. برای کار Claude با فایل‌های .pptx: ساخت ارائه، ویرایش محتوا، کار با layout، افزودن کامنت یا یادداشت سخنران و سایر کارهای ارائه. مجوز: اختصاصی؛ شرایط کامل در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "aa60b916ad936b3b318100cb9e71e18d839bb89d1a1227a159b6551577138e79",
+    "status": "draft"
+  },
+  "anthropic/skill-creator": {
+    "title": "ساخت اسکیل جدید",
+    "what": "راهنمای ساخت اسکیل‌های مؤثر؛ برای ساخت یا به‌روزرسانی اسکیلی که توانایی‌های Claude را با دانش تخصصی، workflow یا اتصال ابزارها گسترش می‌دهد. شرایط کامل مجوز در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "828e40ccbbacdb811fca59bb30e9a6189153d7e2dfae656a16d4288150d2e868",
+    "status": "draft"
+  },
+  "anthropic/webapp-testing": {
+    "title": "تست وب‌اپلیکیشن با Playwright",
+    "what": "ابزار تعامل و تست وب‌اپلیکیشن‌های محلی با Playwright؛ با پشتیبانی از بررسی عملکرد frontend، اشکال‌زدایی رفتار UI، ثبت screenshot مرورگر و مشاهدهٔ logها. شرایط کامل مجوز در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "b8707e39ec25a127f282dcf3cdbeeda8708b62ba3f10953b863692519a25deea",
+    "status": "draft"
+  },
+  "anthropic/mcp-builder": {
+    "title": "ساخت MCP server",
+    "what": "راهنمای ساخت MCP serverهای باکیفیت که به LLMها امکان می‌دهند با ابزارهای خوش‌طراحی‌شده به سرویس‌های خارجی متصل شوند.",
+    "use_when": "هنگام ساخت MCP server برای اتصال APIها یا سرویس‌های خارجی، با Python و FastMCP یا Node/TypeScript و MCP SDK.",
+    "sourceHash": "79989eef4f8e5f13b428622766dde311419866858d3acd9148813174584dc3f3",
+    "status": "draft"
+  },
+  "vercel/react-best-practices": {
+    "title": "بهینه‌سازی React و Next.js",
+    "what": "راهنمای بهینه‌سازی عملکرد React و Next.js از تیم مهندسی Vercel؛ برای نوشتن، بازبینی یا refactor کد React/Next.js با الگوهای بهینهٔ عملکرد.",
+    "use_when": "برای کارهای مرتبط با componentهای React، صفحات Next.js، data fetching، بهینه‌سازی bundle یا بهبود عملکرد.",
+    "sourceHash": "aa285c6f4d720d28c032cbea2797a145bbb511d460a973a0fda9e2de941e1863",
+    "status": "draft"
+  },
+  "deepgram/1password": {
+    "title": "مدیریت 1Password با CLI",
+    "what": "راه‌اندازی و استفاده از CLI ابزار 1Password با دستور op.",
+    "use_when": "هنگام نصب CLI، فعال‌سازی اتصال به اپلیکیشن دسکتاپ، ورود به یک یا چند حساب یا…",
+    "sourceHash": "c4e0d85ccf6b87e771b5e64ed2a3fe80c81e20fb3cdb668f8377c219c183a92a",
+    "status": "draft"
+  },
+  "anthropic/algorithmic-art": {
+    "title": "خلق هنر با کدنویسی",
+    "what": "خلق هنر الگوریتمی با p5.js، تصادفی‌سازی با seed و بررسی تعاملی پارامترها.",
+    "use_when": "وقتی کاربر هنر با کدنویسی، generative art، هنر الگوریتمی، flow field یا particle system می‌خواهد. برای جلوگیری از نقض copyright، اثر اصیل بسازید و آثار هنرمندان دیگر را کپی نکنید.",
+    "sourceHash": "5ace117b6f97f3f7af85ba23cc2a655231e3ca5f0a59e42a6bf519c06bff2aa9",
+    "status": "draft"
+  },
+  "anthropic/brand-guidelines": {
+    "title": "رعایت هویت بصری برند",
+    "what": "اعمال رنگ‌ها و تایپوگرافی رسمی برند Anthropic روی هر خروجی که از ظاهر و حس این برند بهره می‌برد.",
+    "use_when": "هنگام استفاده از رنگ‌های برند، دستورالعمل‌های سبک، قالب‌بندی بصری یا استانداردهای طراحی شرکت.",
+    "sourceHash": "177a3aca02e4111b9335d1aa6694d0e1d1045721d6757f28ec342dbffb6cb497",
+    "status": "draft"
+  },
+  "anthropic/theme-factory": {
+    "title": "قالب‌بندی با تم‌های آماده",
+    "what": "ابزار اعمال تم روی خروجی‌هایی مثل اسلاید، سند، گزارش و HTML landing page. شامل ۱۰ تم آماده با رنگ و فونت و امکان تولید تم جدید در لحظه. شرایط کامل مجوز در LICENSE.txt آمده است.",
+    "use_when": "",
+    "sourceHash": "f518acd1e10832b01291b74a737b95499e9205c50b27c60c2884569181d5bd07",
+    "status": "draft"
+  },
+  "openai/develop-web-game": {
+    "title": "توسعه و تست بازی وب",
+    "what": "توسعهٔ تکرارشوندهٔ بازی وب با تست مبتنی بر Playwright، اعتبارسنجی screenshot و پیشروی زمانی قطعی.",
+    "use_when": "",
+    "sourceHash": "96bbbb60752ac9af67b5c2aed9dd783c8e18100228c5f3c6dc3f662494b2024c",
+    "status": "draft"
+  },
+  "openai/figma": {
+    "title": "از Figma به کد",
+    "what": "دریافت اطلاعات طراحی، screenshotها و assetها از Figma و تبدیل طرح‌ها به کد آمادهٔ استفاده در محصول.",
+    "use_when": "",
+    "sourceHash": "1689bba388e238e7be510bcedf7b05cfb4c92c1fbb56efa43dd69ac37bae91d7",
+    "status": "draft"
+  },
+  "openai/imagegen": {
+    "title": "تولید و ویرایش تصویر",
+    "what": "تولید یا ویرایش تصویر با API شرکت OpenAI و CLI همراه، برای اجراهای قطعی و تکرارپذیر.",
+    "use_when": "",
+    "sourceHash": "e01a83211a89914d23396ef09f190d89c350676f339b96e43d3b59a190481ba1",
+    "status": "draft"
+  },
+  "openai/playwright": {
+    "title": "اتوماسیون مرورگر",
+    "what": "اتوماسیون مرورگر از طریق terminal با snapshot عناصر و workflowهای تعاملی UI.",
+    "use_when": "",
+    "sourceHash": "ab53c1ce2078a51ed0ea8dfd4399d039c31f472372391590a41615976947dd04",
+    "status": "draft"
+  },
+  "openai/security-best-practices": {
+    "title": "بازبینی امنیت کد",
+    "what": "بازبینی امنیت متناسب با زبان و framework، همراه با شناسایی آسیب‌پذیری‌ها و راهنمای عملی رفع آن‌ها.",
+    "use_when": "",
+    "sourceHash": "21b70f619a77d046632691694d5bf5c3fdc9009c9b0a3fa25c2cabad422adbdf",
+    "status": "draft"
+  },
+  "openai/speech": {
+    "title": "تبدیل متن به گفتار",
+    "what": "تولید گفتار از متن برای روایت، voiceover، پیام‌های IVR و خواندن دسترس‌پذیر با OpenAI Audio API.",
+    "use_when": "",
+    "sourceHash": "c397b87af7bd4249340fc086ea216b24a12d9dc6fdde94f4fafc9ccf6af7e905",
+    "status": "draft"
+  },
+  "openai/transcribe": {
+    "title": "تبدیل صوت به متن",
+    "what": "تبدیل فایل صوتی به متن با امکان تفکیک گویندگان و ارائهٔ اطلاعات راهنما دربارهٔ گویندگان شناخته‌شده.",
+    "use_when": "",
+    "sourceHash": "f5b3344378c4c6d300342357008f2dc9260a152d9eb783439052c4d27db2547d",
+    "status": "draft"
+  },
+  "openai/vercel-deploy": {
+    "title": "انتشار پروژه روی Vercel",
+    "what": "Deploy اپلیکیشن‌ها روی Vercel در محیط preview یا production.",
+    "use_when": "",
+    "sourceHash": "adae7aa67a3afb03e8b312a1743c0f441559df0e09e8bc743210907874253fd5",
+    "status": "draft"
+  },
+  "vercel/web-design-guidelines": {
+    "title": "بازبینی رابط کاربری",
+    "what": "بازبینی کد UI برای بررسی انطباق با Web Interface Guidelines.",
+    "use_when": "وقتی درخواست «review my UI»، «check accessibility»، «audit design»، «review UX» یا «check my site against best practices» مطرح می‌شود.",
+    "sourceHash": "85e9785381ed902a621eafd3b6a9c5b50d88218d8fd3779224788f1e14fed155",
+    "status": "draft"
+  },
+  "openai/web-design-guidelines": {
+    "title": "بازبینی رابط کاربری",
+    "what": "بازبینی کد UI برای بررسی انطباق با Web Interface Guidelines.",
+    "use_when": "وقتی درخواست «review my UI»، «check accessibility»، «audit design»، «review UX» یا «check my site…» مطرح می‌شود.",
+    "sourceHash": "a92a6b5f2d9075a8c519a6ced52eaa094f5e8c59488edeb805ab8b0e4a9cb7ed",
+    "status": "draft"
+  },
+  "101-skills/agent-browser": {
+    "title": "مرورگر برای ایجنت‌ها",
+    "what": "اتوماسیون مرورگر برای ایجنت‌های AI با inference.sh. پیمایش صفحات، تعامل با عناصر از طریق @e refs، گرفتن screenshot و ضبط ویدیو. قابلیت‌ها: web scraping، پرکردن فرم، کلیک، تایپ، drag-drop، آپلود فایل و اجرای JavaScript.",
+    "use_when": "برای اتوماسیون وب، استخراج داده، تست، مرور وب با ایجنت و پژوهش. کلیدواژه‌ها: browser، web automation، scrape، navigate، click، fill form، screenshot، browse web، playwright، headless browser، web agent، surf internet، record video.",
+    "sourceHash": "7da6737e43bf3aadfaf8a6e336c7142d20b8cdbaf148893f8fcb6567c1b9a8f7",
+    "status": "draft"
+  }
+}

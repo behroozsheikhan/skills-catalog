@@ -1,0 +1,27 @@
+{
+  "name": "skillnama",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "check": "astro check",
+    "test:browser": "node tests/browser.mjs",
+    "translations": "node scripts/translations.mjs",
+    "format": "prettier --write \"src/**/*.{ts,mjs,css}\" \"tests/*.mjs\" \"scripts/*.mjs\" \"data/*.json\""
+  },
+  "dependencies": {
+    "@fontsource-variable/vazirmatn": "^5.2.5",
+    "astro": "^7.3.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@playwright/test": "^1.55.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.0",
+    "typescript": "^5.9.2"
+  }
+}

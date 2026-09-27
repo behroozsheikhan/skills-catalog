@@ -1,0 +1,243 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Icon from "../../components/Icon.astro";
+import Card from "../../components/Card.astro";
+import { skills, related, shortTopic } from "../../lib/catalog.mjs";
+import { tasks } from "../../lib/search.mjs";
+import type { Skill } from "../../lib/types";
+interface Props {
+  skill: Skill;
+}
+export function getStaticPaths() {
+  return skills.map((skill) => ({
+    params: { slug: skill.key },
+    props: { skill },
+  }));
+}
+const { skill: s } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+const similar = related(s);
+const title = s.fa?.title || s.name;
+const description = (
+  s.fa?.what ||
+  s.what ||
+  s.description ||
+  "مشخصات و لینک‌های اسکیل " + s.name
+).slice(0, 160);
+const incomplete = /…|\.\.\./.test(s.what + " " + s.use_when);
+---
+
+<Layout
+  title={`${title} — ${s.author} | اسکیل کاتالوگ`}
+  description={description}
+>
+  <div class="detail-container">
+    <a
+      id="back-to-results"
+      class="back-to-results secondary-button"
+      href={base + "#catalog"}
+      data-catalog-base={base}
+    >
+      <Icon name="arrow" size={17} />
+      بازگشت به نتایج جستجو
+    </a>
+    <button
+      type="button"
+      class="favorite-button favorite-detail secondary-button"
+      data-favorite-key={s.key}
+      aria-label="افزودن به علاقه‌مندی‌ها"
+      aria-pressed="false"
+      hidden
+    >
+      ♡ افزودن به علاقه‌مندی‌ها
+    </button>
+    <nav class="breadcrumbs" aria-label="مسیر صفحه">
+      <a href={base}>کاتالوگ</a>
+      <span>/</span>
+      <a href={base + "?topic=" + encodeURIComponent(s.topic)}>
+        {shortTopic(s.topic)}
+      </a>
+      <span>/</span>
+      <span dir="ltr">{s.name}</span>
+    </nav>
+    <div class="detail-heading">
+      <span class="detail-icon">
+        <Icon name="code" size={32} />
+      </span>
+      <div>
+        <p class="eyebrow" dir="ltr">
+          {s.author} / AGENT SKILL
+        </p>
+        <h1 dir="ltr" lang="en">
+          {s.name}
+        </h1>
+        {s.fa && <p>{s.fa.title}</p>}
+      </div>
+      <span class="detail-language">
+        {s.fa ? "فارسی + English" : "English · ترجمه در انتظار"}
+      </span>
+    </div>
+    <div class="detail-layout">
+      <article class="detail-content">
+        <section class="content-panel">
+          <h2>
+            <Icon name="book" /> این اسکیل چه می‌کند؟
+          </h2>
+          {s.fa ? (
+            <p class="persian-copy">{s.fa.what}</p>
+          ) : (
+            <p class="pending-translation">
+              ترجمهٔ فارسی این توضیح هنوز آماده نشده است؛ متن اصلی را در ادامه
+              بخوانید.
+            </p>
+          )}
+          <div class="original-copy">
+            <span class="english-label">ORIGINAL DESCRIPTION</span>
+            <p dir="ltr" lang="en">
+              {s.what || s.description || "No description provided."}
+            </p>
+          </div>
+        </section>
+        <section class="content-panel">
+          <h2>
+            <Icon name="spark" /> چه زمانی به کار می‌آید؟
+          </h2>
+          {s.use_when ? (
+            <>
+              {s.fa?.use_when ? (
+                <p class="persian-copy">{s.fa.use_when}</p>
+              ) : (
+                <p class="pending-translation">
+                  ترجمهٔ فارسی این بخش هنوز آماده نشده است.
+                </p>
+              )}
+              <div class="original-copy">
+                <span class="english-label">WHEN TO USE</span>
+                <p dir="ltr" lang="en">
+                  {s.use_when}
+                </p>
+              </div>
+            </>
+          ) : (
+            <p class="muted">
+              در دادهٔ اصلی، کاربرد جداگانه‌ای ثبت نشده است. توضیح بالا و صفحهٔ
+              منبع را ببینید.
+            </p>
+          )}
+        </section>
+        {incomplete && (
+          <p class="notice">
+            بخشی از متن اصلی با «…» قطع شده است. ادامهٔ آن حدس زده یا تکمیل نشده
+            است.
+          </p>
+        )}
+        {s.tasks.length > 0 && (
+          <section class="task-section">
+            <h2>کاربردهای مرتبط</h2>
+            <div class="task-tags">
+              {s.tasks.map((id) => (
+                <a href={base + "?task=" + id}>
+                  {tasks.find((t) => t.id === id)?.label}
+                </a>
+              ))}
+            </div>
+            <p class="filter-hint">
+              برچسب‌گذاری خودکار بر اساس نام و توضیح؛ ممکن است نیازمند اصلاح
+              باشد.
+            </p>
+          </section>
+        )}
+      </article>
+      <aside class="detail-sidebar">
+        <div class="metadata-panel">
+          <h2>شناسنامهٔ اسکیل</h2>
+          <dl>
+            <div>
+              <dt>منبع</dt>
+              <dd dir="ltr">{s.author}</dd>
+            </div>
+            <div>
+              <dt>موضوع</dt>
+              <dd>{shortTopic(s.topic)}</dd>
+            </div>
+            <div>
+              <dt>آخرین تغییر در دادهٔ منبع</dt>
+              <dd>
+                <time datetime={s.updated} dir="ltr">
+                  {s.updated || "ثبت نشده"}
+                </time>
+              </dd>
+            </div>
+          </dl>
+          <div class="source-status">
+            <Icon name="shield" size={19} />
+            <span>
+              {s.known
+                ? "منبع شناخته‌شده در کاتالوگ"
+                : "منبع ثبت‌شده در کاتالوگ"}
+            </span>
+          </div>
+          <p class="filter-hint">
+            نام منبع و لینک‌ها از دادهٔ کاتالوگ آمده‌اند. این برچسب تضمین امنیت،
+            کیفیت یا تأیید رسمی نیست.
+          </p>
+          <a
+            class="primary-button full-width"
+            href={s.github || s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {s.github ? "مشاهده در GitHub" : "مشاهدهٔ منبع"}
+            <Icon name="external" size={17} />
+          </a>
+          <a
+            class="secondary-button full-width"
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            صفحه در mcpservers <Icon name="external" size={16} />
+          </a>
+        </div>
+        <p class="sidebar-disclaimer">
+          قبل از نصب یا اجرا، دسترسی‌ها، محتوای اسکیل و مجوز مخزن را بررسی کن.
+          لینک‌ها در این نسخه بررسی زنده نشده‌اند.
+        </p>
+      </aside>
+    </div>
+    {similar.length > 0 && (
+      <section class="related-section">
+        <div class="catalog-heading">
+          <div>
+            <span class="eyebrow">مسیرهای دیگر را هم ببین</span>
+            <h2>اسکیل‌های مشابه</h2>
+          </div>
+          <a href={base + "?topic=" + encodeURIComponent(s.topic)}>
+            مشاهدهٔ موضوع <Icon name="arrow" size={17} />
+          </a>
+        </div>
+        <div class="cards-grid">
+          {similar.map((skill) => (
+            <Card skill={skill} />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Layout>
+
+<script>
+  import { catalogReturnURL } from "../../lib/navigation.mjs";
+  const back = document.querySelector<HTMLAnchorElement>("#back-to-results")!;
+  const base = back.dataset.catalogBase!;
+  const target = catalogReturnURL(location.href, base);
+  back.href = target;
+  // Keep the original search when navigating through related skills as well.
+  document
+    .querySelectorAll<HTMLAnchorElement>(".related-section .skill-card")
+    .forEach((link) => {
+      const url = new URL(link.href);
+      url.searchParams.set("returnTo", target);
+      link.href = url.href;
+    });
+</script>

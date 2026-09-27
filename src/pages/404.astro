@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="صفحه پیدا نشد | اسکیل کاتالوگ">
+  <div class="empty-state not-found">
+    <span class="eyebrow">۴۰۴</span>
+    <h1>این مسیر به اسکیلی نرسید.</h1>
+    <p>ممکن است آدرس تغییر کرده باشد. از کاتالوگ دوباره شروع کن.</p>
+    <a class="primary-button" href={import.meta.env.BASE_URL}>
+      بازگشت به کاتالوگ
+    </a>
+  </div>
+</Layout>

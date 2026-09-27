@@ -1,0 +1,155 @@
+---
+import "@fontsource-variable/vazirmatn";
+import "../styles/global.css";
+import Icon from "../components/Icon.astro";
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = "اسکیل کاتالوگ — کاتالوگ فارسی اسکیل‌های ایجنت",
+  description = "اسکیل مناسب ایجنت خود را پیدا کنید؛ جستجوی فارسی و انگلیسی، فیلتر موضوع و منبع، و توضیحات کوتاه کاربردی.",
+} = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f8f9f6" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(base + "og.png", Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem("theme");
+        document.documentElement.dataset.theme =
+          t === "dark" || t === "light"
+            ? t
+            : matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      رفتن به محتوای اصلی
+    </a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href={base} aria-label="اسکیل کاتالوگ، صفحهٔ اصلی">
+          <span class="brand-icon">
+            <Icon name="spark" size={24} />
+          </span>
+          <span>
+            اسکیل کاتالوگ<span class="brand-en">SKILL CATALOG</span>
+          </span>
+        </a>
+        <nav aria-label="ناوبری اصلی">
+          <a class:list={{ active: Astro.url.pathname === base }} href={base}>
+            کاوش اسکیل‌ها
+          </a>
+          <a href={base + "about/"}>دربارهٔ کاتالوگ</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="icon-button"
+            aria-label="تغییر تم"
+            title="تغییر تم"
+          >
+            <span class="light-icon">
+              <Icon name="moon" />
+            </span>
+            <span class="dark-icon">
+              <Icon name="sun" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand small" href={base}>
+          <span class="brand-icon">
+            <Icon name="spark" size={19} />
+          </span>
+          اسکیل کاتالوگ
+        </a>
+        <p>مهارت‌های بیشتر، برای ایجنت‌های توانمندتر.</p>
+        <a href={base + "about/"}>
+          داده‌ها و شفافیت <Icon name="arrow" size={16} />
+        </a>
+      </div>
+      <div class="footer-note">
+        یک کاتالوگ مستقل برای جامعهٔ فارسی‌زبان · داده‌ها از{" "}
+        <a href="https://mcpservers.org/agent-skills" dir="ltr" lang="en">
+          mcpservers.org
+        </a>
+      </div>
+    </footer>
+    <script>
+      import "../scripts/favorites";
+      const toggle =
+        document.querySelector<HTMLButtonElement>("#theme-toggle")!;
+      const update = () => {
+        const dark = document.documentElement.dataset.theme === "dark";
+        toggle.setAttribute(
+          "aria-label",
+          dark ? "فعال‌کردن تم روشن" : "فعال‌کردن تم تاریک",
+        );
+        toggle.setAttribute("aria-pressed", String(dark));
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute("content", dark ? "#101a18" : "#f8f9f6");
+      };
+      update();
+      toggle.addEventListener("click", () => {
+        const theme =
+          document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = theme;
+        try {
+          localStorage.setItem("theme", theme);
+        } catch {}
+        update();
+      });
+      matchMedia("(prefers-color-scheme: dark)").addEventListener(
+        "change",
+        (e) => {
+          let saved = null;
+          try {
+            saved = localStorage.getItem("theme");
+          } catch {}
+          if (!saved) {
+            document.documentElement.dataset.theme = e.matches
+              ? "dark"
+              : "light";
+            update();
+          }
+        },
+      );
+    </script>
+  </body>
+</html>
