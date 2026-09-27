@@ -1349,12 +1349,12 @@
   },
   "anthropic/capacity-plan": {
     "title": "",
-    "what": "ظرفیت منابع برنامه ریزی - تجزیه و تحلیل حجم کار و پیش بینی استفاده.",
-    "use_when": "وقتی وارد برنامه ریزی فصلی می شوید، تیم احساس می کند بیش از حد تخصیص داده شده است و شما به …",
+    "what": "برنامه‌ریزی ظرفیت منابع: تحلیل بارکاری و پیش‌بینی میزان استفاده.",
+    "use_when": "در آستانهٔ برنامه‌ریزی فصلی، وقتی تیم احساس می‌کند بیش از ظرفیتش کار به آن تخصیص یافته و به…",
     "sourceHash": "5a3c3e620a7902f576d32b23f6d7faeb15b2b062772b2a8a9eda6950afe6200c",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/cardputer-buddy": {
     "title": "",
@@ -1574,12 +1574,12 @@
   },
   "anthropic/close-month": {
     "title": "",
-    "what": "ماه را می بندد - QB را با پردازشگرهای پرداخت تطبیق می دهد، شکاف ها را نشان می دهد، روایت P&L را می نویسد، بسته را صادر می کند. آرگومان های ماه اختیاری و save-to را می پذیرد.",
+    "what": "بستن حساب‌های ماه: تطبیق QB با پردازشگرهای پرداخت، مشخص‌کردن مغایرت‌ها، نوشتن توضیح گزارش P&L و خروجی‌گرفتن از مجموعهٔ اسناد بستن حساب‌ها. آرگومان‌های اختیاری ماه و save-to را می‌پذیرد.",
     "use_when": "",
     "sourceHash": "7adce2b2731df0a0d71eaf215665dd5bd57e3ac4bdf0b52f7f3040aa4b999a6a",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/closing-checklist": {
     "title": "",
@@ -7002,12 +7002,12 @@
   },
   "automattic/dev": {
     "title": "",
-    "what": "توسعه workflows برای پلاگین WordPress ActivityPub از جمله راه‌اندازی wp-env، دستورات آزمایش، پر کردن و فرآیندهای ساخت.",
-    "use_when": "هنگام راه‌اندازی توسعه…",
+    "what": "workflowهای توسعه برای plugin مربوط به ActivityPub در WordPress؛ شامل راه‌اندازی wp-env، دستورهای تست، linting و فرایندهای build.",
+    "use_when": "هنگام راه‌اندازی محیط توسعه…",
     "sourceHash": "f8d5240e7015c214d6ed3720791f3db7cce9c70f926493d2c2665916b503bed8",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "automattic/diagnose": {
     "title": "",
@@ -16082,12 +16082,12 @@
   },
   "exploreomni/omni-query": {
     "title": "",
-    "what": "پرس و جوها را در برابر لایه معنایی Omni Analytics با استفاده از Omni CLI اجرا کنید، نتایج را تفسیر کنید، و جستجوهای زنجیره ای را برای تجزیه و تحلیل multi-step.",
-    "use_when": "هر زمان که …",
+    "what": "اجرای query روی لایهٔ معنایی Omni Analytics با Omni CLI، تفسیر نتایج و زنجیره‌کردن queryها برای تحلیل چندمرحله‌ای.",
+    "use_when": "هر زمان که…",
     "sourceHash": "8a2e85d21ca8ef1bb16e3df45f9069f9108d6d3e54ead23505711932d893a624",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "exploreomni/omni-to-databricks-metric-view": {
     "title": "",
@@ -23986,12 +23986,12 @@
   },
   "github/qdrant-scaling-qps": {
     "title": "",
-    "what": "مقیاس پذیری Qdrant پرس و جو (QPS) را راهنمایی می کند.",
-    "use_when": "وقتی کسی می‌پرسد «چگونه QPS را افزایش دهیم»، «به توان عملیاتی بیشتری نیاز داریم»، «پرسش‌ها در ثانیه خیلی کم»، «دسته…",
+    "what": "راهنمای افزایش توان عملیاتی query در Qdrant بر حسب QPS.",
+    "use_when": "وقتی کسی درخواست می‌کند 'how to increase QPS'، 'need more throughput'، 'queries per second too low'، 'batch…",
     "sourceHash": "9e047ad4a33f643f3d5d048761c4a56a459d4552a20fde40071cc80b76d45163",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "github/qdrant-scaling-query-volume": {
     "title": "",
@@ -25399,12 +25399,12 @@
   },
   "google-gemini/tts-generation": {
     "title": "",
-    "what": "با استفاده از تعاملات API اسکریپت نمایش رادیویی را به صدای گفتاری با جلوه تلفن بر روی صداهای خبرنگار تبدیل کنید.",
+    "what": "تبدیل متن برنامهٔ رادیویی به فایل صوتی گفتار، با اعمال افکت تلفن بر صدای گزارشگران، از طریق Interactions API.",
     "use_when": "",
     "sourceHash": "1f290e6781bf6a90b3e31bb52c6b4418fd6d58eaa177e7991be15766e4509c08",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "google-gemini/tui-tester": {
     "title": "",
@@ -29435,12 +29435,12 @@
   },
   "launchdarkly/aiconfig-agent-graphs": {
     "title": "",
-    "what": "DEPRECATED تغییر مسیر - این مهارت به agent-graphs تغییر نام داد. از این مهارت استفاده نکنید؛ در عوض agent-graphs را فراخوانی کنید.",
+    "what": "تغییرمسیرِ منسوخ: نام این اسکیل به agent-graphs تغییر کرده است. از این اسکیل استفاده نکنید؛ به‌جای آن agent-graphs را فراخوانی کنید.",
     "use_when": "",
     "sourceHash": "6c91ebe0c5c84e55ad306049441e8f39fcf8f92870e2811180ec54986a1f465a",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "launchdarkly/aiconfig-ai-metrics": {
     "title": "",
@@ -31096,12 +31096,12 @@
   },
   "mcp-use/openapi-to-mcp": {
     "title": "",
-    "what": "با استفاده از mcp-use TypeScript SDK یک سرور MCP را از مشخصات OpenAPI / Swagger بسازید و استقرار دهید.",
+    "what": "ساخت و deploy کردن یک MCP server از مشخصات OpenAPI / Swagger، با استفاده از mcp-use TypeScript SDK.",
     "use_when": "هر زمان که کاربر بخواهد \"turn this OpenAPI…",
     "sourceHash": "2d8f9e2452abaed0264392e31b21550c95bc650cca35ffd3c7fd737defe7f7a4",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "medusajs/building-admin-dashboard-customizations": {
     "title": "",
@@ -34681,12 +34681,12 @@
   },
   "microsoft/ensure-pipelines-host": {
     "title": "",
-    "what": "اطمینان حاصل می کند که مستاجر قبل از اجرای هر گونه عملیات خط لوله، یک محیط میزبان قابل استفاده از Power Platform Pipelines دارد.",
+    "what": "اطمینان از وجود محیط میزبان قابل‌استفادهٔ Power Platform Pipelines در tenant، پیش از اجرای هر عملیات pipeline.",
     "use_when": "",
     "sourceHash": "a25bc1ded3dc2580c571da668da2aed2e012e732e0fdebedb2612745b5cf796c",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "microsoft/entra-app-registration": {
     "title": "",
@@ -36436,12 +36436,12 @@
   },
   "microsoft/pytest": {
     "title": "",
-    "what": "بهترین روش‌ها برای نوشتن و سازمان‌دهی آزمون‌ها با pytest از جمله فیکسچرها، پارامتریزه کردن، و افزونه‌ها.",
+    "what": "بهترین شیوه‌های نوشتن و سازمان‌دهی تست‌ها با pytest، شامل fixtures، parametrize و pluginها.",
     "use_when": "",
     "sourceHash": "751bc2b236034f0c5a7d01395e5d65bb03ecd0705944d144e136aeb454b488d4",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "microsoft/python-appservice-deploy": {
     "title": "",
@@ -43651,12 +43651,12 @@
   },
   "nvidia/paidf-anomalygen": {
     "title": "",
-    "what": "خط لوله کامل PAIDF AnomalyGen - fine-tune در مجموعه داده ناهنجاری جدید، تولید تصاویر ناهنجاری مصنوعی (SDG)، ارزیابی کیفیت (nn_score)، و جستجو…",
+    "what": "pipeline کامل PAIDF AnomalyGen: انجام fine-tune با یک مجموعه‌دادهٔ جدید ناهنجاری، تولید تصاویر مصنوعی ناهنجاری (SDG)، ارزیابی کیفیت (nn_score) و جستجو…",
     "use_when": "",
     "sourceHash": "5033bd4d2c6a43b0d4c89cfc61f196f4a57ac58b92469d7b60222a0fe5bfd73c",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "nvidia/pattern-creation": {
     "title": "",
@@ -60513,12 +60513,12 @@
   },
   "vercel/marketplace-add-xmc": {
     "title": "",
-    "what": "ادغام XM Cloud API را به برنامه Sitecore Marketplace اضافه می کند.",
-    "use_when": "زمانی که کاربر می‌خواهد به سایت‌ها، صفحات، تألیف، انتقال محتوا، جستجو یا عامل دسترسی داشته باشد APIs…",
+    "what": "افزودن اتصال XM Cloud API به اپلیکیشن Sitecore Marketplace.",
+    "use_when": "وقتی کاربر می‌خواهد به APIهای Sites، Pages، Authoring، Content Transfer، Search یا Agent دسترسی داشته باشد…",
     "sourceHash": "9f6cc919fae6e9e406266cb4717b72cae4040077b0028262ec334ec408742efb",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "vercel/marketplace-build-component": {
     "title": "",
