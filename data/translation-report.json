@@ -1,0 +1,15 @@
+{
+  "total": 7764,
+  "translated": 1432,
+  "pending": 6332,
+  "uniqueTranslationRecords": 1311,
+  "machineTranslationRecords": 1287,
+  "humanReviewed": false,
+  "status": "draft",
+  "checks": [
+    "source hash",
+    "empty source fields",
+    "description fallback",
+    "protected technical terms"
+  ]
+}
