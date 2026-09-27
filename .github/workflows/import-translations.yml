@@ -6,9 +6,6 @@ on:
         description: Translation workflow run ID in this repository
         required: true
         type: string
-  push:
-    branches: [arena/01a0e471-skills-catalog]
-    paths: [.github/workflows/import-translations.yml]
 permissions:
   contents: write
   actions: read

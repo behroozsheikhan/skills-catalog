@@ -1,11 +1,6 @@
 name: Translate public catalog to Persian
 on:
   workflow_dispatch:
-  push:
-    branches: [arena/01a0e471-skills-catalog]
-    paths:
-      - scripts/bulk_translate.py
-      - .github/workflows/translate-catalog.yml
 permissions:
   contents: read
 concurrency:
