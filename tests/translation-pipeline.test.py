@@ -12,6 +12,8 @@ class TranslationPipeline(unittest.TestCase):
         self.assertIn('`npm run build`',tokens); self.assertIn('…',tokens)
         translated='استفاده از '+ ' '.join(f'[[T{i}]]' for i in range(len(tokens)))
         self.assertTrue(m.restore(translated,tokens,text).endswith('…'))
+    def test_persian_word_order_can_move_ellipsis(self):
+        self.assertEqual(m.restore('برای [[T0]] استفاده کنید', ['…'], 'Use for…'), 'برای … استفاده کنید')
     def test_missing_placeholder_rejected(self):
         with self.assertRaises(ValueError):m.restore('استفاده', ['CLI'],'Use the CLI')
     def test_duplicated_placeholder_rejected(self):

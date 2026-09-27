@@ -55,13 +55,11 @@ def restore(text, tokens, original):
     if collections.Counter(found) != collections.Counter(range(len(tokens))):
         raise ValueError('Technical placeholder lost or duplicated')
     result = TOKEN.sub(lambda m: tokens[int(m.group(1))], text).strip()
-    for suffix in ('…', '...'):
-        if original.rstrip().endswith(suffix) and not result.endswith(suffix):
-            # Do not invent or append content after a truncated source ending.
-            if result.endswith(suffix + '.'):
-                result = result[:-1]
-            else:
-                raise ValueError('Truncated ending not preserved')
+    # Persian word order can move the truncation marker inside the sentence.
+    # Preserve each marker rather than forcing English word order onto Persian.
+    for marker in ('…', '...'):
+        if original.count(marker) != result.count(marker):
+            raise ValueError('Truncation marker lost or invented')
     if re.search(r'\[\[T\d+\]\]', result):
         raise ValueError('Unresolved placeholder')
     # Prose must actually have been translated. Pure tool/code lists may stay English.

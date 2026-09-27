@@ -34,10 +34,9 @@ test("translations preserve empty fields and do not leak placeholders", () => {
         !/\[\[(?:T\d+|\d{5})\]\]/.test(s.fa[field]),
         `${s.key}: unresolved token`,
       );
-      if (s[field]?.endsWith("…"))
-        assert.ok(s.fa[field].endsWith("…"), `${s.key}: truncated source`);
-      if (s[field]?.endsWith("..."))
-        assert.ok(s.fa[field].endsWith("..."), `${s.key}: truncated source`);
+      for (const marker of ['…','...']) {
+        assert.equal(s.fa[field].split(marker).length, (s[field]||'').split(marker).length, `${s.key}: truncation marker mismatch`);
+      }
     }
     if (!s.what && s.description)
       assert.ok(s.fa.description, `${s.key}: fallback not translated`);

@@ -15,17 +15,17 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix:
-        shard: [0, 1, 2, 3]
+        shard: [0, 1]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: persian-translations
+          name: combined-persian-translations
           path: translation-output/
-          run-id: 36353925921
+          run-id: 36355071978
           github-token: ${{ github.token }}
       - name: Translate remaining fields at a limited request rate
-        run: python3 scripts/bulk_translate.py --shard-index ${{ matrix.shard }} --shard-count 4 --delay 2
+        run: python3 scripts/bulk_translate.py --shard-index ${{ matrix.shard }} --shard-count 2 --delay 2
       - uses: actions/upload-artifact@v4
         if: always()
         with:
