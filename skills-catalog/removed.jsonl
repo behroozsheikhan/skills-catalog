@@ -1,0 +1,7 @@
+{"key": "huggingface/hugging-face-evaluation", "reason": "اسکیل در ریپوی huggingface/skills وجود ندارد (تأیید دستی کاربر)"}
+{"key": "microsoft/azure-hosted-copilot-sdk", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}
+{"key": "microsoft/azure-observability", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}
+{"key": "microsoft/azure-rbac", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}
+{"key": "zapier/code-review", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}
+{"key": "zapier/git-commit", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}
+{"key": "zapier/work-on-ticket", "reason": "منبع گیتهاب ندارد / مرده (تأیید دستی کاربر)"}

@@ -5,7 +5,9 @@ import json, os, sqlite3, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
 IDX  = os.path.join(HERE, "skills-index-flat.jsonl")
 FULL = os.path.join(HERE, "skills-data.jsonl")   # متن کاملِ ۳۴۸ اسکیلِ قبلاً دانلودشده
+LAST = os.path.join(HERE, "lastmod.tsv")          # تاریخ آخرین تغییر هر اسکیل
 DB   = os.path.join(HERE, "skills.db")
+REMOVED = os.path.join(HERE, "removed.jsonl")     # اسکیل‌های حذف‌شده (برنگشتن در به‌روزرسانی)
 TOP  = json.load(open(os.path.join(HERE, "topics.json")))
 
 tmap = {}
@@ -22,6 +24,13 @@ if os.path.exists(FULL):
         except Exception:
             pass
 
+lastmod = {}
+if os.path.exists(LAST):
+    for line in open(LAST, encoding='utf-8'):
+        if '\t' in line:
+            k, d = line.rstrip('\n').split('\t', 1)
+            lastmod[k.replace('agent-skills/', '', 1)] = d[:10]
+
 if os.path.exists(DB):
     os.remove(DB)
 con = sqlite3.connect(DB)
@@ -29,7 +38,8 @@ con.executescript("""
 PRAGMA journal_mode=OFF; PRAGMA synchronous=OFF;
 CREATE TABLE skills(
   id INTEGER PRIMARY KEY, author TEXT, name TEXT, url TEXT, github TEXT,
-  description TEXT, topic TEXT, full INTEGER DEFAULT 0);
+  description TEXT, what TEXT DEFAULT '', use_when TEXT DEFAULT '',
+  topic TEXT, full INTEGER DEFAULT 0, updated TEXT);
 CREATE VIRTUAL TABLE fts USING fts5(
   name, description, content='skills', content_rowid='id',
   tokenize="porter unicode61 remove_diacritics 2");
@@ -43,9 +53,12 @@ for line in open(IDX, encoding='utf-8'):
         continue
     seen.add(k)
     rows.append((d['author'], d['name'], d['url'], d.get('github', ''),
-                 d.get('description', ''), tmap.get(k, '📦 سایر / عمومی'),
-                 1 if full.get(k) else 0))
-con.executemany("INSERT INTO skills(author,name,url,github,description,topic,full) VALUES(?,?,?,?,?,?,?)", rows)
+                 d.get('description', ''), d.get('what', ''), d.get('use_when', ''),
+                 tmap.get(k, '📦 سایر / عمومی'),
+                 1 if full.get(k) else 0,
+                 d.get('updated') or lastmod.get(k)))
+con.executemany("""INSERT INTO skills(author,name,url,github,description,what,use_when,topic,full,updated)
+                   VALUES(?,?,?,?,?,?,?,?,?,?)""", rows)
 con.execute("INSERT INTO fts(rowid,name,description) SELECT id,name,description FROM skills")
 con.commit()
 

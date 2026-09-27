@@ -52,9 +52,14 @@ def search(q, author=None, topic=None, n=15, show=False, official=False):
           (" | فقط رسمی" if official else "") + "\n" + "─" * 70)
     for r in rows:
         flag = "  ★" if r['author'] in OFFICIAL else "   "
-        print(f"{flag} {r['author']}/{r['name']}  [{r['topic'].split(' ')[0]}]")
-        d = re.sub(r'\s+', ' ', r['description'] or '')[:135]
-        print(f"      {d}")
+        upd = f"  🕐{r['updated']}" if r['updated'] else ""
+        print(f"{flag} {r['author']}/{r['name']}  [{r['topic'].split(' ')[0]}]{upd}")
+        what = re.sub(r'\s+', ' ', r['what'] or r['description'] or '')[:150]
+        if what:
+            print(f"      📌 {what}")
+        use = re.sub(r'\s+', ' ', r['use_when'] or '')[:170]
+        if use:
+            print(f"      🎯 {use}")
         if show:
             snip = re.sub(r'\s+', ' ', r['snip'] or '')[:260]
             print(textwrap.fill(snip, 66, initial_indent='      ', subsequent_indent='      '))

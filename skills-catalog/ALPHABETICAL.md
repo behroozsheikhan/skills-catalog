@@ -1,8 +1,8 @@
 # 🔤 فهرست الفبایی کامل اسکیل‌ها
 
-**7,718 اسکیل** مرتب‌شده بر اساس نام.
+**7,764 اسکیل** مرتب‌شده بر اساس نام.
 
-`1`: 2 · `3`: 2 · `a`: 820 · `b`: 204 · `c`: 768 · `d`: 604 · `e`: 285 · `f`: 369 · `g`: 290 · `h`: 134 · `i`: 285 · `j`: 77 · `k`: 49 · `l`: 210 · `m`: 300 · `n`: 334 · `o`: 172 · `p`: 542 · `q`: 60 · `r`: 471 · `s`: 661 · `t`: 393 · `u`: 134 · `v`: 169 · `w`: 322 · `x`: 25 · `y`: 9 · `z`: 27
+`1`: 2 · `3`: 2 · `A`: 814 · `B`: 203 · `C`: 770 · `D`: 599 · `E`: 286 · `F`: 368 · `G`: 289 · `H`: 133 · `I`: 284 · `J`: 77 · `K`: 49 · `L`: 213 · `M`: 298 · `N`: 355 · `O`: 172 · `P`: 549 · `Q`: 60 · `R`: 471 · `S`: 668 · `T`: 392 · `U`: 134 · `V`: 168 · `W`: 348 · `X`: 25 · `Y`: 8 · `Z`: 27
 
 > منبع: <https://mcpservers.org/agent-skills> — استخراج‌شده از `sitemaps/skills.xml`
 > فقط صفحات انگلیسی (بدون ۱۶ نسخهٔ ترجمه‌شده).
@@ -20,7 +20,7 @@
 - `3-statement-model`  <sub>anthropic</sub>
 - `3d`  <sub>remotion-dev</sub>
 
-## A  (820)
+## A  (814)
 
 - `a365-code-validator`  <sub>microsoft</sub>
 - `a365-setup`  <sub>microsoft</sub>
@@ -365,7 +365,6 @@
 - `anti-detect-browser`  <sub>antibrow</sub>
 - `anti-ui-slop`  <sub>github</sub>
 - `aoti-debug`  <sub>pytorch</sub>
-- `api`  <sub>category</sub>
 - `api`  <sub>deepgram</sub>
 - `api-and-interface-design`  <sub>addyosmani</sub>
 - `api-changes`  <sub>microsoft</sub>
@@ -508,7 +507,6 @@
 - `atlassian-reader`  <sub>bitwarden</sub>
 - `attack-path-analysis`  <sub>openai</sub>
 - `attribution`  <sub>coreyhaines31</sub>
-- `audio`  <sub>category</sub>
 - `audio-mixing`  <sub>google-gemini</sub>
 - `audiocraft-audio-generation`  <sub>firecrawl</sub>
 - `audit`  <sub>openai</sub>
@@ -613,7 +611,6 @@
 - `awf-release-integrator`  <sub>github</sub>
 - `awf-skill`  <sub>github</sub>
 - `awq-quantization`  <sub>firecrawl</sub>
-- `aws`  <sub>category</sub>
 - `aws`  <sub>vercel</sub>
 - `aws-ai-ml`  <sub>aws</sub>
 - `aws-ami-builder`  <sub>hashicorp</sub>
@@ -732,7 +729,6 @@
 - `azure-eventhub-py`  <sub>microsoft</sub>
 - `azure-eventhub-rust`  <sub>microsoft</sub>
 - `azure-eventhub-ts`  <sub>microsoft</sub>
-- `azure-hosted-copilot-sdk`  <sub>microsoft</sub>
 - `azure-identity-dotnet`  <sub>microsoft</sub>
 - `azure-identity-java`  <sub>microsoft</sub>
 - `azure-identity-py`  <sub>microsoft</sub>
@@ -776,14 +772,12 @@
 - `azure-monitor-opentelemetry-ts`  <sub>microsoft</sub>
 - `azure-monitor-query-java`  <sub>microsoft</sub>
 - `azure-monitor-query-py`  <sub>microsoft</sub>
-- `azure-observability`  <sub>microsoft</sub>
 - `azure-openai-to-responses`  <sub>microsoft</sub>
 - `azure-pipelines`  <sub>microsoft</sub>
 - `azure-postgres-ts`  <sub>microsoft</sub>
 - `azure-prepare`  <sub>microsoft</sub>
 - `azure-pricing`  <sub>github</sub>
 - `azure-quotas`  <sub>microsoft</sub>
-- `azure-rbac`  <sub>microsoft</sub>
 - `azure-reliability`  <sub>microsoft</sub>
 - `azure-resource-health-diagnose`  <sub>github</sub>
 - `azure-resource-lookup`  <sub>microsoft</sub>
@@ -843,7 +837,7 @@
 - `azuresql-db-sidecar`  <sub>microsoft</sub>
 - `azuresql-db-testing`  <sub>microsoft</sub>
 
-## B  (204)
+## B  (203)
 
 - `babysit-pr`  <sub>openai</sub>
 - `backdoor-deployment`  <sub>microsoft</sub>
@@ -956,7 +950,6 @@
 - `browser-act`  <sub>browser-act</sub>
 - `browser-act-skill-forge`  <sub>browser-act</sub>
 - `browser-automation`  <sub>browserbase</sub>
-- `browser-automation`  <sub>category</sub>
 - `browser-execute`  <sub>browser-use</sub>
 - `browser-fingerprint-audit`  <sub>liarjsdev</sub>
 - `browser-harness`  <sub>browser-use</sub>
@@ -1050,7 +1043,7 @@
 - `bx`  <sub>brave</sub>
 - `bx-search`  <sub>brave</sub>
 
-## C  (768)
+## C  (770)
 
 - `cache-components`  <sub>vercel</sub>
 - `cad-reference`  <sub>convex-dev</sub>
@@ -1185,6 +1178,12 @@
 - `circleci-cli`  <sub>openai</sub>
 - `circleci-migration`  <sub>github</sub>
 - `civic-skill`  <sub>openai</sub>
+- `ckm%3Abanner-design`  <sub>nextlevelbuilder</sub>
+- `ckm%3Abrand`  <sub>nextlevelbuilder</sub>
+- `ckm%3Adesign`  <sub>nextlevelbuilder</sub>
+- `ckm%3Adesign-system`  <sub>nextlevelbuilder</sub>
+- `ckm%3Aslides`  <sub>nextlevelbuilder</sub>
+- `ckm%3Aui-styling`  <sub>nextlevelbuilder</sub>
 - `ckm:banner-design`  <sub>nextlevelbuilder</sub>
 - `ckm:brand`  <sub>nextlevelbuilder</sub>
 - `ckm:design`  <sub>nextlevelbuilder</sub>
@@ -1316,6 +1315,7 @@
 - `co-marketing`  <sub>coreyhaines31</sub>
 - `coach-nemoclaw-hermes`  <sub>nvidia</sub>
 - `cobol-converter`  <sub>factory-ai</sub>
+- `cocounsel-legal%3Adeep-research`  <sub>anthropic</sub>
 - `cocounsel-legal:deep-research`  <sub>anthropic</sub>
 - `code-breaking-changes`  <sub>openai</sub>
 - `code-change-verification`  <sub>openai</sub>
@@ -1330,7 +1330,6 @@
 - `code-oss-logs`  <sub>microsoft</sub>
 - `code-quality`  <sub>redis</sub>
 - `code-review`  <sub>anthropic</sub>
-- `code-review`  <sub>category</sub>
 - `code-review`  <sub>clickhouse</sub>
 - `code-review`  <sub>cloudflare</sub>
 - `code-review`  <sub>coderabbitai</sub>
@@ -1346,7 +1345,6 @@
 - `code-review`  <sub>openshift</sub>
 - `code-review`  <sub>sentry</sub>
 - `code-review`  <sub>vercel</sub>
-- `code-review`  <sub>zapier</sub>
 - `code-review-and-quality`  <sub>addyosmani</sub>
 - `code-review-and-quality`  <sub>sanity-io</sub>
 - `code-review-change-size`  <sub>openai</sub>
@@ -1403,7 +1401,6 @@
 - `commits`  <sub>redis</sub>
 - `committing-android-changes`  <sub>bitwarden</sub>
 - `committing-changes`  <sub>bitwarden</sub>
-- `communication`  <sub>category</sub>
 - `community-marketing`  <sub>coreyhaines31</sub>
 - `community-ontology-contribution`  <sub>microsoft</sub>
 - `comp-analysis`  <sub>anthropic</sub>
@@ -1730,7 +1727,6 @@
 - `creating-secrets-using-best-practices`  <sub>aws</sub>
 - `creating-streamlit-themes`  <sub>streamlit</sub>
 - `creating-themes`  <sub>automattic</sub>
-- `creative`  <sub>category</sub>
 - `creative-writing-coach`  <sub>nvidia</sub>
 - `credential-setup-with-computer-use`  <sub>n8n-io</sub>
 - `credit-note-fixer`  <sub>openai</sub>
@@ -1753,7 +1749,6 @@
 - `csharp-tunit`  <sub>github</sub>
 - `csharp-xunit`  <sub>github</sub>
 - `css-review`  <sub>openshift</sub>
-- `csv`  <sub>category</sub>
 - `csv`  <sub>vercel</sub>
 - `csv-data-summarizer-claude-skill`  <sub>coffeefuelbump</sub>
 - `csv-workbench`  <sub>openai</sub>
@@ -1821,7 +1816,7 @@
 - `cutedsl-kernel-integration`  <sub>nvidia</sub>
 - `cve-remediation`  <sub>microsoft</sub>
 
-## D  (604)
+## D  (599)
 
 - `d3-data-visualization`  <sub>openai</sub>
 - `d3k`  <sub>vercel</sub>
@@ -1871,7 +1866,6 @@
 - `dashboard-widgets`  <sub>posthog</sub>
 - `dashboards-and-real-time-visualization`  <sub>openai</sub>
 - `dat-conventions`  <sub>facebook</sub>
-- `data-analysis`  <sub>category</sub>
 - `data-architecture`  <sub>microsoft</sub>
 - `data-breach-blast-radius`  <sub>github</sub>
 - `data-context-extractor`  <sub>anthropic</sub>
@@ -1885,7 +1879,6 @@
 - `data-visualization`  <sub>anthropic</sub>
 - `data-visualization`  <sub>langchain-ai</sub>
 - `data-visualization`  <sub>openai</sub>
-- `database`  <sub>category</sub>
 - `database-migrations`  <sub>langchain-ai</sub>
 - `database-query`  <sub>notion</sub>
 - `database-schema-designer`  <sub>softaworks</sub>
@@ -2007,6 +2000,7 @@
 - `deep-agents`  <sub>langchain-ai</sub>
 - `deep-agents-core`  <sub>langchain-ai</sub>
 - `deep-agents-memory`  <sub>langchain-ai</sub>
+- `deep-agents-memory-%26-filesystem`  <sub>langchain-ai</sub>
 - `deep-agents-memory-&amp;-filesystem`  <sub>langchain-ai</sub>
 - `deep-agents-orchestration`  <sub>langchain-ai</sub>
 - `deep-code-review`  <sub>expo</sub>
@@ -2121,7 +2115,6 @@
 - `deprecation-and-migration`  <sub>addyosmani</sub>
 - `deps-update`  <sub>openshift</sub>
 - `derive-client`  <sub>vercel</sub>
-- `design`  <sub>category</sub>
 - `design`  <sub>nextlevelbuilder</sub>
 - `design-an-interface`  <sub>mattpocock</sub>
 - `design-audit`  <sub>resend</sub>
@@ -2179,8 +2172,6 @@
 - `developing-genkit-python`  <sub>firebase</sub>
 - `developing-genkit-tooling`  <sub>firebase</sub>
 - `developing-with-streamlit`  <sub>streamlit</sub>
-- `development`  <sub>category</sub>
-- `devops`  <sub>category</sub>
 - `devops-rollout-plan`  <sub>github</sub>
 - `devtools`  <sub>vercel</sub>
 - `devx-ux`  <sub>microsoft</sub>
@@ -2351,7 +2342,6 @@
 - `docs-writer`  <sub>google-gemini</sub>
 - `docspress-install`  <sub>automattic</sub>
 - `docstring`  <sub>pytorch</sub>
-- `document`  <sub>category</sub>
 - `document-public-apis`  <sub>pytorch</sub>
 - `documentation`  <sub>anthropic</sub>
 - `documentation`  <sub>github</sub>
@@ -2428,7 +2418,7 @@
 - `dynamo-router-starter`  <sub>nvidia</sub>
 - `dynamo-troubleshoot`  <sub>nvidia</sub>
 
-## E  (285)
+## E  (286)
 
 - `e-commerce`  <sub>firecrawl</sub>
 - `e2e`  <sub>sentry</sub>
@@ -2461,7 +2451,6 @@
 - `eas-simulator`  <sub>expo</sub>
 - `eas-update-insights`  <sub>expo</sub>
 - `eas-workflows`  <sub>expo</sub>
-- `ecommerce`  <sub>category</sub>
 - `economic-impact-report`  <sub>openai</sub>
 - `ecosystem`  <sub>convex-dev</sub>
 - `ecosystem-primer`  <sub>langchain-ai</sub>
@@ -2481,6 +2470,7 @@
 - `efo-ontology-skill`  <sub>openai</sub>
 - `eightctl`  <sub>deepgram</sub>
 - `eightctl`  <sub>firecrawl</sub>
+- `elevenlabs%3Asdk-migration`  <sub>elevenlabs</sub>
 - `elevenlabs-music-generation`  <sub>agentspace-so</sub>
 - `elevenlabs-music-generation`  <sub>doany-ai</sub>
 - `elevenlabs-music-generation`  <sub>prime-skills</sub>
@@ -2490,6 +2480,7 @@
 - `eli5`  <sub>cloudflare</sub>
 - `em-dash`  <sub>github</sub>
 - `email`  <sub>openai</sub>
+- `email-%26-password-best-practices`  <sub>better-auth</sub>
 - `email-&amp;-password-best-practices`  <sub>better-auth</sub>
 - `email-analytics`  <sub>microsoft</sub>
 - `email-and-password-best-practices`  <sub>better-auth</sub>
@@ -2716,7 +2707,7 @@
 - `extracting-session-data`  <sub>bitwarden</sub>
 - `eyeball`  <sub>github</sub>
 
-## F  (369)
+## F  (368)
 
 - `fabric-cli`  <sub>microsoft</sub>
 - `fabric-cli-core`  <sub>microsoft</sub>
@@ -2764,7 +2755,6 @@
 - `feature-spec`  <sub>anthropic</sub>
 - `feature-spec`  <sub>apify</sub>
 - `feature-usage-feed`  <sub>posthog</sub>
-- `featured`  <sub>category</sub>
 - `federation`  <sub>automattic</sub>
 - `fedora-linux-triage`  <sub>github</sub>
 - `feedback-learning`  <sub>microsoft</sub>
@@ -3088,7 +3078,7 @@
 - `fuzzing`  <sub>microsoft</sub>
 - `fx-carry-trade`  <sub>anthropic</sub>
 
-## G  (290)
+## G  (289)
 
 - `game-engine`  <sub>github</sub>
 - `game-jam`  <sub>contentful</sub>
@@ -3160,7 +3150,6 @@
 - `gilfoyle`  <sub>axiomhq</sub>
 - `git-commit`  <sub>cloudflare</sub>
 - `git-commit`  <sub>github</sub>
-- `git-commit`  <sub>zapier</sub>
 - `git-commit-format`  <sub>openshift</sub>
 - `git-environment`  <sub>openshift</sub>
 - `git-flow-branch-creator`  <sub>github</sub>
@@ -3381,7 +3370,7 @@
 - `gws-workflow-standup-report`  <sub>googleworkspace</sub>
 - `gws-workflow-weekly-digest`  <sub>googleworkspace</sub>
 
-## H  (134)
+## H  (133)
 
 - `hallmark`  <sub>nutlope</sub>
 - `handbook-updates`  <sub>anthropic</sub>
@@ -3466,7 +3455,6 @@
 - `hugging-face-cli`  <sub>huggingface</sub>
 - `hugging-face-dataset-viewer`  <sub>huggingface</sub>
 - `hugging-face-datasets`  <sub>huggingface</sub>
-- `hugging-face-evaluation`  <sub>huggingface</sub>
 - `hugging-face-jobs`  <sub>huggingface</sub>
 - `hugging-face-model-trainer`  <sub>huggingface</sub>
 - `hugging-face-object-detection-trainer`  <sub>huggingface</sub>
@@ -3518,7 +3506,7 @@
 - `hyperframes-read-first`  <sub>heygen-com</sub>
 - `hyperframes-registry`  <sub>heygen-com</sub>
 
-## I  (285)
+## I  (284)
 
 - `i-have-adhd`  <sub>ayghri</sub>
 - `i18n`  <sub>redis</sub>
@@ -3551,7 +3539,6 @@
 - `idea-refine`  <sub>addyosmani</sub>
 - `ideate`  <sub>openai</sub>
 - `identify-reviewer`  <sub>cloudflare</sub>
-- `image`  <sub>category</sub>
 - `image`  <sub>coreyhaines31</sub>
 - `image`  <sub>vercel</sub>
 - `image-annotations`  <sub>github</sub>
@@ -3938,7 +3925,7 @@
 - `kyc-doc-parse`  <sub>anthropic</sub>
 - `kyc-rules`  <sub>anthropic</sub>
 
-## L  (210)
+## L  (213)
 
 - `lambda-labs-gpu-cloud`  <sub>firecrawl</sub>
 - `land`  <sub>openai</sub>
@@ -3954,11 +3941,13 @@
 - `langchain-dependencies`  <sub>langchain-ai</sub>
 - `langchain-fundamentals`  <sub>langchain-ai</sub>
 - `langchain-middleware`  <sub>langchain-ai</sub>
+- `langchain-middleware-%26-hitl`  <sub>langchain-ai</sub>
 - `langchain-middleware-&amp;-hitl`  <sub>langchain-ai</sub>
 - `langchain-oss-primer`  <sub>langchain-ai</sub>
 - `langchain-python-quickstart`  <sub>langchain-ai</sub>
 - `langchain-rag`  <sub>langchain-ai</sub>
 - `langchain-rag-pipeline`  <sub>langchain-ai</sub>
+- `langchain-structured-output-%26-hitl`  <sub>langchain-ai</sub>
 - `langchain-structured-output-&amp;-hitl`  <sub>langchain-ai</sub>
 - `langchain-typescript-quickstart`  <sub>langchain-ai</sub>
 - `langfuse`  <sub>langfuse</sub>
@@ -3975,6 +3964,7 @@
 - `langgraph-fundamentals`  <sub>langchain-ai</sub>
 - `langgraph-human-in-the-loop`  <sub>langchain-ai</sub>
 - `langgraph-persistence`  <sub>langchain-ai</sub>
+- `langgraph-persistence-%26-memory`  <sub>langchain-ai</sub>
 - `langgraph-persistence-&amp;-memory`  <sub>langchain-ai</sub>
 - `langgraph-python-quickstart`  <sub>langchain-ai</sub>
 - `langgraph-typescript-quickstart`  <sub>langchain-ai</sub>
@@ -4151,7 +4141,7 @@
 - `lp-milp-formulation`  <sub>nvidia</sub>
 - `lsp-setup`  <sub>github</sub>
 
-## M  (300)
+## M  (298)
 
 - `m365-agent-evaluator`  <sub>microsoft</sub>
 - `m365-agents-dotnet`  <sub>microsoft</sub>
@@ -4223,7 +4213,6 @@
 - `markdown-to-epub`  <sub>smerchek</sub>
 - `markdown-to-html`  <sub>github</sub>
 - `market-sizing`  <sub>openai</sub>
-- `marketing`  <sub>category</sub>
 - `marketing-claims-review`  <sub>anthropic</sub>
 - `marketing-council`  <sub>coreyhaines31</sub>
 - `marketing-ideas`  <sub>coreyhaines31</sub>
@@ -4298,7 +4287,6 @@
 - `mcporter`  <sub>deepgram</sub>
 - `mcporter`  <sub>firecrawl</sub>
 - `md-to-docx`  <sub>github</sub>
-- `media`  <sub>category</sub>
 - `media-use`  <sub>heygen-com</sub>
 - `mediabunny`  <sub>remotion-dev</sub>
 - `meeting-briefing`  <sub>anthropic</sub>
@@ -4454,8 +4442,30 @@
 - `my-pull-requests`  <sub>github</sub>
 - `mysql`  <sub>planetscale</sub>
 
-## N  (334)
+## N  (355)
 
+- `n8n%3Acommunity-pr-readiness-check`  <sub>n8n-io</sub>
+- `n8n%3Acontent-design`  <sub>n8n-io</sub>
+- `n8n%3Aconventions`  <sub>n8n-io</sub>
+- `n8n%3Acreate-community-node-lint-rule`  <sub>n8n-io</sub>
+- `n8n%3Acreate-instance-ai-eval`  <sub>n8n-io</sub>
+- `n8n%3Acreate-issue`  <sub>n8n-io</sub>
+- `n8n%3Acreate-pr`  <sub>n8n-io</sub>
+- `n8n%3Acreate-skill`  <sub>n8n-io</sub>
+- `n8n%3Adb-migrations`  <sub>n8n-io</sub>
+- `n8n%3Adesign-system`  <sub>n8n-io</sub>
+- `n8n%3Aexperiments`  <sub>n8n-io</sub>
+- `n8n%3Ahuman-like-code-review`  <sub>n8n-io</sub>
+- `n8n%3Alinear-issue`  <sub>n8n-io</sub>
+- `n8n%3Aloom-transcript`  <sub>n8n-io</sub>
+- `n8n%3Anathan`  <sub>n8n-io</sub>
+- `n8n%3Anode-add-oauth`  <sub>n8n-io</sub>
+- `n8n%3Aprotect-endpoints`  <sub>n8n-io</sub>
+- `n8n%3Apublic-api`  <sub>n8n-io</sub>
+- `n8n%3Areproduce-bug`  <sub>n8n-io</sub>
+- `n8n%3Asetup-mcps`  <sub>n8n-io</sub>
+- `n8n%3Aspec-driven-development`  <sub>n8n-io</sub>
+- `n8n%3Atelemetry`  <sub>n8n-io</sub>
 - `n8n-agents`  <sub>n8n-io</sub>
 - `n8n-agents-official`  <sub>n8n-io</sub>
 - `n8n-binary-and-data`  <sub>n8n-io</sub>
@@ -4726,7 +4736,6 @@
 - `notification-platform`  <sub>sentry</sub>
 - `notify-templates`  <sub>anthropic</sub>
 - `notinvalid`  <sub>flutter</sub>
-- `notion`  <sub>category</sub>
 - `notion`  <sub>deepgram</sub>
 - `notion`  <sub>firecrawl</sub>
 - `notion-api`  <sub>anthropic</sub>
@@ -4966,7 +4975,7 @@
 - `owasp-top-10`  <sub>microsoft</sub>
 - `oxc-walker-skilld`  <sub>nuxt</sub>
 
-## P  (542)
+## P  (549)
 
 - `p-image`  <sub>101-skills</sub>
 - `p-image`  <sub>qu-skills</sub>
@@ -5084,6 +5093,15 @@
 - `pia-generation`  <sub>anthropic</sub>
 - `pick-ui-library`  <sub>emilkowalski</sub>
 - `pinecone`  <sub>firecrawl</sub>
+- `pinecone%3Aassistant`  <sub>pinecone-io</sub>
+- `pinecone%3Acli`  <sub>pinecone-io</sub>
+- `pinecone%3Adocs`  <sub>pinecone-io</sub>
+- `pinecone%3Afull-text-search`  <sub>pinecone-io</sub>
+- `pinecone%3Ahelp`  <sub>pinecone-io</sub>
+- `pinecone%3Amcp`  <sub>pinecone-io</sub>
+- `pinecone%3An8n`  <sub>pinecone-io</sub>
+- `pinecone%3Aquery`  <sub>pinecone-io</sub>
+- `pinecone%3Aquickstart`  <sub>pinecone-io</sub>
 - `pinecone-assistant`  <sub>pinecone-io</sub>
 - `pinecone-cli`  <sub>pinecone-io</sub>
 - `pinecone-docs`  <sub>pinecone-io</sub>
@@ -5402,7 +5420,6 @@
 - `product-photography`  <sub>qu-skills</sub>
 - `product-photography`  <sub>skills-101</sub>
 - `production-incident-responder`  <sub>kotlin</sub>
-- `productivity`  <sub>category</sub>
 - `profile`  <sub>pytorch</sub>
 - `profile-model-performance`  <sub>nvidia</sub>
 - `profiling`  <sub>nvidia</sub>
@@ -5413,7 +5430,6 @@
 - `project-artifact`  <sub>anthropic</sub>
 - `project-context-ingestion`  <sub>kotlin</sub>
 - `project-decomposition`  <sub>microsoft</sub>
-- `project-management`  <sub>category</sub>
 - `project-recon`  <sub>microsoft</sub>
 - `project-setup-info-context7`  <sub>microsoft</sub>
 - `project-setup-info-local`  <sub>microsoft</sub>
@@ -5598,6 +5614,7 @@
 - `rds-oss`  <sub>aws</sub>
 - `rds-sqlserver`  <sub>aws</sub>
 - `react`  <sub>vercel</sub>
+- `react%3Acomponents`  <sub>google-labs-code</sub>
 - `react-and-nextjs-data-visualization`  <sub>openai</sub>
 - `react-audit-grep-patterns`  <sub>github</sub>
 - `react-best-practices`  <sub>mastra-ai</sub>
@@ -5828,7 +5845,6 @@
 - `requesting-code-review`  <sub>openai</sub>
 - `requests`  <sub>microsoft</sub>
 - `requirements-author`  <sub>microsoft</sub>
-- `research`  <sub>category</sub>
 - `research`  <sub>google-gemini</sub>
 - `research`  <sub>mattpocock</sub>
 - `research`  <sub>microsoft</sub>
@@ -6048,7 +6064,7 @@
 - `rwkv-architecture`  <sub>firecrawl</sub>
 - `rxjs-like-a-pro`  <sub>sanity-io</sub>
 
-## S  (661)
+## S  (668)
 
 - `saas-msa-review`  <sub>anthropic</sub>
 - `safe-browser`  <sub>browserbase</sub>
@@ -6136,7 +6152,6 @@
 - `secure-by-design`  <sub>microsoft</sub>
 - `secure-linux-web-hosting`  <sub>xixu-me</sub>
 - `securing-s3-buckets`  <sub>aws</sub>
-- `security`  <sub>category</sub>
 - `security-alert-review`  <sub>microsoft</sub>
 - `security-alerts`  <sub>microsoft</sub>
 - `security-and-hardening`  <sub>addyosmani</sub>
@@ -6604,6 +6619,14 @@
 - `status`  <sub>parallel-web</sub>
 - `status-report`  <sub>anthropic</sub>
 - `steno-mode`  <sub>github</sub>
+- `stitch%3A%3Acode-to-design`  <sub>google-labs-code</sub>
+- `stitch%3A%3Aextract-design-md`  <sub>google-labs-code</sub>
+- `stitch%3A%3Aextract-static-html`  <sub>google-labs-code</sub>
+- `stitch%3A%3Agenerate-design`  <sub>google-labs-code</sub>
+- `stitch%3A%3Amanage-design-system`  <sub>google-labs-code</sub>
+- `stitch%3A%3Areact-components`  <sub>google-labs-code</sub>
+- `stitch%3A%3Areact-native`  <sub>google-labs-code</sub>
+- `stitch%3A%3Aupload-to-stitch`  <sub>google-labs-code</sub>
 - `stitch-design`  <sub>google-labs-code</sub>
 - `stitch-design-taste`  <sub>leonxlnx</sub>
 - `stitch-loop`  <sub>google-labs-code</sub>
@@ -6712,7 +6735,7 @@
 - `systematic-debugging`  <sub>obra</sub>
 - `systematic-debugging`  <sub>openai</sub>
 
-## T  (393)
+## T  (392)
 
 - `tabular-optimization-ingestion`  <sub>nvidia</sub>
 - `tabular-review`  <sub>anthropic</sub>
@@ -6886,7 +6909,6 @@
 - `testdino-runs`  <sub>anthropic</sub>
 - `testdino-sessions`  <sub>anthropic</sub>
 - `tester-breaker`  <sub>microsoft</sub>
-- `testing`  <sub>category</sub>
 - `testing`  <sub>cloudflare</sub>
 - `testing`  <sub>contentstack</sub>
 - `testing`  <sub>microsoft</sub>
@@ -7245,7 +7267,7 @@
 - `ux-theming`  <sub>microsoft</sub>
 - `ux-writing`  <sub>anthropic</sub>
 
-## V  (169)
+## V  (168)
 
 - `v0-dev`  <sub>openai</sub>
 - `v5-breaking-changes`  <sub>remotion-dev</sub>
@@ -7326,7 +7348,6 @@
 - `version-update`  <sub>openshift</sub>
 - `vex`  <sub>microsoft</sub>
 - `vgpu`  <sub>vercel</sub>
-- `video`  <sub>category</sub>
 - `video`  <sub>coreyhaines31</sub>
 - `video-ad-specs`  <sub>101-skills</sub>
 - `video-ad-specs`  <sub>halt-catch-fire</sub>
@@ -7417,7 +7438,7 @@
 - `vulnerability-validation`  <sub>factory-ai</sub>
 - `vulnerability-writeup`  <sub>openai</sub>
 
-## W  (322)
+## W  (348)
 
 - `wacli`  <sub>deepgram</sub>
 - `wacli`  <sub>firecrawl</sub>
@@ -7464,7 +7485,6 @@
 - `web-quality-audit`  <sub>addyosmani</sub>
 - `web-renderer-test`  <sub>remotion-dev</sub>
 - `web-research`  <sub>langchain-ai</sub>
-- `web-scraping`  <sub>category</sub>
 - `web-search`  <sub>101-skills</sub>
 - `web-search`  <sub>brave</sub>
 - `web-search`  <sub>halt-catch-fire</sub>
@@ -7473,11 +7493,23 @@
 - `web-to-native`  <sub>expo</sub>
 - `webapp-testing`  <sub>anthropic</sub>
 - `webapp-testing`  <sub>github</sub>
+- `webflow-cli%3Acloud`  <sub>webflow</sub>
+- `webflow-cli%3Acode-component`  <sub>webflow</sub>
+- `webflow-cli%3Adesigner-extension`  <sub>webflow</sub>
+- `webflow-cli%3Adevlink`  <sub>webflow</sub>
+- `webflow-cli%3Atroubleshooter`  <sub>webflow</sub>
 - `webflow-cli:cloud`  <sub>webflow</sub>
 - `webflow-cli:code-component`  <sub>webflow</sub>
 - `webflow-cli:designer-extension`  <sub>webflow</sub>
 - `webflow-cli:devlink`  <sub>webflow</sub>
 - `webflow-cli:troubleshooter`  <sub>webflow</sub>
+- `webflow-code-component%3Acomponent-audit`  <sub>webflow</sub>
+- `webflow-code-component%3Acomponent-scaffold`  <sub>webflow</sub>
+- `webflow-code-component%3Aconvert-component`  <sub>webflow</sub>
+- `webflow-code-component%3Adeploy-guide`  <sub>webflow</sub>
+- `webflow-code-component%3Alocal-dev-setup`  <sub>webflow</sub>
+- `webflow-code-component%3Apre-deploy-check`  <sub>webflow</sub>
+- `webflow-code-component%3Atroubleshoot-deploy`  <sub>webflow</sub>
 - `webflow-code-component:component-audit`  <sub>webflow</sub>
 - `webflow-code-component:component-scaffold`  <sub>webflow</sub>
 - `webflow-code-component:convert-component`  <sub>webflow</sub>
@@ -7485,6 +7517,21 @@
 - `webflow-code-component:local-dev-setup`  <sub>webflow</sub>
 - `webflow-code-component:pre-deploy-check`  <sub>webflow</sub>
 - `webflow-code-component:troubleshoot-deploy`  <sub>webflow</sub>
+- `webflow-mcp%3Aaccessibility-audit`  <sub>webflow</sub>
+- `webflow-mcp%3Aasset-audit`  <sub>webflow</sub>
+- `webflow-mcp%3Abulk-cms-update`  <sub>webflow</sub>
+- `webflow-mcp%3Acms-best-practices`  <sub>webflow</sub>
+- `webflow-mcp%3Acms-collection-setup`  <sub>webflow</sub>
+- `webflow-mcp%3Acompress-cms-image`  <sub>webflow</sub>
+- `webflow-mcp%3Acustom-code-management`  <sub>webflow</sub>
+- `webflow-mcp%3Adesigner-tools`  <sub>webflow</sub>
+- `webflow-mcp%3Afigma-to-webflow`  <sub>webflow</sub>
+- `webflow-mcp%3Aflowkit-naming`  <sub>webflow</sub>
+- `webflow-mcp%3Alink-checker`  <sub>webflow</sub>
+- `webflow-mcp%3Areview-comments`  <sub>webflow</sub>
+- `webflow-mcp%3Asafe-publish`  <sub>webflow</sub>
+- `webflow-mcp%3Asite-activity`  <sub>webflow</sub>
+- `webflow-mcp%3Asite-audit`  <sub>webflow</sub>
 - `webflow-mcp:accessibility-audit`  <sub>webflow</sub>
 - `webflow-mcp:asset-audit`  <sub>webflow</sub>
 - `webflow-mcp:bulk-cms-update`  <sub>webflow</sub>
@@ -7500,6 +7547,7 @@
 - `webflow-mcp:safe-publish`  <sub>webflow</sub>
 - `webflow-mcp:site-activity`  <sub>webflow</sub>
 - `webflow-mcp:site-audit`  <sub>webflow</sub>
+- `webflow-university%3Amcp-getting-started`  <sub>webflow</sub>
 - `webflow-university:mcp-getting-started`  <sub>webflow</sub>
 - `webhook-setup`  <sub>facebook</sub>
 - `webmcp-gen`  <sub>browserbase</sub>
@@ -7600,7 +7648,6 @@
 - `wordpress-workspace-transcription-smoke-test`  <sub>automattic</sub>
 - `work-iterations`  <sub>microsoft</sub>
 - `work-on-issue`  <sub>huggingface</sub>
-- `work-on-ticket`  <sub>zapier</sub>
 - `workdir-smoke`  <sub>pinecone-io</sub>
 - `worker-classification`  <sub>anthropic</sub>
 - `workerd-api-review`  <sub>cloudflare</sub>
@@ -7770,12 +7817,11 @@
 - `xstate`  <sub>vercel</sub>
 - `xurl`  <sub>firecrawl</sub>
 
-## Y  (9)
+## Y  (8)
 
 - `yaml`  <sub>vercel</sub>
 - `yeet`  <sub>firecrawl</sub>
 - `yeet`  <sub>openai</sub>
-- `youtube`  <sub>category</sub>
 - `youtube-thumbnail-design`  <sub>101-skills</sub>
 - `youtube-thumbnail-design`  <sub>halt-catch-fire</sub>
 - `youtube-thumbnail-design`  <sub>qu-skills</sub>

@@ -74,6 +74,14 @@ if __name__ == '__main__':
             if d:
                 d['updated'] = new[d['key']][:10]; out.append(d)
             if i % 100 == 0: print(f"  {i}/{len(new)} | {(time.time()-t0)/60:.1f}دقیقه", flush=True)
+    import os as _os
+    removed=set()
+    rp=_os.path.join(HERE,'removed.jsonl')
+    if _os.path.exists(rp):
+        for l in open(rp,encoding='utf-8'):
+            try: removed.add(json.loads(l)['key'])
+            except Exception: pass
+    out=[d for d in out if d['key'] not in removed]
     with open(os.path.join(HERE, 'skills-index-flat.jsonl'), 'a', encoding='utf-8') as f:
         for d in out: f.write(json.dumps(d, ensure_ascii=False) + '\n')
     with open(os.path.join(HERE, 'lastmod.tsv'), 'a', encoding='utf-8') as f:

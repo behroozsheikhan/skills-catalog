@@ -1,19 +1,20 @@
 # 👥 فهرست کامل بر اساس منبع
 
-**208 منبع**، از بزرگ‌ترین تا کوچک‌ترین.
+**206 منبع**، از بزرگ‌ترین تا کوچک‌ترین.
 
 منابع رسمی (Anthropic, OpenAI, GitHub, Microsoft, NVIDIA, Vercel, Google, Cloudflare, Figma, Notion, Stripe, Sentry, Hugging Face, Prisma, Firecrawl) معمولاً قابل‌اعتماد‌ترند.
 
 > منبع: <https://mcpservers.org/agent-skills> — استخراج‌شده از `sitemaps/skills.xml`
 > فقط صفحات انگلیسی (بدون ۱۶ نسخهٔ ترجمه‌شده).
 
+
 ## خلاصه
 
 | منبع | اسکیل |
 |---|---:|
-| `microsoft` | 789 |
+| `microsoft` | 786 |
 | `nvidia` | 713 |
-| `anthropic` | 543 |
+| `anthropic` | 544 |
 | `github` | 507 |
 | `openai` | 377 |
 | `posthog` | 342 |
@@ -23,20 +24,21 @@
 | `flutter` | 132 |
 | `aws` | 122 |
 | `deepgram` | 113 |
+| `n8n-io` | 96 |
 | `prisma` | 95 |
 | `googleworkspace` | 92 |
 | `automattic` | 86 |
 | `cloudflare` | 83 |
 | `bitwarden` | 82 |
-| `langchain-ai` | 76 |
-| `huggingface` | 75 |
-| `n8n-io` | 74 |
+| `langchain-ai` | 80 |
+| `huggingface` | 74 |
 | `remotion-dev` | 72 |
+| `webflow` | 68 |
 | `samber` | 65 |
 | `datadog-labs` | 53 |
 | `expo` | 52 |
-| `facebook` | 50 |
 | `astronomer` | 50 |
+| `facebook` | 50 |
 | `coreyhaines31` | 49 |
 | `launchdarkly` | 49 |
 | `auth0` | 48 |
@@ -47,41 +49,39 @@
 | `mattpocock` | 44 |
 | `sanity-io` | 43 |
 | `google-gemini` | 41 |
-| `webflow` | 40 |
 | `wix` | 40 |
+| `google-labs-code` | 39 |
 | `langfuse` | 39 |
 | `streamlit` | 39 |
 | `shopify` | 38 |
 | `apify` | 37 |
-| `rivet-dev` | 36 |
 | `coinbase` | 36 |
 | `get-convex` | 36 |
+| `rivet-dev` | 36 |
+| `pinecone-io` | 35 |
 | `triggerdotdev` | 35 |
 | `pytorch` | 34 |
-| `redis` | 33 |
 | `mastra-ai` | 33 |
+| `redis` | 33 |
 | `agentspace-so` | 32 |
 | `runwayml` | 32 |
-| `kotlin` | 31 |
 | `dagster-io` | 31 |
+| `kotlin` | 31 |
 | `addyosmani` | 30 |
+| `encoredev` | 30 |
+| `heygen-com` | 30 |
 | `prime-skills` | 30 |
 | `runcomfy-com` | 30 |
-| `google-labs-code` | 30 |
-| `heygen-com` | 30 |
-| `encoredev` | 30 |
-| `doany-ai` | 29 |
 | `brave` | 29 |
+| `doany-ai` | 29 |
 | `okx` | 29 |
-| `category` | 28 |
 | `clerk` | 27 |
 | `firebase` | 27 |
 | `larksuite` | 27 |
 | `101-skills` | 26 |
+| `dontbesilent2025` | 26 |
 | `qu-skills` | 26 |
 | `supabase` | 26 |
-| `pinecone-io` | 26 |
-| `dontbesilent2025` | 26 |
 | `warpdotdev` | 25 |
 | `neondatabase` | 24 |
 | `medusajs` | 23 |
@@ -91,141 +91,137 @@
 | `upstash` | 22 |
 | `hashicorp` | 21 |
 | `mapbox` | 21 |
+| `caffeinelabs` | 20 |
 | `convex-dev` | 20 |
 | `halt-catch-fire` | 20 |
-| `skills-101` | 20 |
 | `juliusbrussee` | 20 |
-| `caffeinelabs` | 20 |
-| `wordpress` | 19 |
+| `skills-101` | 20 |
+| `nextlevelbuilder` | 19 |
 | `notion` | 19 |
 | `planetscale` | 19 |
+| `wordpress` | 19 |
 | `tavily-ai` | 18 |
 | `dbt-labs` | 17 |
 | `pulumi` | 16 |
 | `signoz` | 16 |
 | `apollographql` | 15 |
-| `mongodb` | 15 |
 | `browser-use` | 15 |
-| `resend` | 14 |
-| `obra` | 14 |
+| `mongodb` | 15 |
 | `denoland` | 14 |
-| `elevenlabs` | 13 |
+| `elevenlabs` | 14 |
+| `obra` | 14 |
+| `resend` | 14 |
 | `axiomhq` | 13 |
-| `nextlevelbuilder` | 13 |
-| `leonxlnx` | 13 |
+| `better-auth` | 13 |
 | `figma` | 13 |
-| `better-auth` | 12 |
+| `leonxlnx` | 13 |
 | `contentful` | 12 |
-| `xixu-me` | 12 |
 | `parallel-web` | 12 |
+| `xixu-me` | 12 |
+| `exploreomni` | 11 |
 | `lllllllama` | 11 |
 | `stripe` | 11 |
-| `exploreomni` | 11 |
 | `emilkowalski` | 9 |
 | `greensock` | 8 |
 | `higgsfield-ai` | 8 |
 | `google` | 7 |
 | `limrun-inc` | 7 |
 | `vyralcontent` | 7 |
-| `nuxt` | 6 |
+| `autonnel` | 6 |
 | `dash0hq` | 6 |
 | `getpaperclipai` | 6 |
-| `autonnel` | 6 |
+| `nuxt` | 6 |
 | `price-win` | 6 |
+| `atlassian` | 5 |
+| `box` | 5 |
+| `dietrichgebert` | 5 |
 | `genmedia-labs` | 5 |
+| `kepano` | 5 |
 | `livekit` | 5 |
 | `modelstudioai` | 5 |
-| `box` | 5 |
-| `atlassian` | 5 |
-| `phuryn` | 5 |
-| `kepano` | 5 |
 | `momentic-ai` | 5 |
+| `phuryn` | 5 |
 | `sveltejs` | 5 |
-| `dietrichgebert` | 5 |
-| `liarjsdev` | 4 |
-| `mcp-use` | 4 |
-| `tw93` | 4 |
-| `semgrep` | 4 |
 | `composiohq` | 4 |
 | `insforge` | 4 |
+| `liarjsdev` | 4 |
+| `mcp-use` | 4 |
+| `semgrep` | 4 |
 | `temporalio` | 4 |
 | `tinybirdco` | 4 |
+| `tw93` | 4 |
 | `antibrow` | 3 |
-| `coderabbitai` | 3 |
-| `wshobson` | 3 |
 | `canva` | 3 |
-| `zapier` | 3 |
-| `stablyai` | 3 |
-| `shadcn` | 3 |
+| `coderabbitai` | 3 |
 | `fetcher-sh` | 3 |
-| `nexscope-ai` | 2 |
-| `michalparkola` | 2 |
+| `shadcn` | 3 |
+| `stablyai` | 3 |
+| `wshobson` | 3 |
+| `base` | 2 |
 | `browser-act` | 2 |
 | `google-chrome` | 2 |
+| `michalparkola` | 2 |
+| `nexscope-ai` | 2 |
 | `op7418` | 2 |
-| `base` | 2 |
 | `wind-information-co-ltd` | 2 |
-| `jane-o-o-o-o` | 1 |
+| `2dmurali` | 1 |
 | `agentix-cloud` | 1 |
+| `alchaincyf` | 1 |
 | `angular` | 1 |
-| `tt-a1i` | 1 |
+| `antfu` | 1 |
 | `ast-grep` | 1 |
-| `squirrelscan` | 1 |
-| `zxkane` | 1 |
+| `ayghri` | 1 |
+| `bradautomates` | 1 |
 | `coffeefuelbump` | 1 |
-| `softaworks` | 1 |
-| `spillwavesolutions` | 1 |
-| `genkit-ai` | 1 |
-| `mcollina` | 1 |
+| `conorluddy` | 1 |
+| `currents-dev` | 1 |
+| `degausai` | 1 |
+| `diffusionstudio` | 1 |
 | `feature-sliced` | 1 |
+| `flowkit-labs` | 1 |
+| `genkit-ai` | 1 |
+| `humanlayer` | 1 |
+| `intellectronica` | 1 |
+| `jakubkrehel` | 1 |
+| `jane-o-o-o-o` | 1 |
 | `jthack` | 1 |
-| `withgraphite` | 1 |
+| `klingai-tech` | 1 |
+| `kunchenguid` | 1 |
+| `lackeyjb` | 1 |
+| `linear` | 1 |
+| `mcollina` | 1 |
+| `msmps` | 1 |
+| `mvanhorn` | 1 |
+| `nozomio-labs` | 1 |
+| `nrwl` | 1 |
 | `nutlope` | 1 |
 | `ogulcancelik` | 1 |
-| `alchaincyf` | 1 |
-| `ayghri` | 1 |
-| `pbakaus` | 1 |
-| `conorluddy` | 1 |
-| `scrapegraphai` | 1 |
-| `klingai-tech` | 1 |
-| `mvanhorn` | 1 |
-| `kunchenguid` | 1 |
-| `linear` | 1 |
-| `jakubkrehel` | 1 |
-| `smerchek` | 1 |
-| `nozomio-labs` | 1 |
-| `petergyang` | 1 |
-| `pleaseprompto` | 1 |
-| `intellectronica` | 1 |
-| `nrwl` | 1 |
-| `projectopensea` | 1 |
-| `msmps` | 1 |
-| `pexoai` | 1 |
 | `othmanadi` | 1 |
-| `currents-dev` | 1 |
-| `lackeyjb` | 1 |
-| `flowkit-labs` | 1 |
-| `2dmurali` | 1 |
-| `resciencelab` | 1 |
-| `shadcn-ui` | 1 |
-| `humanlayer` | 1 |
-| `roin-orca` | 1 |
-| `sleekdotdesign` | 1 |
-| `solana-foundation` | 1 |
-| `diffusionstudio` | 1 |
+| `pbakaus` | 1 |
+| `petergyang` | 1 |
+| `pexoai` | 1 |
+| `pleaseprompto` | 1 |
+| `projectopensea` | 1 |
 | `ramp` | 1 |
-| `antfu` | 1 |
-| `bradautomates` | 1 |
+| `resciencelab` | 1 |
+| `roin-orca` | 1 |
+| `scrapegraphai` | 1 |
+| `shadcn-ui` | 1 |
+| `sleekdotdesign` | 1 |
+| `smerchek` | 1 |
+| `softaworks` | 1 |
+| `solana-foundation` | 1 |
+| `spillwavesolutions` | 1 |
+| `squirrelscan` | 1 |
 | `tencent` | 1 |
+| `tt-a1i` | 1 |
 | `whopio` | 1 |
-| `degausai` | 1 |
-| **مجموع** | **7,718** |
-
----
+| `withgraphite` | 1 |
+| `zxkane` | 1 |
 
 ## microsoft
 
-**789 اسکیل**
+**786 اسکیل**
 
 - `a365-code-validator`
 - `a365-setup`
@@ -372,7 +368,6 @@
 - `azure-eventhub-py`
 - `azure-eventhub-rust`
 - `azure-eventhub-ts`
-- `azure-hosted-copilot-sdk`
 - `azure-identity-dotnet`
 - `azure-identity-java`
 - `azure-identity-py`
@@ -415,13 +410,11 @@
 - `azure-monitor-opentelemetry-ts`
 - `azure-monitor-query-java`
 - `azure-monitor-query-py`
-- `azure-observability`
 - `azure-openai-to-responses`
 - `azure-pipelines`
 - `azure-postgres-ts`
 - `azure-prepare`
 - `azure-quotas`
-- `azure-rbac`
 - `azure-reliability`
 - `azure-resource-lookup`
 - `azure-resource-manager-cosmosdb-dotnet`
@@ -1737,7 +1730,7 @@
 
 ## anthropic
 
-**543 اسکیل**
+**544 اسکیل**
 
 - `3-statement-model`
 - `access`
@@ -1827,6 +1820,7 @@
 - `close-management`
 - `close-month`
 - `closing-checklist`
+- `cocounsel-legal%3Adeep-research`
 - `cocounsel-legal:deep-research`
 - `code-migration`
 - `code-review`
@@ -4518,6 +4512,107 @@
 - `wacli`
 - `weather`
 
+## n8n-io
+
+**96 اسکیل**
+
+- `agent-builder`
+- `content-design`
+- `create-issue`
+- `create-pr`
+- `create-skill`
+- `credential-setup-with-computer-use`
+- `data-table-manager`
+- `debugging-executions`
+- `experiments`
+- `intent-recognition`
+- `linear-issue`
+- `loom-transcript`
+- `n8n%3Acommunity-pr-readiness-check`
+- `n8n%3Acontent-design`
+- `n8n%3Aconventions`
+- `n8n%3Acreate-community-node-lint-rule`
+- `n8n%3Acreate-instance-ai-eval`
+- `n8n%3Acreate-issue`
+- `n8n%3Acreate-pr`
+- `n8n%3Acreate-skill`
+- `n8n%3Adb-migrations`
+- `n8n%3Adesign-system`
+- `n8n%3Aexperiments`
+- `n8n%3Ahuman-like-code-review`
+- `n8n%3Alinear-issue`
+- `n8n%3Aloom-transcript`
+- `n8n%3Anathan`
+- `n8n%3Anode-add-oauth`
+- `n8n%3Aprotect-endpoints`
+- `n8n%3Apublic-api`
+- `n8n%3Areproduce-bug`
+- `n8n%3Asetup-mcps`
+- `n8n%3Aspec-driven-development`
+- `n8n%3Atelemetry`
+- `n8n-agents`
+- `n8n-agents-official`
+- `n8n-binary-and-data`
+- `n8n-binary-and-data-official`
+- `n8n-cli`
+- `n8n-code-nodes`
+- `n8n-code-nodes-official`
+- `n8n-connections`
+- `n8n-conventions`
+- `n8n-credentials-and-security`
+- `n8n-credentials-and-security-official`
+- `n8n-data-tables`
+- `n8n-data-tables-official`
+- `n8n-debugging`
+- `n8n-debugging-official`
+- `n8n-docs-assistant`
+- `n8n-error-handling`
+- `n8n-error-handling-official`
+- `n8n-expressions`
+- `n8n-expressions-official`
+- `n8n-extending-mcp`
+- `n8n-extending-mcp-official`
+- `n8n-loops`
+- `n8n-loops-official`
+- `n8n-node-configuration`
+- `n8n-node-configuration-official`
+- `n8n-subworkflows`
+- `n8n-subworkflows-official`
+- `n8n-workflow-lifecycle`
+- `n8n-workflow-lifecycle-official`
+- `n8n:community-pr-readiness-check`
+- `n8n:content-design`
+- `n8n:conventions`
+- `n8n:create-community-node-lint-rule`
+- `n8n:create-instance-ai-eval`
+- `n8n:create-issue`
+- `n8n:create-pr`
+- `n8n:create-skill`
+- `n8n:db-migrations`
+- `n8n:design-system`
+- `n8n:experiments`
+- `n8n:human-like-code-review`
+- `n8n:linear-issue`
+- `n8n:loom-transcript`
+- `n8n:nathan`
+- `n8n:node-add-oauth`
+- `n8n:protect-endpoints`
+- `n8n:public-api`
+- `n8n:reproduce-bug`
+- `n8n:setup-mcps`
+- `n8n:spec-driven-development`
+- `n8n:telemetry`
+- `node-add-oauth`
+- `planned-task-runtime`
+- `planning`
+- `post-build-flow`
+- `reproduce-bug`
+- `setup-experiment`
+- `spec-driven-development`
+- `using-n8n-skills`
+- `using-n8n-skills-official`
+- `workflow-builder`
+
 ## prisma
 
 **95 اسکیل**
@@ -4983,7 +5078,7 @@
 
 ## langchain-ai
 
-**76 اسکیل**
+**80 اسکیل**
 
 - `api-docs`
 - `arxiv-search`
@@ -4998,6 +5093,7 @@
 - `deep-agents`
 - `deep-agents-core`
 - `deep-agents-memory`
+- `deep-agents-memory-%26-filesystem`
 - `deep-agents-memory-&amp;-filesystem`
 - `deep-agents-orchestration`
 - `deepagents-python-quickstart`
@@ -5017,11 +5113,13 @@
 - `langchain-dependencies`
 - `langchain-fundamentals`
 - `langchain-middleware`
+- `langchain-middleware-%26-hitl`
 - `langchain-middleware-&amp;-hitl`
 - `langchain-oss-primer`
 - `langchain-python-quickstart`
 - `langchain-rag`
 - `langchain-rag-pipeline`
+- `langchain-structured-output-%26-hitl`
 - `langchain-structured-output-&amp;-hitl`
 - `langchain-typescript-quickstart`
 - `langgraph`
@@ -5031,6 +5129,7 @@
 - `langgraph-fundamentals`
 - `langgraph-human-in-the-loop`
 - `langgraph-persistence`
+- `langgraph-persistence-%26-memory`
 - `langgraph-persistence-&amp;-memory`
 - `langgraph-python-quickstart`
 - `langgraph-typescript-quickstart`
@@ -5064,7 +5163,7 @@
 
 ## huggingface
 
-**75 اسکیل**
+**74 اسکیل**
 
 - `add-model-descriptions`
 - `add-or-fix-type-checking`
@@ -5091,7 +5190,6 @@
 - `hugging-face-cli`
 - `hugging-face-dataset-viewer`
 - `hugging-face-datasets`
-- `hugging-face-evaluation`
 - `hugging-face-jobs`
 - `hugging-face-model-trainer`
 - `hugging-face-object-detection-trainer`
@@ -5141,85 +5239,6 @@
 - `work-on-issue`
 - `write-tests`
 - `xpu-kernels`
-
-## n8n-io
-
-**74 اسکیل**
-
-- `agent-builder`
-- `content-design`
-- `create-issue`
-- `create-pr`
-- `create-skill`
-- `credential-setup-with-computer-use`
-- `data-table-manager`
-- `debugging-executions`
-- `experiments`
-- `intent-recognition`
-- `linear-issue`
-- `loom-transcript`
-- `n8n-agents`
-- `n8n-agents-official`
-- `n8n-binary-and-data`
-- `n8n-binary-and-data-official`
-- `n8n-cli`
-- `n8n-code-nodes`
-- `n8n-code-nodes-official`
-- `n8n-connections`
-- `n8n-conventions`
-- `n8n-credentials-and-security`
-- `n8n-credentials-and-security-official`
-- `n8n-data-tables`
-- `n8n-data-tables-official`
-- `n8n-debugging`
-- `n8n-debugging-official`
-- `n8n-docs-assistant`
-- `n8n-error-handling`
-- `n8n-error-handling-official`
-- `n8n-expressions`
-- `n8n-expressions-official`
-- `n8n-extending-mcp`
-- `n8n-extending-mcp-official`
-- `n8n-loops`
-- `n8n-loops-official`
-- `n8n-node-configuration`
-- `n8n-node-configuration-official`
-- `n8n-subworkflows`
-- `n8n-subworkflows-official`
-- `n8n-workflow-lifecycle`
-- `n8n-workflow-lifecycle-official`
-- `n8n:community-pr-readiness-check`
-- `n8n:content-design`
-- `n8n:conventions`
-- `n8n:create-community-node-lint-rule`
-- `n8n:create-instance-ai-eval`
-- `n8n:create-issue`
-- `n8n:create-pr`
-- `n8n:create-skill`
-- `n8n:db-migrations`
-- `n8n:design-system`
-- `n8n:experiments`
-- `n8n:human-like-code-review`
-- `n8n:linear-issue`
-- `n8n:loom-transcript`
-- `n8n:nathan`
-- `n8n:node-add-oauth`
-- `n8n:protect-endpoints`
-- `n8n:public-api`
-- `n8n:reproduce-bug`
-- `n8n:setup-mcps`
-- `n8n:spec-driven-development`
-- `n8n:telemetry`
-- `node-add-oauth`
-- `planned-task-runtime`
-- `planning`
-- `post-build-flow`
-- `reproduce-bug`
-- `setup-experiment`
-- `spec-driven-development`
-- `using-n8n-skills`
-- `using-n8n-skills-official`
-- `workflow-builder`
 
 ## remotion-dev
 
@@ -5297,6 +5316,79 @@
 - `web-renderer-test`
 - `writing-docs`
 - `writing-tests`
+
+## webflow
+
+**68 اسکیل**
+
+- `accessibility-audit`
+- `asset-audit`
+- `bulk-cms-update`
+- `cms-best-practices`
+- `cms-collection-setup`
+- `custom-code-management`
+- `designer-tools`
+- `flowkit-naming`
+- `link-checker`
+- `safe-publish`
+- `site-activity`
+- `site-audit`
+- `webflow-cli%3Acloud`
+- `webflow-cli%3Acode-component`
+- `webflow-cli%3Adesigner-extension`
+- `webflow-cli%3Adevlink`
+- `webflow-cli%3Atroubleshooter`
+- `webflow-cli:cloud`
+- `webflow-cli:code-component`
+- `webflow-cli:designer-extension`
+- `webflow-cli:devlink`
+- `webflow-cli:troubleshooter`
+- `webflow-code-component%3Acomponent-audit`
+- `webflow-code-component%3Acomponent-scaffold`
+- `webflow-code-component%3Aconvert-component`
+- `webflow-code-component%3Adeploy-guide`
+- `webflow-code-component%3Alocal-dev-setup`
+- `webflow-code-component%3Apre-deploy-check`
+- `webflow-code-component%3Atroubleshoot-deploy`
+- `webflow-code-component:component-audit`
+- `webflow-code-component:component-scaffold`
+- `webflow-code-component:convert-component`
+- `webflow-code-component:deploy-guide`
+- `webflow-code-component:local-dev-setup`
+- `webflow-code-component:pre-deploy-check`
+- `webflow-code-component:troubleshoot-deploy`
+- `webflow-mcp%3Aaccessibility-audit`
+- `webflow-mcp%3Aasset-audit`
+- `webflow-mcp%3Abulk-cms-update`
+- `webflow-mcp%3Acms-best-practices`
+- `webflow-mcp%3Acms-collection-setup`
+- `webflow-mcp%3Acompress-cms-image`
+- `webflow-mcp%3Acustom-code-management`
+- `webflow-mcp%3Adesigner-tools`
+- `webflow-mcp%3Afigma-to-webflow`
+- `webflow-mcp%3Aflowkit-naming`
+- `webflow-mcp%3Alink-checker`
+- `webflow-mcp%3Areview-comments`
+- `webflow-mcp%3Asafe-publish`
+- `webflow-mcp%3Asite-activity`
+- `webflow-mcp%3Asite-audit`
+- `webflow-mcp:accessibility-audit`
+- `webflow-mcp:asset-audit`
+- `webflow-mcp:bulk-cms-update`
+- `webflow-mcp:cms-best-practices`
+- `webflow-mcp:cms-collection-setup`
+- `webflow-mcp:compress-cms-image`
+- `webflow-mcp:custom-code-management`
+- `webflow-mcp:designer-tools`
+- `webflow-mcp:figma-to-webflow`
+- `webflow-mcp:flowkit-naming`
+- `webflow-mcp:link-checker`
+- `webflow-mcp:review-comments`
+- `webflow-mcp:safe-publish`
+- `webflow-mcp:site-activity`
+- `webflow-mcp:site-audit`
+- `webflow-university%3Amcp-getting-started`
+- `webflow-university:mcp-getting-started`
 
 ## samber
 
@@ -5483,61 +5575,6 @@
 - `use-dom`
 - `web-to-native`
 
-## facebook
-
-**50 اسکیل**
-
-- `add-ir-instruction`
-- `add-shape-types-to-torch-model`
-- `add-torch-shapes-example`
-- `api-health`
-- `api-integration`
-- `app-health-check`
-- `app-review-prep`
-- `binary-size-analysis`
-- `buck2-rule-basics`
-- `camera-streaming`
-- `click-target`
-- `compliance-check`
-- `dat-conventions`
-- `debug-webhooks`
-- `debugging`
-- `display-access`
-- `extract-errors`
-- `feature-flags`
-- `fix`
-- `flags`
-- `flow`
-- `gc-safe-coding`
-- `getting-started`
-- `iwsdk-planner`
-- `iwsdk-ui-panel`
-- `mockdevice-testing`
-- `modify-jsi-features`
-- `modify-shaped-array-dsl`
-- `non-interactive-git-rebase`
-- `permissions-registration`
-- `relay-best-practices`
-- `relay-e2e-test`
-- `relay-performance`
-- `sample-app-guide`
-- `search-docs`
-- `session-lifecycle`
-- `test`
-- `test-all`
-- `test-audio`
-- `test-ecs-core`
-- `test-environment`
-- `test-grab`
-- `test-interactions`
-- `test-level`
-- `test-locomotion`
-- `test-physics`
-- `test-ui`
-- `verify`
-- `webhook-setup`
-- `xr-mode-test`
-
 ## astronomer
 
 **50 اسکیل**
@@ -5592,6 +5629,61 @@
 - `troubleshooting-astro-deployments`
 - `upgrade-fab-provider`
 - `warehouse-init`
+
+## facebook
+
+**50 اسکیل**
+
+- `add-ir-instruction`
+- `add-shape-types-to-torch-model`
+- `add-torch-shapes-example`
+- `api-health`
+- `api-integration`
+- `app-health-check`
+- `app-review-prep`
+- `binary-size-analysis`
+- `buck2-rule-basics`
+- `camera-streaming`
+- `click-target`
+- `compliance-check`
+- `dat-conventions`
+- `debug-webhooks`
+- `debugging`
+- `display-access`
+- `extract-errors`
+- `feature-flags`
+- `fix`
+- `flags`
+- `flow`
+- `gc-safe-coding`
+- `getting-started`
+- `iwsdk-planner`
+- `iwsdk-ui-panel`
+- `mockdevice-testing`
+- `modify-jsi-features`
+- `modify-shaped-array-dsl`
+- `non-interactive-git-rebase`
+- `permissions-registration`
+- `relay-best-practices`
+- `relay-e2e-test`
+- `relay-performance`
+- `sample-app-guide`
+- `search-docs`
+- `session-lifecycle`
+- `test`
+- `test-all`
+- `test-audio`
+- `test-ecs-core`
+- `test-environment`
+- `test-grab`
+- `test-interactions`
+- `test-level`
+- `test-locomotion`
+- `test-physics`
+- `test-ui`
+- `verify`
+- `webhook-setup`
+- `xr-mode-test`
 
 ## coreyhaines31
 
@@ -6103,51 +6195,6 @@
 - `tui-tester`
 - `vendor-verification`
 
-## webflow
-
-**40 اسکیل**
-
-- `accessibility-audit`
-- `asset-audit`
-- `bulk-cms-update`
-- `cms-best-practices`
-- `cms-collection-setup`
-- `custom-code-management`
-- `designer-tools`
-- `flowkit-naming`
-- `link-checker`
-- `safe-publish`
-- `site-activity`
-- `site-audit`
-- `webflow-cli:cloud`
-- `webflow-cli:code-component`
-- `webflow-cli:designer-extension`
-- `webflow-cli:devlink`
-- `webflow-cli:troubleshooter`
-- `webflow-code-component:component-audit`
-- `webflow-code-component:component-scaffold`
-- `webflow-code-component:convert-component`
-- `webflow-code-component:deploy-guide`
-- `webflow-code-component:local-dev-setup`
-- `webflow-code-component:pre-deploy-check`
-- `webflow-code-component:troubleshoot-deploy`
-- `webflow-mcp:accessibility-audit`
-- `webflow-mcp:asset-audit`
-- `webflow-mcp:bulk-cms-update`
-- `webflow-mcp:cms-best-practices`
-- `webflow-mcp:cms-collection-setup`
-- `webflow-mcp:compress-cms-image`
-- `webflow-mcp:custom-code-management`
-- `webflow-mcp:designer-tools`
-- `webflow-mcp:figma-to-webflow`
-- `webflow-mcp:flowkit-naming`
-- `webflow-mcp:link-checker`
-- `webflow-mcp:review-comments`
-- `webflow-mcp:safe-publish`
-- `webflow-mcp:site-activity`
-- `webflow-mcp:site-audit`
-- `webflow-university:mcp-getting-started`
-
 ## wix
 
 **40 اسکیل**
@@ -6192,6 +6239,50 @@
 - `wix-stores-versioning`
 - `wix-vibe-headless`
 - `writing-great-skills`
+
+## google-labs-code
+
+**39 اسکیل**
+
+- `agent-dx-cli-scale`
+- `automate-github-issues`
+- `design-md`
+- `enhance-prompt`
+- `github-codebase-briefing`
+- `ink`
+- `local-action-verification`
+- `react%3Acomponents`
+- `react-vite-dashboard`
+- `react:components`
+- `remotion`
+- `shadcn-ui`
+- `stitch%3A%3Acode-to-design`
+- `stitch%3A%3Aextract-design-md`
+- `stitch%3A%3Aextract-static-html`
+- `stitch%3A%3Agenerate-design`
+- `stitch%3A%3Amanage-design-system`
+- `stitch%3A%3Areact-components`
+- `stitch%3A%3Areact-native`
+- `stitch%3A%3Aupload-to-stitch`
+- `stitch-design`
+- `stitch-loop`
+- `stitch-sdk-bug-bash`
+- `stitch-sdk-development`
+- `stitch-sdk-domain-design`
+- `stitch-sdk-pipeline`
+- `stitch-sdk-readme`
+- `stitch-sdk-usage`
+- `stitch::code-to-design`
+- `stitch::extract-design-md`
+- `stitch::extract-static-html`
+- `stitch::generate-design`
+- `stitch::manage-design-system`
+- `stitch::react-components`
+- `stitch::react-native`
+- `stitch::upload-to-stitch`
+- `taste-design`
+- `tdd-red-green-refactor`
+- `typed-service-contracts`
 
 ## langfuse
 
@@ -6366,47 +6457,6 @@
 - `review-docs`
 - `tutorial`
 
-## rivet-dev
-
-**36 اسکیل**
-
-- `agent-browser`
-- `ai-agent`
-- `ai-agent-workspace`
-- `chat-room`
-- `collaborative-text-editor`
-- `cron-jobs`
-- `driver-test-runner`
-- `live-cursors`
-- `multiplayer-game`
-- `openspec-apply-change`
-- `openspec-archive-change`
-- `openspec-bulk-archive-change`
-- `openspec-continue-change`
-- `openspec-explore`
-- `openspec-ff-change`
-- `openspec-new-change`
-- `openspec-onboard`
-- `openspec-sync-specs`
-- `openspec-verify-change`
-- `per-tenant-database`
-- `rivet-actors`
-- `rivet-agentos`
-- `rivet-dynamic-apps`
-- `rivet-workflows`
-- `rivetkit`
-- `rivetkit-actors`
-- `rivetkit-client-javascript`
-- `rivetkit-client-react`
-- `rivetkit-client-rust`
-- `rivetkit-client-swift`
-- `rivetkit-client-swiftui`
-- `rivetkit-typescript`
-- `sandbox-agent`
-- `sanity-check`
-- `stack-merge`
-- `vpc-air-gapped`
-
 ## coinbase
 
 **36 اسکیل**
@@ -6489,6 +6539,87 @@
 - `convex-test`
 - `convex-verify`
 
+## rivet-dev
+
+**36 اسکیل**
+
+- `agent-browser`
+- `ai-agent`
+- `ai-agent-workspace`
+- `chat-room`
+- `collaborative-text-editor`
+- `cron-jobs`
+- `driver-test-runner`
+- `live-cursors`
+- `multiplayer-game`
+- `openspec-apply-change`
+- `openspec-archive-change`
+- `openspec-bulk-archive-change`
+- `openspec-continue-change`
+- `openspec-explore`
+- `openspec-ff-change`
+- `openspec-new-change`
+- `openspec-onboard`
+- `openspec-sync-specs`
+- `openspec-verify-change`
+- `per-tenant-database`
+- `rivet-actors`
+- `rivet-agentos`
+- `rivet-dynamic-apps`
+- `rivet-workflows`
+- `rivetkit`
+- `rivetkit-actors`
+- `rivetkit-client-javascript`
+- `rivetkit-client-react`
+- `rivetkit-client-rust`
+- `rivetkit-client-swift`
+- `rivetkit-client-swiftui`
+- `rivetkit-typescript`
+- `sandbox-agent`
+- `sanity-check`
+- `stack-merge`
+- `vpc-air-gapped`
+
+## pinecone-io
+
+**35 اسکیل**
+
+- `assistant`
+- `cli`
+- `cultivar`
+- `help`
+- `mcp`
+- `pinecone%3Aassistant`
+- `pinecone%3Acli`
+- `pinecone%3Adocs`
+- `pinecone%3Afull-text-search`
+- `pinecone%3Ahelp`
+- `pinecone%3Amcp`
+- `pinecone%3An8n`
+- `pinecone%3Aquery`
+- `pinecone%3Aquickstart`
+- `pinecone-assistant`
+- `pinecone-cli`
+- `pinecone-docs`
+- `pinecone-full-text-search`
+- `pinecone-help`
+- `pinecone-mcp`
+- `pinecone-n8n`
+- `pinecone-query`
+- `pinecone-quickstart`
+- `pinecone:assistant`
+- `pinecone:cli`
+- `pinecone:docs`
+- `pinecone:full-text-search`
+- `pinecone:help`
+- `pinecone:mcp`
+- `pinecone:n8n`
+- `pinecone:query`
+- `pinecone:quickstart`
+- `query`
+- `quickstart`
+- `workdir-smoke`
+
 ## triggerdotdev
 
 **35 اسکیل**
@@ -6568,44 +6699,6 @@
 - `wheel-size-analyzer`
 - `zephyr`
 
-## redis
-
-**33 اسکیل**
-
-- `backend`
-- `branches`
-- `bump-test-image`
-- `code-quality`
-- `commits`
-- `dead-dependencies`
-- `docs-sync`
-- `e2e-testing`
-- `feature-flags`
-- `frontend`
-- `git-safety`
-- `i18n`
-- `implement-command`
-- `iris-development`
-- `maintainer-review`
-- `pr-draft-summary`
-- `pull-requests`
-- `redis-best-practices`
-- `redis-clustering`
-- `redis-connections`
-- `redis-core`
-- `redis-development`
-- `redis-insight-plugin`
-- `redis-observability`
-- `redis-query-engine`
-- `redis-search`
-- `redis-security`
-- `redis-semantic-cache`
-- `redis-vector-search`
-- `runtime-behavior-probe`
-- `testing`
-- `tsconfigs`
-- `type-check-baselines`
-
 ## mastra-ai
 
 **33 اسکیل**
@@ -6643,6 +6736,44 @@
 - `testing-mastracode-tui`
 - `understand-issue`
 - `understand-pr`
+
+## redis
+
+**33 اسکیل**
+
+- `backend`
+- `branches`
+- `bump-test-image`
+- `code-quality`
+- `commits`
+- `dead-dependencies`
+- `docs-sync`
+- `e2e-testing`
+- `feature-flags`
+- `frontend`
+- `git-safety`
+- `i18n`
+- `implement-command`
+- `iris-development`
+- `maintainer-review`
+- `pr-draft-summary`
+- `pull-requests`
+- `redis-best-practices`
+- `redis-clustering`
+- `redis-connections`
+- `redis-core`
+- `redis-development`
+- `redis-insight-plugin`
+- `redis-observability`
+- `redis-query-engine`
+- `redis-search`
+- `redis-security`
+- `redis-semantic-cache`
+- `redis-vector-search`
+- `runtime-behavior-probe`
+- `testing`
+- `tsconfigs`
+- `type-check-baselines`
 
 ## agentspace-so
 
@@ -6718,42 +6849,6 @@
 - `setup-api-key`
 - `use-runway-api`
 
-## kotlin
-
-**31 اسکیل**
-
-- `ci-cd-containerization-advisor`
-- `configuration-properties-profiles-kotlin-safe`
-- `dependency-conflict-resolver`
-- `domain-decomposition-api-design-advisor`
-- `error-model-validation-architect`
-- `gradle-kotlin-dsl-doctor`
-- `integration-resilience-engineer`
-- `jackson-kotlin-serialization-specialist`
-- `java-kotlin-migration-assistant`
-- `jpa-spring-data-kotlin-mapper`
-- `kotlin-backend-jpa-entity-mapping`
-- `kotlin-idiomatic-refactorer-spring-aware`
-- `kotlin-spring-proxy-compatibility`
-- `kotlin-tooling-agp9-migration`
-- `kotlin-tooling-cocoapods-spm-migration`
-- `kotlin-tooling-immutable-collections-0-5-x-migration`
-- `kotlin-tooling-java-to-kotlin`
-- `kotlin-tooling-native-build-performance`
-- `observability-integrator`
-- `performance-concurrency-advisor`
-- `production-incident-responder`
-- `project-context-ingestion`
-- `schema-migration-planner`
-- `spring-context-di-reasoning`
-- `spring-kotlin-code-review`
-- `spring-mvc-webflux-api-builder`
-- `spring-security-configurator-auditor`
-- `stacktrace-log-triage`
-- `test-suite-builder`
-- `transaction-consistency-designer`
-- `upgrade-breaking-change-navigator`
-
 ## dagster-io
 
 **31 اسکیل**
@@ -6790,6 +6885,42 @@
 - `session-inspector`
 - `skill-creator`
 
+## kotlin
+
+**31 اسکیل**
+
+- `ci-cd-containerization-advisor`
+- `configuration-properties-profiles-kotlin-safe`
+- `dependency-conflict-resolver`
+- `domain-decomposition-api-design-advisor`
+- `error-model-validation-architect`
+- `gradle-kotlin-dsl-doctor`
+- `integration-resilience-engineer`
+- `jackson-kotlin-serialization-specialist`
+- `java-kotlin-migration-assistant`
+- `jpa-spring-data-kotlin-mapper`
+- `kotlin-backend-jpa-entity-mapping`
+- `kotlin-idiomatic-refactorer-spring-aware`
+- `kotlin-spring-proxy-compatibility`
+- `kotlin-tooling-agp9-migration`
+- `kotlin-tooling-cocoapods-spm-migration`
+- `kotlin-tooling-immutable-collections-0-5-x-migration`
+- `kotlin-tooling-java-to-kotlin`
+- `kotlin-tooling-native-build-performance`
+- `observability-integrator`
+- `performance-concurrency-advisor`
+- `production-incident-responder`
+- `project-context-ingestion`
+- `schema-migration-planner`
+- `spring-context-di-reasoning`
+- `spring-kotlin-code-review`
+- `spring-mvc-webflux-api-builder`
+- `spring-security-configurator-auditor`
+- `stacktrace-log-triage`
+- `test-suite-builder`
+- `transaction-consistency-designer`
+- `upgrade-breaking-change-navigator`
+
 ## addyosmani
 
 **30 اسکیل**
@@ -6824,6 +6955,76 @@
 - `test-driven-development`
 - `using-agent-skills`
 - `web-quality-audit`
+
+## encoredev
+
+**30 اسکیل**
+
+- `encore-api`
+- `encore-auth`
+- `encore-bucket`
+- `encore-cache`
+- `encore-code-review`
+- `encore-cron`
+- `encore-database`
+- `encore-frontend`
+- `encore-getting-started`
+- `encore-go-api`
+- `encore-go-auth`
+- `encore-go-bucket`
+- `encore-go-cache`
+- `encore-go-code-review`
+- `encore-go-cron`
+- `encore-go-database`
+- `encore-go-getting-started`
+- `encore-go-infrastructure`
+- `encore-go-pubsub`
+- `encore-go-secret`
+- `encore-go-service`
+- `encore-go-testing`
+- `encore-go-webhook`
+- `encore-infrastructure`
+- `encore-migrate`
+- `encore-pubsub`
+- `encore-secret`
+- `encore-service`
+- `encore-testing`
+- `encore-webhook`
+
+## heygen-com
+
+**30 اسکیل**
+
+- `captions-overlay`
+- `changelog-video`
+- `cut-the-curve`
+- `embedded-captions`
+- `faceless-explainer`
+- `figma`
+- `general-video`
+- `graphic-overlays`
+- `hyperframes`
+- `hyperframes-animation`
+- `hyperframes-audio`
+- `hyperframes-cli`
+- `hyperframes-core`
+- `hyperframes-creative`
+- `hyperframes-keyframes`
+- `hyperframes-media`
+- `hyperframes-read-first`
+- `hyperframes-registry`
+- `media-use`
+- `motion-doctrine`
+- `motion-graphics`
+- `music-to-video`
+- `oversized-cursor`
+- `pr-to-video`
+- `product-launch-video`
+- `remotion-to-hyperframes`
+- `seam-craft`
+- `slideshow`
+- `talking-head-recut`
+- `website-to-video`
 
 ## prime-skills
 
@@ -6895,110 +7096,39 @@
 - `video-outpainting`
 - `wan-2-7`
 
-## google-labs-code
+## brave
 
-**30 اسکیل**
+**29 اسکیل**
 
-- `agent-dx-cli-scale`
-- `automate-github-issues`
-- `design-md`
-- `enhance-prompt`
-- `github-codebase-briefing`
-- `ink`
-- `local-action-verification`
-- `react-vite-dashboard`
-- `react:components`
-- `remotion`
-- `shadcn-ui`
-- `stitch-design`
-- `stitch-loop`
-- `stitch-sdk-bug-bash`
-- `stitch-sdk-development`
-- `stitch-sdk-domain-design`
-- `stitch-sdk-pipeline`
-- `stitch-sdk-readme`
-- `stitch-sdk-usage`
-- `stitch::code-to-design`
-- `stitch::extract-design-md`
-- `stitch::extract-static-html`
-- `stitch::generate-design`
-- `stitch::manage-design-system`
-- `stitch::react-components`
-- `stitch::react-native`
-- `stitch::upload-to-stitch`
-- `taste-design`
-- `tdd-red-green-refactor`
-- `typed-service-contracts`
-
-## heygen-com
-
-**30 اسکیل**
-
-- `captions-overlay`
-- `changelog-video`
-- `cut-the-curve`
-- `embedded-captions`
-- `faceless-explainer`
-- `figma`
-- `general-video`
-- `graphic-overlays`
-- `hyperframes`
-- `hyperframes-animation`
-- `hyperframes-audio`
-- `hyperframes-cli`
-- `hyperframes-core`
-- `hyperframes-creative`
-- `hyperframes-keyframes`
-- `hyperframes-media`
-- `hyperframes-read-first`
-- `hyperframes-registry`
-- `media-use`
-- `motion-doctrine`
-- `motion-graphics`
-- `music-to-video`
-- `oversized-cursor`
-- `pr-to-video`
-- `product-launch-video`
-- `remotion-to-hyperframes`
-- `seam-craft`
-- `slideshow`
-- `talking-head-recut`
-- `website-to-video`
-
-## encoredev
-
-**30 اسکیل**
-
-- `encore-api`
-- `encore-auth`
-- `encore-bucket`
-- `encore-cache`
-- `encore-code-review`
-- `encore-cron`
-- `encore-database`
-- `encore-frontend`
-- `encore-getting-started`
-- `encore-go-api`
-- `encore-go-auth`
-- `encore-go-bucket`
-- `encore-go-cache`
-- `encore-go-code-review`
-- `encore-go-cron`
-- `encore-go-database`
-- `encore-go-getting-started`
-- `encore-go-infrastructure`
-- `encore-go-pubsub`
-- `encore-go-secret`
-- `encore-go-service`
-- `encore-go-testing`
-- `encore-go-webhook`
-- `encore-infrastructure`
-- `encore-migrate`
-- `encore-pubsub`
-- `encore-secret`
-- `encore-service`
-- `encore-testing`
-- `encore-webhook`
+- `add-best-practice`
+- `answers`
+- `bx`
+- `bx-search`
+- `check-upstream-flake`
+- `clean-branches`
+- `create-contributor-prs`
+- `fix-bp-docs`
+- `force-push-downstream`
+- `images-search`
+- `impl-review`
+- `llm-context`
+- `local-descriptions`
+- `local-place-search`
+- `local-pois`
+- `make-ci-green`
+- `news-search`
+- `plaster-from-patch`
+- `pr`
+- `preflight`
+- `prs-reviewed`
+- `rebase-downstream`
+- `review`
+- `review-prs`
+- `spellcheck`
+- `suggest`
+- `top-crashers`
+- `videos-search`
+- `web-search`
 
 ## doany-ai
 
@@ -7034,40 +7164,6 @@
 - `video-outpainting`
 - `wan-2-7`
 
-## brave
-
-**29 اسکیل**
-
-- `add-best-practice`
-- `answers`
-- `bx`
-- `bx-search`
-- `check-upstream-flake`
-- `clean-branches`
-- `create-contributor-prs`
-- `fix-bp-docs`
-- `force-push-downstream`
-- `images-search`
-- `impl-review`
-- `llm-context`
-- `local-descriptions`
-- `local-place-search`
-- `local-pois`
-- `make-ci-green`
-- `news-search`
-- `plaster-from-patch`
-- `pr`
-- `preflight`
-- `prs-reviewed`
-- `rebase-downstream`
-- `review`
-- `review-prs`
-- `spellcheck`
-- `suggest`
-- `top-crashers`
-- `videos-search`
-- `web-search`
-
 ## okx
 
 **29 اسکیل**
@@ -7101,39 +7197,6 @@
 - `okx-security`
 - `okx-task-watch`
 - `okx-wallet-portfolio`
-
-## category
-
-**28 اسکیل**
-
-- `api`
-- `audio`
-- `aws`
-- `browser-automation`
-- `code-review`
-- `communication`
-- `creative`
-- `csv`
-- `data-analysis`
-- `database`
-- `design`
-- `development`
-- `devops`
-- `document`
-- `ecommerce`
-- `featured`
-- `image`
-- `marketing`
-- `media`
-- `notion`
-- `productivity`
-- `project-management`
-- `research`
-- `security`
-- `testing`
-- `video`
-- `web-scraping`
-- `youtube`
 
 ## clerk
 
@@ -7262,6 +7325,37 @@
 - `web-search`
 - `youtube-thumbnail-design`
 
+## dontbesilent2025
+
+**26 اسکیل**
+
+- `dbs`
+- `dbs-action`
+- `dbs-agent-migration`
+- `dbs-ai-check`
+- `dbs-benchmark`
+- `dbs-bridge`
+- `dbs-chatroom`
+- `dbs-chatroom-austrian`
+- `dbs-content`
+- `dbs-content-system`
+- `dbs-decision`
+- `dbs-deconstruct`
+- `dbs-diagnosis`
+- `dbs-goal`
+- `dbs-good-question`
+- `dbs-hook`
+- `dbs-learning`
+- `dbs-report`
+- `dbs-resonate`
+- `dbs-restore`
+- `dbs-save`
+- `dbs-script-flow`
+- `dbs-slowisfast`
+- `dbs-spread`
+- `dbs-wechat-html`
+- `dbs-xhs-title`
+
 ## qu-skills
 
 **26 اسکیل**
@@ -7323,68 +7417,6 @@
 - `vercel-composition-patterns`
 - `vitest`
 - `write-the-docs`
-
-## pinecone-io
-
-**26 اسکیل**
-
-- `assistant`
-- `cli`
-- `cultivar`
-- `help`
-- `mcp`
-- `pinecone-assistant`
-- `pinecone-cli`
-- `pinecone-docs`
-- `pinecone-full-text-search`
-- `pinecone-help`
-- `pinecone-mcp`
-- `pinecone-n8n`
-- `pinecone-query`
-- `pinecone-quickstart`
-- `pinecone:assistant`
-- `pinecone:cli`
-- `pinecone:docs`
-- `pinecone:full-text-search`
-- `pinecone:help`
-- `pinecone:mcp`
-- `pinecone:n8n`
-- `pinecone:query`
-- `pinecone:quickstart`
-- `query`
-- `quickstart`
-- `workdir-smoke`
-
-## dontbesilent2025
-
-**26 اسکیل**
-
-- `dbs`
-- `dbs-action`
-- `dbs-agent-migration`
-- `dbs-ai-check`
-- `dbs-benchmark`
-- `dbs-bridge`
-- `dbs-chatroom`
-- `dbs-chatroom-austrian`
-- `dbs-content`
-- `dbs-content-system`
-- `dbs-decision`
-- `dbs-deconstruct`
-- `dbs-diagnosis`
-- `dbs-goal`
-- `dbs-good-question`
-- `dbs-hook`
-- `dbs-learning`
-- `dbs-report`
-- `dbs-resonate`
-- `dbs-restore`
-- `dbs-save`
-- `dbs-script-flow`
-- `dbs-slowisfast`
-- `dbs-spread`
-- `dbs-wechat-html`
-- `dbs-xhs-title`
 
 ## warpdotdev
 
@@ -7634,6 +7666,31 @@
 - `mapbox-web-performance-patterns`
 - `repro-issue`
 
+## caffeinelabs
+
+**20 اسکیل**
+
+- `connector-googlemail`
+- `extension-authorization`
+- `extension-camera`
+- `extension-core-infrastructure`
+- `extension-data-viewer`
+- `extension-email`
+- `extension-email-calendar-events`
+- `extension-email-marketing`
+- `extension-email-raw`
+- `extension-email-verification`
+- `extension-http-outcalls`
+- `extension-invite-links`
+- `extension-object-storage`
+- `extension-openai`
+- `extension-oql`
+- `extension-posting-to-x`
+- `extension-qr-code`
+- `extension-querying-oql`
+- `extension-stripe`
+- `extension-user-approval`
+
 ## convex-dev
 
 **20 اسکیل**
@@ -7684,31 +7741,6 @@
 - `web-search`
 - `youtube-thumbnail-design`
 
-## skills-101
-
-**20 اسکیل**
-
-- `agent-browser`
-- `agent-tools`
-- `ai-avatar-video`
-- `ai-image-generation`
-- `ai-video-generation`
-- `app-store-screenshots`
-- `character-design-sheet`
-- `competitor-teardown`
-- `image-to-video`
-- `infsh-cli`
-- `landing-page-design`
-- `product-hunt-launch`
-- `product-photography`
-- `python-executor`
-- `remotion-render`
-- `storyboard-creation`
-- `twitter-automation`
-- `video-ad-specs`
-- `web-search`
-- `youtube-thumbnail-design`
-
 ## juliusbrussee
 
 **20 اسکیل**
@@ -7734,54 +7766,54 @@
 - `surgical-patch`
 - `verify-and-stop`
 
-## caffeinelabs
+## skills-101
 
 **20 اسکیل**
 
-- `connector-googlemail`
-- `extension-authorization`
-- `extension-camera`
-- `extension-core-infrastructure`
-- `extension-data-viewer`
-- `extension-email`
-- `extension-email-calendar-events`
-- `extension-email-marketing`
-- `extension-email-raw`
-- `extension-email-verification`
-- `extension-http-outcalls`
-- `extension-invite-links`
-- `extension-object-storage`
-- `extension-openai`
-- `extension-oql`
-- `extension-posting-to-x`
-- `extension-qr-code`
-- `extension-querying-oql`
-- `extension-stripe`
-- `extension-user-approval`
+- `agent-browser`
+- `agent-tools`
+- `ai-avatar-video`
+- `ai-image-generation`
+- `ai-video-generation`
+- `app-store-screenshots`
+- `character-design-sheet`
+- `competitor-teardown`
+- `image-to-video`
+- `infsh-cli`
+- `landing-page-design`
+- `product-hunt-launch`
+- `product-photography`
+- `python-executor`
+- `remotion-render`
+- `storyboard-creation`
+- `twitter-automation`
+- `video-ad-specs`
+- `web-search`
+- `youtube-thumbnail-design`
 
-## wordpress
+## nextlevelbuilder
 
 **19 اسکیل**
 
-- `blueprint`
-- `mcp-php-schema`
-- `wordpress-router`
-- `wp-abilities-api`
-- `wp-abilities-audit`
-- `wp-abilities-verify`
-- `wp-block-development`
-- `wp-block-themes`
-- `wp-interactivity-api`
-- `wp-patterns`
-- `wp-performance`
-- `wp-phpstan`
-- `wp-playground`
-- `wp-plugin-development`
-- `wp-plugin-directory-guidelines`
-- `wp-project-triage`
-- `wp-rest-api`
-- `wp-wpcli-and-ops`
-- `wpds`
+- `banner-design`
+- `brand`
+- `ckm%3Abanner-design`
+- `ckm%3Abrand`
+- `ckm%3Adesign`
+- `ckm%3Adesign-system`
+- `ckm%3Aslides`
+- `ckm%3Aui-styling`
+- `ckm:banner-design`
+- `ckm:brand`
+- `ckm:design`
+- `ckm:design-system`
+- `ckm:slides`
+- `ckm:ui-styling`
+- `design`
+- `design-system`
+- `slides`
+- `ui-styling`
+- `ui-ux-pro-max`
 
 ## notion
 
@@ -7830,6 +7862,30 @@
 - `planetscale-webhook-automation-recommendations`
 - `postgres`
 - `vitess`
+
+## wordpress
+
+**19 اسکیل**
+
+- `blueprint`
+- `mcp-php-schema`
+- `wordpress-router`
+- `wp-abilities-api`
+- `wp-abilities-audit`
+- `wp-abilities-verify`
+- `wp-block-development`
+- `wp-block-themes`
+- `wp-interactivity-api`
+- `wp-patterns`
+- `wp-performance`
+- `wp-phpstan`
+- `wp-playground`
+- `wp-plugin-development`
+- `wp-plugin-directory-guidelines`
+- `wp-project-triage`
+- `wp-rest-api`
+- `wp-wpcli-and-ops`
+- `wpds`
 
 ## tavily-ai
 
@@ -7938,26 +7994,6 @@
 - `rust-code-review`
 - `skill-creator`
 
-## mongodb
-
-**15 اسکیل**
-
-- `atlas-stream-processing`
-- `laravel-mongodb`
-- `leafygreen-authoring`
-- `local-build-check`
-- `mongo-tools-js-to-go`
-- `mongodb-atlas-stream-processing`
-- `mongodb-connection`
-- `mongodb-mcp-setup`
-- `mongodb-natural-language-querying`
-- `mongodb-query-optimizer`
-- `mongodb-schema-design`
-- `mongodb-search-and-ai`
-- `mongosh-release-notes`
-- `review-skill`
-- `setup-leafygreen`
-
 ## browser-use
 
 **15 اسکیل**
@@ -7978,43 +8014,25 @@
 - `video-use`
 - `x402`
 
-## resend
+## mongodb
 
-**14 اسکیل**
+**15 اسکیل**
 
-- `agent-email-inbox`
-- `design-audit`
-- `email-best-practices`
-- `marketing-pages`
-- `react-email`
-- `resend`
-- `resend-brand`
-- `resend-cli`
-- `resend-design-skills`
-- `resend-design-system`
-- `resend-inbound`
-- `resend-migrate`
-- `send-email`
-- `templates`
-
-## obra
-
-**14 اسکیل**
-
-- `brainstorming`
-- `dispatching-parallel-agents`
-- `executing-plans`
-- `finishing-a-development-branch`
-- `receiving-code-review`
-- `requesting-code-review`
-- `subagent-driven-development`
-- `systematic-debugging`
-- `test-driven-development`
-- `using-git-worktrees`
-- `using-superpowers`
-- `verification-before-completion`
-- `writing-plans`
-- `writing-skills`
+- `atlas-stream-processing`
+- `laravel-mongodb`
+- `leafygreen-authoring`
+- `local-build-check`
+- `mongo-tools-js-to-go`
+- `mongodb-atlas-stream-processing`
+- `mongodb-connection`
+- `mongodb-mcp-setup`
+- `mongodb-natural-language-querying`
+- `mongodb-query-optimizer`
+- `mongodb-schema-design`
+- `mongodb-search-and-ai`
+- `mongosh-release-notes`
+- `review-skill`
+- `setup-leafygreen`
 
 ## denoland
 
@@ -8037,10 +8055,11 @@
 
 ## elevenlabs
 
-**13 اسکیل**
+**14 اسکیل**
 
 - `agents`
 - `dubbing`
+- `elevenlabs%3Asdk-migration`
 - `elevenlabs-transcribe`
 - `elevenlabs:sdk-migration`
 - `music`
@@ -8052,6 +8071,44 @@
 - `update-skills-from-changelog`
 - `voice-changer`
 - `voice-isolator`
+
+## obra
+
+**14 اسکیل**
+
+- `brainstorming`
+- `dispatching-parallel-agents`
+- `executing-plans`
+- `finishing-a-development-branch`
+- `receiving-code-review`
+- `requesting-code-review`
+- `subagent-driven-development`
+- `systematic-debugging`
+- `test-driven-development`
+- `using-git-worktrees`
+- `using-superpowers`
+- `verification-before-completion`
+- `writing-plans`
+- `writing-skills`
+
+## resend
+
+**14 اسکیل**
+
+- `agent-email-inbox`
+- `design-audit`
+- `email-best-practices`
+- `marketing-pages`
+- `react-email`
+- `resend`
+- `resend-brand`
+- `resend-cli`
+- `resend-design-skills`
+- `resend-design-system`
+- `resend-inbound`
+- `resend-migrate`
+- `send-email`
+- `templates`
 
 ## axiomhq
 
@@ -8071,41 +8128,23 @@
 - `spl-to-apl`
 - `writing-evals`
 
-## nextlevelbuilder
+## better-auth
 
 **13 اسکیل**
 
-- `banner-design`
-- `brand`
-- `ckm:banner-design`
-- `ckm:brand`
-- `ckm:design`
-- `ckm:design-system`
-- `ckm:slides`
-- `ckm:ui-styling`
-- `design`
-- `design-system`
-- `slides`
-- `ui-styling`
-- `ui-ux-pro-max`
-
-## leonxlnx
-
-**13 اسکیل**
-
-- `brandkit`
-- `design-taste-frontend`
-- `design-taste-frontend-v1`
-- `full-output-enforcement`
-- `gpt-taste`
-- `high-end-visual-design`
-- `image-to-code`
-- `imagegen-frontend-mobile`
-- `imagegen-frontend-web`
-- `industrial-brutalist-ui`
-- `minimalist-ui`
-- `redesign-existing-projects`
-- `stitch-design-taste`
+- `agent-auth-cli`
+- `agent-auth-connectors`
+- `agent-auth-mcp`
+- `better-auth-best-practices`
+- `better-auth-security-best-practices`
+- `better-icons`
+- `create-auth`
+- `create-auth-skill`
+- `email-%26-password-best-practices`
+- `email-&amp;-password-best-practices`
+- `email-and-password-best-practices`
+- `organization-best-practices`
+- `two-factor-authentication-best-practices`
 
 ## figma
 
@@ -8125,22 +8164,23 @@
 - `implement-design`
 - `video-interaction-mapper`
 
-## better-auth
+## leonxlnx
 
-**12 اسکیل**
+**13 اسکیل**
 
-- `agent-auth-cli`
-- `agent-auth-connectors`
-- `agent-auth-mcp`
-- `better-auth-best-practices`
-- `better-auth-security-best-practices`
-- `better-icons`
-- `create-auth`
-- `create-auth-skill`
-- `email-&amp;-password-best-practices`
-- `email-and-password-best-practices`
-- `organization-best-practices`
-- `two-factor-authentication-best-practices`
+- `brandkit`
+- `design-taste-frontend`
+- `design-taste-frontend-v1`
+- `full-output-enforcement`
+- `gpt-taste`
+- `high-end-visual-design`
+- `image-to-code`
+- `imagegen-frontend-mobile`
+- `imagegen-frontend-web`
+- `industrial-brutalist-ui`
+- `minimalist-ui`
+- `redesign-existing-projects`
+- `stitch-design-taste`
 
 ## contentful
 
@@ -8159,6 +8199,23 @@
 - `primitives-showcase`
 - `ts-patterns`
 
+## parallel-web
+
+**12 اسکیل**
+
+- `migrate-to-parallel`
+- `parallel-cli-setup`
+- `parallel-data-enrichment`
+- `parallel-deep-research`
+- `parallel-findall`
+- `parallel-memory`
+- `parallel-monitor`
+- `parallel-web-extract`
+- `parallel-web-search`
+- `result`
+- `setup`
+- `status`
+
 ## xixu-me
 
 **12 اسکیل**
@@ -8176,22 +8233,21 @@
 - `xdrop`
 - `xget`
 
-## parallel-web
+## exploreomni
 
-**12 اسکیل**
+**11 اسکیل**
 
-- `migrate-to-parallel`
-- `parallel-cli-setup`
-- `parallel-data-enrichment`
-- `parallel-deep-research`
-- `parallel-findall`
-- `parallel-memory`
-- `parallel-monitor`
-- `parallel-web-extract`
-- `parallel-web-search`
-- `result`
-- `setup`
-- `status`
+- `omni-admin`
+- `omni-ai-eval`
+- `omni-ai-optimizer`
+- `omni-content-builder`
+- `omni-content-explorer`
+- `omni-embed`
+- `omni-model-builder`
+- `omni-model-explorer`
+- `omni-query`
+- `omni-to-databricks-metric-view`
+- `omni-to-snowflake-semantic-view`
 
 ## lllllllama
 
@@ -8224,22 +8280,6 @@
 - `stripe-docs`
 - `stripe-projects`
 - `upgrade-stripe`
-
-## exploreomni
-
-**11 اسکیل**
-
-- `omni-admin`
-- `omni-ai-eval`
-- `omni-ai-optimizer`
-- `omni-content-builder`
-- `omni-content-explorer`
-- `omni-embed`
-- `omni-model-builder`
-- `omni-model-explorer`
-- `omni-query`
-- `omni-to-databricks-metric-view`
-- `omni-to-snowflake-semantic-view`
 
 ## emilkowalski
 
@@ -8317,16 +8357,16 @@
 - `viral-tiktok-content`
 - `viral-youtube-shorts`
 
-## nuxt
+## autonnel
 
 **6 اسکیل**
 
-- `contributing`
-- `nuxt-test-utils-skilld`
-- `nuxt-ui`
-- `oxc-walker-skilld`
-- `ui`
-- `unplugin-skilld`
+- `funnel-platform-picker`
+- `landing-page-conversion-audit`
+- `post-purchase-upsell-flow`
+- `sales-funnel-blueprint`
+- `self-hosted-funnel-launch`
+- `server-side-conversion-tracking`
 
 ## dash0hq
 
@@ -8350,16 +8390,16 @@
 - `paperclip-create-agent`
 - `para-memory-files`
 
-## autonnel
+## nuxt
 
 **6 اسکیل**
 
-- `funnel-platform-picker`
-- `landing-page-conversion-audit`
-- `post-purchase-upsell-flow`
-- `sales-funnel-blueprint`
-- `self-hosted-funnel-launch`
-- `server-side-conversion-tracking`
+- `contributing`
+- `nuxt-test-utils-skilld`
+- `nuxt-ui`
+- `oxc-walker-skilld`
+- `ui`
+- `unplugin-skilld`
 
 ## price-win
 
@@ -8372,6 +8412,36 @@
 - `pricewin-hotel-search`
 - `pricewin-price-comparison`
 
+## atlassian
+
+**5 اسکیل**
+
+- `capture-tasks-from-meeting-notes`
+- `generate-status-report`
+- `search-company-knowledge`
+- `spec-to-backlog`
+- `triage-issue`
+
+## box
+
+**5 اسکیل**
+
+- `box`
+- `box-legal-workflows`
+- `box-legal-workflows-contract`
+- `box-legal-workflows-intake`
+- `box-legal-workflows-ma`
+
+## dietrichgebert
+
+**5 اسکیل**
+
+- `ponytail`
+- `ponytail-audit`
+- `ponytail-debt`
+- `ponytail-help`
+- `ponytail-review`
+
 ## genmedia-labs
 
 **5 اسکیل**
@@ -8381,6 +8451,16 @@
 - `ai-video-generation`
 - `image-to-video`
 - `video-edit`
+
+## kepano
+
+**5 اسکیل**
+
+- `defuddle`
+- `json-canvas`
+- `obsidian-bases`
+- `obsidian-cli`
+- `obsidian-markdown`
 
 ## livekit
 
@@ -8402,25 +8482,15 @@
 - `bailian-managed-agent`
 - `bailian-protocol`
 
-## box
+## momentic-ai
 
 **5 اسکیل**
 
-- `box`
-- `box-legal-workflows`
-- `box-legal-workflows-contract`
-- `box-legal-workflows-intake`
-- `box-legal-workflows-ma`
-
-## atlassian
-
-**5 اسکیل**
-
-- `capture-tasks-from-meeting-notes`
-- `generate-status-report`
-- `search-company-knowledge`
-- `spec-to-backlog`
-- `triage-issue`
+- `momentic-explore-prompt`
+- `momentic-mobile-test`
+- `momentic-result-classification`
+- `momentic-spec`
+- `momentic-test`
 
 ## phuryn
 
@@ -8432,26 +8502,6 @@
 - `prioritization-frameworks`
 - `strategy-red-team`
 
-## kepano
-
-**5 اسکیل**
-
-- `defuddle`
-- `json-canvas`
-- `obsidian-bases`
-- `obsidian-cli`
-- `obsidian-markdown`
-
-## momentic-ai
-
-**5 اسکیل**
-
-- `momentic-explore-prompt`
-- `momentic-mobile-test`
-- `momentic-result-classification`
-- `momentic-spec`
-- `momentic-test`
-
 ## sveltejs
 
 **5 اسکیل**
@@ -8461,52 +8511,6 @@
 - `svelte-code-writer`
 - `svelte-core-bestpractices`
 - `writing-opencode-plugins`
-
-## dietrichgebert
-
-**5 اسکیل**
-
-- `ponytail`
-- `ponytail-audit`
-- `ponytail-debt`
-- `ponytail-help`
-- `ponytail-review`
-
-## liarjsdev
-
-**4 اسکیل**
-
-- `browser-fingerprint-audit`
-- `fingerprint-ci-gate`
-- `fingerprint-failure-triage`
-- `playwright-stealth-verify`
-
-## mcp-use
-
-**4 اسکیل**
-
-- `chatgpt-app-builder`
-- `mcp-apps-builder`
-- `mcp-builder`
-- `openapi-to-mcp`
-
-## tw93
-
-**4 اسکیل**
-
-- `check`
-- `health`
-- `hunt`
-- `think`
-
-## semgrep
-
-**4 اسکیل**
-
-- `code-security`
-- `llm-security`
-- `semgrep`
-- `setup-semgrep-plugin`
 
 ## composiohq
 
@@ -8526,6 +8530,33 @@
 - `insforge-debug`
 - `insforge-integrations`
 
+## liarjsdev
+
+**4 اسکیل**
+
+- `browser-fingerprint-audit`
+- `fingerprint-ci-gate`
+- `fingerprint-failure-triage`
+- `playwright-stealth-verify`
+
+## mcp-use
+
+**4 اسکیل**
+
+- `chatgpt-app-builder`
+- `mcp-apps-builder`
+- `mcp-builder`
+- `openapi-to-mcp`
+
+## semgrep
+
+**4 اسکیل**
+
+- `code-security`
+- `llm-security`
+- `semgrep`
+- `setup-semgrep-plugin`
+
 ## temporalio
 
 **4 اسکیل**
@@ -8544,6 +8575,15 @@
 - `tinybird-python-sdk-guidelines`
 - `tinybird-typescript-sdk-guidelines`
 
+## tw93
+
+**4 اسکیل**
+
+- `check`
+- `health`
+- `hunt`
+- `think`
+
 ## antibrow
 
 **3 اسکیل**
@@ -8551,22 +8591,6 @@
 - `anti-detect-browser`
 - `browser-mcp-agent`
 - `multi-account-isolation`
-
-## coderabbitai
-
-**3 اسکیل**
-
-- `autofix`
-- `code-review`
-- `plugin-creator`
-
-## wshobson
-
-**3 اسکیل**
-
-- `brand-landingpage`
-- `tailwind-design-system`
-- `typescript-advanced-types`
 
 ## canva
 
@@ -8576,29 +8600,13 @@
 - `design-translation`
 - `social-media-resize`
 
-## zapier
+## coderabbitai
 
 **3 اسکیل**
 
+- `autofix`
 - `code-review`
-- `git-commit`
-- `work-on-ticket`
-
-## stablyai
-
-**3 اسکیل**
-
-- `computer-use`
-- `orca-cli`
-- `orchestration`
-
-## shadcn
-
-**3 اسکیل**
-
-- `improve`
-- `migrate-radix-to-base`
-- `shadcn`
+- `plugin-creator`
 
 ## fetcher-sh
 
@@ -8608,19 +8616,36 @@
 - `tiktok-api`
 - `twitter-api`
 
-## nexscope-ai
+## shadcn
+
+**3 اسکیل**
+
+- `improve`
+- `migrate-radix-to-base`
+- `shadcn`
+
+## stablyai
+
+**3 اسکیل**
+
+- `computer-use`
+- `orca-cli`
+- `orchestration`
+
+## wshobson
+
+**3 اسکیل**
+
+- `brand-landingpage`
+- `tailwind-design-system`
+- `typescript-advanced-types`
+
+## base
 
 **2 اسکیل**
 
-- `amazon-product-research`
-- `cross-border-ecommerce`
-
-## michalparkola
-
-**2 اسکیل**
-
-- `article-extractor`
-- `youtube-transcript`
+- `plugin-review`
+- `skill-creator`
 
 ## browser-act
 
@@ -8636,19 +8661,26 @@
 - `chrome-extensions`
 - `modern-web-guidance`
 
+## michalparkola
+
+**2 اسکیل**
+
+- `article-extractor`
+- `youtube-transcript`
+
+## nexscope-ai
+
+**2 اسکیل**
+
+- `amazon-product-research`
+- `cross-border-ecommerce`
+
 ## op7418
 
 **2 اسکیل**
 
 - `guizang-ppt-skill`
 - `humanizer-zh`
-
-## base
-
-**2 اسکیل**
-
-- `plugin-review`
-- `skill-creator`
 
 ## wind-information-co-ltd
 
@@ -8657,11 +8689,11 @@
 - `wind-find-finance-skill`
 - `wind-mcp-skill`
 
-## jane-o-o-o-o
+## 2dmurali
 
 **1 اسکیل**
 
-- `agent-pulse`
+- `review-loop`
 
 ## agentix-cloud
 
@@ -8669,17 +8701,23 @@
 
 - `agentix-ceo`
 
+## alchaincyf
+
+**1 اسکیل**
+
+- `huashu-design`
+
 ## angular
 
 **1 اسکیل**
 
 - `angular-developer`
 
-## tt-a1i
+## antfu
 
 **1 اسکیل**
 
-- `archify`
+- `vitest`
 
 ## ast-grep
 
@@ -8687,17 +8725,17 @@
 
 - `ast-grep`
 
-## squirrelscan
+## ayghri
 
 **1 اسکیل**
 
-- `audit-website`
+- `i-have-adhd`
 
-## zxkane
+## bradautomates
 
 **1 اسکیل**
 
-- `aws-cost-operations`
+- `watch`
 
 ## coffeefuelbump
 
@@ -8705,29 +8743,29 @@
 
 - `csv-data-summarizer-claude-skill`
 
-## softaworks
+## conorluddy
 
 **1 اسکیل**
 
-- `database-schema-designer`
+- `ios-simulator-skill`
 
-## spillwavesolutions
-
-**1 اسکیل**
-
-- `design-doc-mermaid`
-
-## genkit-ai
+## currents-dev
 
 **1 اسکیل**
 
-- `developing-genkit-js`
+- `playwright-best-practices`
 
-## mcollina
+## degausai
 
 **1 اسکیل**
 
-- `fastify-best-practices`
+- `wonda-cli`
+
+## diffusionstudio
+
+**1 اسکیل**
+
+- `text-to-lottie`
 
 ## feature-sliced
 
@@ -8735,17 +8773,101 @@
 
 - `feature-sliced-design`
 
+## flowkit-labs
+
+**1 اسکیل**
+
+- `reddit-automation`
+
+## genkit-ai
+
+**1 اسکیل**
+
+- `developing-genkit-js`
+
+## humanlayer
+
+**1 اسکیل**
+
+- `show-me`
+
+## intellectronica
+
+**1 اسکیل**
+
+- `notion-api`
+
+## jakubkrehel
+
+**1 اسکیل**
+
+- `make-interfaces-feel-better`
+
+## jane-o-o-o-o
+
+**1 اسکیل**
+
+- `agent-pulse`
+
 ## jthack
 
 **1 اسکیل**
 
 - `ffuf_claude_skill`
 
-## withgraphite
+## klingai-tech
 
 **1 اسکیل**
 
-- `graphite`
+- `kling-cli`
+
+## kunchenguid
+
+**1 اسکیل**
+
+- `lavish`
+
+## lackeyjb
+
+**1 اسکیل**
+
+- `playwright-skill`
+
+## linear
+
+**1 اسکیل**
+
+- `linear-release-setup`
+
+## mcollina
+
+**1 اسکیل**
+
+- `fastify-best-practices`
+
+## msmps
+
+**1 اسکیل**
+
+- `opentui`
+
+## mvanhorn
+
+**1 اسکیل**
+
+- `last30days`
+
+## nozomio-labs
+
+**1 اسکیل**
+
+- `nia`
+
+## nrwl
+
+**1 اسکیل**
+
+- `nx-workspace`
 
 ## nutlope
 
@@ -8759,17 +8881,11 @@
 
 - `herdr`
 
-## alchaincyf
+## othmanadi
 
 **1 اسکیل**
 
-- `huashu-design`
-
-## ayghri
-
-**1 اسکیل**
-
-- `i-have-adhd`
+- `planning-with-files`
 
 ## pbakaus
 
@@ -8777,95 +8893,11 @@
 
 - `impeccable`
 
-## conorluddy
-
-**1 اسکیل**
-
-- `ios-simulator-skill`
-
-## scrapegraphai
-
-**1 اسکیل**
-
-- `just-scrape`
-
-## klingai-tech
-
-**1 اسکیل**
-
-- `kling-cli`
-
-## mvanhorn
-
-**1 اسکیل**
-
-- `last30days`
-
-## kunchenguid
-
-**1 اسکیل**
-
-- `lavish`
-
-## linear
-
-**1 اسکیل**
-
-- `linear-release-setup`
-
-## jakubkrehel
-
-**1 اسکیل**
-
-- `make-interfaces-feel-better`
-
-## smerchek
-
-**1 اسکیل**
-
-- `markdown-to-epub`
-
-## nozomio-labs
-
-**1 اسکیل**
-
-- `nia`
-
 ## petergyang
 
 **1 اسکیل**
 
 - `no-ai-slop`
-
-## pleaseprompto
-
-**1 اسکیل**
-
-- `notebooklm-skill`
-
-## intellectronica
-
-**1 اسکیل**
-
-- `notion-api`
-
-## nrwl
-
-**1 اسکیل**
-
-- `nx-workspace`
-
-## projectopensea
-
-**1 اسکیل**
-
-- `opensea`
-
-## msmps
-
-**1 اسکیل**
-
-- `opentui`
 
 ## pexoai
 
@@ -8873,77 +8905,17 @@
 
 - `pexo-agent`
 
-## othmanadi
+## pleaseprompto
 
 **1 اسکیل**
 
-- `planning-with-files`
+- `notebooklm-skill`
 
-## currents-dev
-
-**1 اسکیل**
-
-- `playwright-best-practices`
-
-## lackeyjb
+## projectopensea
 
 **1 اسکیل**
 
-- `playwright-skill`
-
-## flowkit-labs
-
-**1 اسکیل**
-
-- `reddit-automation`
-
-## 2dmurali
-
-**1 اسکیل**
-
-- `review-loop`
-
-## resciencelab
-
-**1 اسکیل**
-
-- `seo-geo`
-
-## shadcn-ui
-
-**1 اسکیل**
-
-- `shadcn`
-
-## humanlayer
-
-**1 اسکیل**
-
-- `show-me`
-
-## roin-orca
-
-**1 اسکیل**
-
-- `simple`
-
-## sleekdotdesign
-
-**1 اسکیل**
-
-- `sleek-design-mobile-apps`
-
-## solana-foundation
-
-**1 اسکیل**
-
-- `solana-dev`
-
-## diffusionstudio
-
-**1 اسکیل**
-
-- `text-to-lottie`
+- `opensea`
 
 ## ramp
 
@@ -8951,17 +8923,65 @@
 
 - `vendor-analysis`
 
-## antfu
+## resciencelab
 
 **1 اسکیل**
 
-- `vitest`
+- `seo-geo`
 
-## bradautomates
+## roin-orca
 
 **1 اسکیل**
 
-- `watch`
+- `simple`
+
+## scrapegraphai
+
+**1 اسکیل**
+
+- `just-scrape`
+
+## shadcn-ui
+
+**1 اسکیل**
+
+- `shadcn`
+
+## sleekdotdesign
+
+**1 اسکیل**
+
+- `sleek-design-mobile-apps`
+
+## smerchek
+
+**1 اسکیل**
+
+- `markdown-to-epub`
+
+## softaworks
+
+**1 اسکیل**
+
+- `database-schema-designer`
+
+## solana-foundation
+
+**1 اسکیل**
+
+- `solana-dev`
+
+## spillwavesolutions
+
+**1 اسکیل**
+
+- `design-doc-mermaid`
+
+## squirrelscan
+
+**1 اسکیل**
+
+- `audit-website`
 
 ## tencent
 
@@ -8969,14 +8989,26 @@
 
 - `weread-skills`
 
+## tt-a1i
+
+**1 اسکیل**
+
+- `archify`
+
 ## whopio
 
 **1 اسکیل**
 
 - `whop-payments-network`
 
-## degausai
+## withgraphite
 
 **1 اسکیل**
 
-- `wonda-cli`
+- `graphite`
+
+## zxkane
+
+**1 اسکیل**
+
+- `aws-cost-operations`
