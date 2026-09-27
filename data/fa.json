@@ -529,12 +529,12 @@
   },
   "addyosmani/interview-me": {
     "title": "",
-    "what": "آنچه کاربر واقعاً می‌خواهد را به جای آنچه که فکر می‌کند باید بخواهد استخراج می‌کند. این کار را از طریق مصاحبه one-question-at-a-time تا حدود 95% اطمینان در مورد قصد اساسی انجام می دهد.",
-    "use_when": "هنگامی که یک سؤال نامشخص است (\"build me X\" بدون \"for whom\" یا \"why now\")، هنگامی که کاربر صراحتاً (\"interview me\"، \"grill me\"، \"are we sure?\"، \"stress-test my thinking\") را فراخوانی می‌کند، یا وقتی متوجه می‌شوید که در حال پر کردن بی‌صدا، طرح‌ها، کدهای مورد نیاز، یا کدهای مبهم یا کدهای مبهم است.",
+    "what": "مشخص‌کردن آنچه کاربر واقعاً می‌خواهد، به‌جای آنچه تصور می‌کند باید بخواهد؛ از طریق مصاحبه با یک سؤال در هر مرحله، تا رسیدن به حدود ۹۵٪ اطمینان دربارهٔ قصد اصلی.",
+    "use_when": "وقتی خواسته به‌اندازهٔ کافی مشخص نیست (\"build me X\" بدون \"for whom\" یا \"why now\")؛ وقتی کاربر صریحاً درخواست می‌کند (\"interview me\"، \"grill me\"، \"are we sure?\"، \"stress-test my thinking\")؛ یا وقتی متوجه می‌شوید پیش از وجود هرگونه برنامه، مشخصات یا کد، ابهام‌های نیازمندی را بی‌سروصدا با فرضیات خود پر می‌کنید.",
     "sourceHash": "3408e6a76d2a81c383897d8ed824d13cf00073d919bf3ff449e1eb0af9793afa",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "addyosmani/observability-and-instrumentation": {
     "title": "",
@@ -1393,12 +1393,12 @@
   },
   "anthropic/clinical-note-extract-skill": {
     "title": "",
-    "what": "داده‌های ساختاریافته را از یادداشت‌های بالینی با منشأ span-level و null-safety استخراج کنید.",
-    "use_when": "وقتی کاربران می گویند \"extract [variables] from this note\"، \"این را انتزاعی کنید…",
+    "what": "استخراج دادهٔ ساختاریافته از یادداشت‌های بالینی، همراه با ردیابی منشأ در سطح span و null-safety.",
+    "use_when": "وقتی کاربران می‌گویند \"extract [variables] from this note\"، \"abstract this…",
     "sourceHash": "20660ec2f67ff787bd927d7011aeda52768bfc99cf591db55ad89a496502c44b",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/clinical-trial-protocol-skill": {
     "title": "",
@@ -2122,12 +2122,12 @@
   },
   "anthropic/draft-offer": {
     "title": "",
-    "what": "یک پیشنهاد نامه با جزئیات و شرایط کامپوزیتی تهیه کنید.",
-    "use_when": "هنگامی که یک نامزد برای یک پیشنهاد آماده است، یک بسته کامل را جمع آوری می کند (پایه، سهام، پاداش امضا)،…",
+    "what": "نوشتن نامهٔ پیشنهاد شغلی همراه با جزئیات حقوق و مزایا و شرایط.",
+    "use_when": "وقتی متقاضی برای دریافت پیشنهاد شغلی آماده است، هنگام تنظیم بستهٔ کامل حقوق و مزایا (حقوق پایه، سهام، پاداش شروع همکاری)،…",
     "sourceHash": "a32e14929beda6405e12225c7adcfbc681ecb265f92c297aa9f286f5af60bd34",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/draft-outreach": {
     "title": "",
@@ -3022,12 +3022,12 @@
   },
   "anthropic/material-contract-schedule": {
     "title": "",
-    "what": "برنامه افشای قراردادهای مواد را از یافته‌های کوشش بسازید، با استفاده از تعریف قرارداد مواد قرارداد خرید و قالب‌بندی بر اساس …",
+    "what": "تهیهٔ جدول افشای قراردادهای بااهمیت از یافته‌های بررسی موشکافانه، با اعمال تعریف Material Contract در قرارداد خرید و قالب‌بندی مطابق…",
     "use_when": "",
     "sourceHash": "1898a6f8c54407ffdbbaf99cfa9e87bec969b2272e88bfe8de6ec833c9459ffb",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/math-olympiad": {
     "title": "",
@@ -4523,12 +4523,12 @@
   "anthropic/tres-data-collection-commit": {
     "title": "",
     "what": "",
-    "use_when": "جمع‌آوری داده on-chain (a \"Commit\") را در Tres Finance برای کیف‌هایی که قبلاً نصب شده‌اند، راه‌اندازی کنید.",
-    "description": "جمع‌آوری داده on-chain (a \"Commit\") را در Tres Finance برای کیف‌هایی که قبلاً نصب شده‌اند، راه‌اندازی کنید. از این مهارت هر زمان که کاربر می خواهد جمع آوری کند استفاده کنید…",
+    "use_when": "آغاز جمع‌آوری دادهٔ on-chain (یک \"Commit\") در Tres Finance برای کیف‌پول‌هایی که قبلاً ثبت شده‌اند.",
+    "description": "آغاز جمع‌آوری دادهٔ on-chain (یک \"Commit\") در Tres Finance برای کیف‌پول‌هایی که قبلاً ثبت شده‌اند. از این اسکیل هر زمان استفاده کنید که کاربر می‌خواهد جمع‌آوری کند…",
     "sourceHash": "85c407dda5f8b3248ab97f3b6c37c9d559c998cf5ebae2e986e1d80f3cd78e59",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "anthropic/tres-erp-rule-suggestions": {
     "title": "",
@@ -5505,12 +5505,12 @@
   },
   "apollographql/apollo-router-plugin-creator": {
     "title": "",
-    "what": "پلاگین های بومی Rust را برای آپولو روتر ایجاد کنید.",
+    "what": "ساخت pluginهای native با Rust برای Apollo Router.",
     "use_when": "",
     "sourceHash": "27f6a2ee7e174e29535614d01ad3f251268abbd58bc6e5f9bbc9b9a385d19bc1",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "apollographql/apollo-server": {
     "title": "",
@@ -6845,12 +6845,12 @@
   },
   "autonnel/landing-page-conversion-audit": {
     "title": "",
-    "what": "صفحه فرود، صفحه فروش یا صفحه تسویه حساب را برای نشت تبدیل حسابرسی کنید و یک لیست اصلاحی را که بر اساس تأثیر درآمد مورد انتظار مرتب شده است، بازگردانید.",
-    "use_when": "هنگامی که از شما خواسته می‌شود صفحه فرود، صفحه فروش، صفحه opt-in، صفحه محصول یا جریان تسویه‌حساب را بررسی، نقد یا بهبود بخشد، زمانی که نرخ تبدیل پایین است، زمانی که ترافیک پولی تبدیل نمی‌شود، یا زمانی که شخصی از \"why isn't this page converting\" درخواست می‌کند یا می‌خواهد CRO / صفحه فرود بررسی شود.",
+    "what": "بررسی صفحهٔ فرود، صفحهٔ فروش یا صفحهٔ پرداخت برای یافتن نقاط افت تبدیل و ارائهٔ فهرست اصلاحات با اولویت‌بندی بر اساس اثر مورد انتظار بر درآمد.",
+    "use_when": "هنگام درخواست بررسی، نقد یا بهبود صفحهٔ فرود، صفحهٔ فروش، صفحهٔ opt-in، صفحهٔ محصول یا جریان پرداخت؛ وقتی نرخ تبدیل پایین است یا ترافیک تبلیغاتی به تبدیل منجر نمی‌شود؛ یا وقتی کسی می‌پرسد \"why isn't this page converting\" یا بازبینی CRO / صفحهٔ فرود می‌خواهد.",
     "sourceHash": "ce0e2dceaf0876afe8591bd7c0ad0668c76fc0f6ef0d1aeb7484db952cbf63eb",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "autonnel/post-purchase-upsell-flow": {
     "title": "",
@@ -7620,12 +7620,12 @@
   },
   "aws/routing-traffic-with-route53-and-cloudfront": {
     "title": "",
-    "what": "Amazon مسیر 53 را برای هدایت ترافیک به یک توزیع CloudFront با استفاده از یک دامنه سفارشی پیکربندی می‌کند.",
-    "use_when": "هنگام تنظیم DNS رکوردهای مستعار، نام های دامنه جایگزین…",
+    "what": "پیکربندی Amazon Route 53 برای هدایت ترافیک به یک توزیع CloudFront با دامنهٔ اختصاصی.",
+    "use_when": "هنگام تنظیم رکوردهای alias در DNS، نام‌های دامنهٔ جایگزین…",
     "sourceHash": "c934617bf8fcf89e3ae9709dbbc32374033de675d13937aa8a17320b632c279c",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "aws/scanning-with-aws-security-agent": {
     "title": "",
@@ -10131,12 +10131,12 @@
   },
   "cloudflare/bazel-test-hygiene": {
     "title": "",
-    "what": "قوانین اجباری برای اجرای تست های بازل در طول توسعه.",
+    "what": "قواعد الزامی برای اجرای تست‌های bazel هنگام توسعه.",
     "use_when": "",
     "sourceHash": "da892d61507dc0d0db0a208a16cd31b43bde4abd9fa88dbf94b7549cdb9bfdff",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "cloudflare/building-mcp-server-on-cloudflare": {
     "title": "",
@@ -10367,12 +10367,12 @@
   },
   "cloudflare/investigation-notes": {
     "title": "",
-    "what": "سند ردیابی خراش ساختاریافته برای وضعیت بررسی در طول شکار اشکال - از re-reading کد، از دست دادن زمینه و سوراخ‌های خرگوش جلوگیری می‌کند. خارجی را حفظ می کند…",
+    "what": "یادداشت ساختاریافته برای ثبت وضعیت بررسی هنگام یافتن باگ؛ جلوگیری از خواندن دوبارهٔ کد، از دست‌رفتن زمینه و دنبال‌کردن مسیرهای بی‌نتیجه؛ نگهداریِ بیرونی…",
     "use_when": "",
     "sourceHash": "34817e1d9390cf0c6c6d24345f2e618930b5e005849b5ebfb264355beb33f6e9",
     "status": "draft",
-    "method": "machine",
-    "provider": "Google Translate"
+    "method": "assisted",
+    "provider": "Machine draft with editorial corrections"
   },
   "cloudflare/kj-style": {
     "title": "",
