@@ -22,10 +22,10 @@ jobs:
         with:
           name: combined-persian-translations
           path: translation-output/
-          run-id: 36355637664
+          run-id: 36355811958
           github-token: ${{ github.token }}
       - name: Translate remaining fields at a limited request rate
-        run: python3 scripts/bulk_translate.py --shard-index ${{ matrix.shard }} --shard-count 2 --delay 2
+        run: python3 scripts/bulk_translate.py --shard-index ${{ matrix.shard }} --shard-count 2 --delay 2 --fragmented
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -116,6 +116,28 @@ def translate_batch(batch):
     return translated
 
 
+def fragments(text):
+    """Split at existing clause boundaries, never inside a protected term/command."""
+    masked, tokens = protect(text)
+    pieces = re.split(r'([,;] +|\. +| — | – |\n+)', masked)
+    result = []
+    def original(part):
+        return TOKEN.sub(lambda m: tokens[int(m.group(1))], part)
+    for index in range(0,len(pieces),2):
+        part = pieces[index]
+        separator = pieces[index+1] if index+1<len(pieces) else ''
+        # Long sequences of synthetic placeholders make the provider drop tokens.
+        # A maximum of six per clause avoids this without modifying the source.
+        while len(list(TOKEN.finditer(part))) > 6:
+            matches = list(TOKEN.finditer(part))
+            cut = part.rfind(' ', 0, matches[6].start())
+            if cut <= 0: cut = matches[6].start()
+            result.append((original(part[:cut]).strip(), ' '))
+            part = part[cut:].lstrip()
+        result.append((original(part).strip(), separator))
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', default='translation-output')
@@ -124,6 +146,7 @@ def main():
     parser.add_argument('--shard-index', type=int, default=0)
     parser.add_argument('--shard-count', type=int, default=1)
     parser.add_argument('--assemble-only', action='store_true')
+    parser.add_argument('--fragmented', action='store_true')
     args = parser.parse_args()
     out = ROOT / args.output
     out.mkdir(parents=True, exist_ok=True)
@@ -143,6 +166,14 @@ def main():
     pending = [text for text in unique if text not in cache and int(hashlib.sha256(text.encode()).hexdigest(),16) % args.shard_count == args.shard_index]
     if args.assemble_only: pending = []
     if args.limit: pending = pending[:args.limit]
+    fragment_map = {}
+    if args.fragmented:
+        fragment_map = {text:fragments(text) for text in pending}
+        pending = list(dict.fromkeys(piece for parts in fragment_map.values() for piece,separator in parts if piece and piece not in cache))
+        for text in pending:
+            if not re.search('[A-Za-z]', TOKEN.sub('',protect(text)[0])):
+                cache[text] = text
+        pending = [text for text in pending if text not in cache]
     print(f'{len(rows)} skills; {len(unique)} distinct fields; {len(pending)} fields to translate', flush=True)
     batches, batch, size = [], [], 0
     for text in pending:
@@ -186,6 +217,12 @@ def main():
             atomic_json(cache_path, cache)
             print(f'Batch {i+1}/{len(batches)}: {len(cache)} cached; {len(failures)} failed', flush=True)
     finally:
+        for text, parts in fragment_map.items():
+            if all(not part or part in cache for part,separator in parts):
+                translated = ''.join((cache[part] if part else '') + separator for part,separator in parts).strip()
+                if valid_cached(text, translated) and all(text.count(mark)==translated.count(mark) for mark in ('…','...')):
+                    cache[text] = translated
+        atomic_json(cache_path, cache)
         # Only complete pairs are published; failed fields never get fabricated fallbacks.
         translations = {key:value for key,value in existing.items() if value.get('method') != 'machine'}
         completed_hashes = {t['sourceHash'] for t in translations.values()}
