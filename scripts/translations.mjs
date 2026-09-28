@@ -2,7 +2,12 @@
 import fs from "node:fs";
 import { translationSourceHash } from "../src/lib/translations.mjs";
 import { skills } from "../src/lib/catalog.mjs";
-const missing = skills.filter((s) => !s.fa);
+const editorial = skills.filter((s) => s.fa?.method === "editorial");
+const missing = skills.filter((s) =>
+  process.argv.includes("--editorial-pending")
+    ? s.fa?.method !== "editorial"
+    : !s.fa,
+);
 if (process.argv.includes("--export")) {
   const unique = new Map();
   for (const s of missing) {
@@ -31,8 +36,12 @@ if (process.argv.includes("--export")) {
     JSON.stringify(
       {
         total: skills.length,
-        translated: skills.length - missing.length,
-        pending: missing.length,
+        translated: skills.filter((s) => s.fa).length,
+        pending: skills.filter((s) => !s.fa).length,
+        editorialSkills: editorial.length,
+        editorialSourcePairs: new Set(editorial.map((s) => s.fa.sourceHash))
+          .size,
+        editorialPending: skills.length - editorial.length,
       },
       null,
       2,

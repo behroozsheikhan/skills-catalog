@@ -40,11 +40,17 @@ for key, entry in current.items():
         incoming[key] = entry
 hashes = {entry['sourceHash'] for entry in incoming.values()}
 covered = sum(source_hash(row) in hashes for row in rows)
+editorial_hashes = {e['sourceHash'] for e in incoming.values() if e.get('method')=='editorial'}
+editorial_skills = sum(source_hash(row) in editorial_hashes for row in rows)
 (root/'data/fa.json').write_text(json.dumps(incoming,ensure_ascii=False,indent=2)+'\n')
 report = {'total':len(rows), 'translated':covered, 'pending':len(rows)-covered,
-          'uniqueTranslationRecords':len(incoming),
+          'uniqueTranslationRecords':len(hashes),
+          'storedTranslationRecords':len(incoming),
           'machineTranslationRecords':sum(entry.get('method') == 'machine' for entry in incoming.values()),
           'humanReviewed':False, 'status':'draft',
+          'editorialSourcePairs':len(editorial_hashes),
+          'editorialSkills':editorial_skills,
+          'editorialPending':len(rows)-editorial_skills,
           'checks':['source hash','empty source fields','description fallback','protected technical terms']}
 (root/'data/translation-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(report,ensure_ascii=False,indent=2))

@@ -11,6 +11,7 @@ import {
 } from "../lib/catalog.mjs";
 import { tasks } from "../lib/search.mjs";
 const translationComplete = skills.every((s) => s.fa);
+const editorialComplete = skills.every((s) => s.fa?.method === "editorial");
 const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 ---
 
@@ -209,9 +210,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
         <div class="translation-note">
           <span class="status-dot"></span>
           <p>
-            {translationComplete
-              ? "فارسی، در کنار زبان اصلی. ترجمه‌های خودکار پیش‌نویس‌اند و ممکن است خطا داشته باشند."
-              : "فارسی، در کنار زبان اصلی. ترجمه‌ها در حال تکمیل‌اند؛ موارد بدون ترجمه با نشان EN مشخص شده‌اند."}
+            {editorialComplete
+              ? "فارسی، در کنار زبان اصلی. متن‌ها مستقیماً از منبع بازنویسی شده‌اند و همچنان پیش‌نویس‌اند."
+              : translationComplete
+                ? "فارسی، در کنار زبان اصلی. بازنویسی توضیحات برای خوانایی بیشتر در حال انجام است."
+                : "فارسی، در کنار زبان اصلی. ترجمه‌ها در حال تکمیل‌اند؛ موارد بدون ترجمه با نشان EN مشخص شده‌اند."}
           </p>
           <a href={base + "about/#translations"}>
             شفافیت محتوا <span>↗</span>
