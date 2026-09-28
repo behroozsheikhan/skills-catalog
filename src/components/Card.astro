@@ -1,0 +1,71 @@
+---
+import Icon from "./Icon.astro";
+import { shortTopic } from "../lib/catalog.mjs";
+const { skill: s } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+const colors = ["mint", "blue", "violet", "amber"];
+const color = colors[s.author.length % 4];
+---
+
+<div class="skill-card-shell">
+  <button
+    type="button"
+    class="favorite-button"
+    data-favorite-key={s.key}
+    aria-label={"افزودن به علاقه‌مندی‌ها: " + s.name}
+    aria-pressed="false"
+    hidden
+  >
+    ♡
+  </button>
+  <a class="skill-card" href={base + s.path}>
+    <div class="card-top">
+      <span class:list={["skill-icon", color]}>
+        <Icon
+          name={
+            s.tasks.includes("design")
+              ? "spark"
+              : s.tasks.includes("document")
+                ? "book"
+                : s.tasks.includes("test")
+                  ? "shield"
+                  : "code"
+          }
+          size={23}
+        />
+      </span>
+      <span class="author" dir="ltr">
+        {s.author}
+        {s.known && (
+          <span title="منبع شناخته‌شده؛ تضمین امنیت نیست">
+            <Icon name="check" size={13} />
+          </span>
+        )}
+      </span>
+      <Icon name="arrow" size={17} class="card-arrow" />
+    </div>
+    <h3 dir="ltr" lang="en">
+      {s.name}
+    </h3>
+    {s.fa?.title && <p class="card-title">{s.fa.title}</p>}
+    <p
+      class:list={["card-description", !s.fa && "english"]}
+      dir={s.fa ? "rtl" : "ltr"}
+      lang={s.fa ? "fa" : s.sourceLanguage}
+    >
+      {s.fa?.what ||
+        s.fa?.description ||
+        s.what ||
+        s.description ||
+        "توضیحی در منبع ثبت نشده است."}
+    </p>
+    <div class="card-bottom">
+      <span class="topic-tag">{shortTopic(s.topic)}</span>
+      <span class="language-tag">
+        {s.fa
+          ? "FA / " + s.sourceLanguage.toUpperCase()
+          : s.sourceLanguage.toUpperCase()}
+      </span>
+    </div>
+  </a>
+</div>

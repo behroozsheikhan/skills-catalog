@@ -1,0 +1,19 @@
+{
+  "total": 7764,
+  "translated": 7764,
+  "pending": 0,
+  "uniqueTranslationRecords": 7269,
+  "storedTranslationRecords": 7270,
+  "machineTranslationRecords": 0,
+  "humanReviewed": false,
+  "status": "draft",
+  "editorialSourcePairs": 7269,
+  "editorialSkills": 7764,
+  "editorialPending": 0,
+  "checks": [
+    "source hash",
+    "empty source fields",
+    "description fallback",
+    "protected technical terms"
+  ]
+}

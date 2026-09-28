@@ -1,0 +1,270 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import Card from "../components/Card.astro";
+import {
+  skills,
+  topics,
+  authors,
+  number,
+  shortTopic,
+} from "../lib/catalog.mjs";
+import { tasks } from "../lib/search.mjs";
+const translationComplete = skills.every((s) => s.fa);
+const editorialComplete = skills.every((s) => s.fa?.method === "editorial");
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
+---
+
+<Layout>
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="status-dot"></span> کتابخانهٔ بازِ مهارت‌های ایجنت{" "}
+      <span class="badge-separator">/</span>{" "}
+      <span class="badge-en">AGENT SKILLS</span>
+    </div>
+    <h1>
+      اسکیل مناسب ایجنتت را
+      <br class="mobile-break" /> <span>پیدا کن.</span>
+      <span class="hero-star" aria-hidden="true">
+        ✳
+      </span>
+    </h1>
+    <p class="hero-description">
+      در میان هزاران اسکیل جستجو کن،
+      <br />
+      کاربردشان را بشناس و گزینهٔ مناسب را انتخاب کن.
+    </p>
+    <form class="search-box" id="search-form" role="search">
+      <Icon name="search" size={23} />
+      <label class="sr-only" for="search">
+        جستجو در اسکیل‌ها
+      </label>
+      <input
+        id="search"
+        type="search"
+        name="q"
+        placeholder="چه کاری می‌خواهی انجام بدهی؟"
+        autocomplete="off"
+        maxlength="160"
+      />
+      <kbd aria-hidden="true">/</kbd>
+      <button type="submit">
+        جستجو <Icon name="arrow" size={17} />
+      </button>
+    </form>
+    <div class="search-suggestions">
+      <span>مثلاً:</span>
+      {[
+        { label: "طراحی رابط کاربری", q: "frontend design" },
+        { label: "کار با PDF", q: "pdf" },
+        { label: "تست و رفع باگ", q: "testing" },
+        { label: "React", q: "react" },
+      ].map((t) => (
+        <button type="button" data-query={t.q}>
+          {t.label}
+          <span>↖</span>
+        </button>
+      ))}
+    </div>
+    <div class="hero-stats">
+      <span>
+        <b>{number(skills.length)}</b> اسکیل قابل کشف
+      </span>
+      <i></i>
+      <span>
+        <b>{number(authors.length)}</b> منبع مختلف
+      </span>
+      <i></i>
+      <span>
+        <b>{number(topics.length)}</b> دسته‌بندی موضوعی
+      </span>
+    </div>
+  </section>
+  <section class="catalog-section" id="catalog" data-base={base}>
+    <div class="catalog-heading">
+      <div>
+        <span class="eyebrow">کشف کن، انتخاب کن، به کار بگیر</span>
+        <h2>
+          کاوش در کاتالوگ<span class="tiny-dot"></span>
+        </h2>
+      </div>
+      <span class="catalog-note">
+        <Icon name="grid" size={15} /> همهٔ مهارت‌ها، یک‌جا
+      </span>
+    </div>
+    <div class="catalog-layout">
+      <aside class="filters" id="filters-panel" aria-label="فیلترهای کاتالوگ">
+        <div class="filters-heading">
+          <h3>
+            <Icon name="filter" size={17} /> فیلترها
+          </h3>
+          <button class="text-button clear-filters">پاک کردن</button>
+          <button
+            class="icon-button mobile-only"
+            id="close-filters"
+            aria-label="بستن فیلترها"
+          >
+            <Icon name="close" />
+          </button>
+        </div>
+        <div class="filter-group">
+          <h4>موضوع</h4>
+          <div class="topic-options">
+            <button
+              class="topic-option selected"
+              data-topic=""
+              aria-pressed="true"
+            >
+              <span>
+                ◈ <span>همهٔ موضوع‌ها</span>
+              </span>
+              <small>{number(skills.length)}</small>
+            </button>
+            {topics.map((t) => (
+              <button class="topic-option" data-topic={t} aria-pressed="false">
+                <span>
+                  <span class="topic-emoji">{t.split(" ")[0]}</span>
+                  <span>{shortTopic(t)}</span>
+                </span>
+                <small>
+                  {number(skills.filter((s) => s.topic === t).length)}
+                </small>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div class="filter-group">
+          <label for="author-filter">منبع اسکیل</label>
+          <select id="author-filter">
+            <option value="">همهٔ منابع ({number(authors.length)})</option>
+            {authors.map((a) => (
+              <option value={a}>{a}</option>
+            ))}
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="task-filter">کاری که می‌خواهی انجام دهی</label>
+          <select id="task-filter">
+            <option value="">همهٔ کاربردها</option>
+            {tasks.map((t) => (
+              <option value={t.id}>{t.label}</option>
+            ))}
+          </select>
+          <p class="filter-hint">
+            برچسب‌های کاربردی به‌صورت خودکار تعیین شده‌اند.
+          </p>
+        </div>
+        <label class="translation-filter">
+          <input type="checkbox" id="translated-filter" /> فقط دارای ترجمهٔ
+          فارسی
+        </label>
+        <div class="sidebar-tip">
+          <Icon name="book" size={21} />
+          <h4>اسکیل چیست؟</h4>
+          <p>
+            مجموعه‌ای از دستورالعمل‌ها که به ایجنت کمک می‌کند یک کار مشخص را
+            بهتر انجام دهد.
+          </p>
+          <a href={base + "about/"}>
+            بیشتر بدان <Icon name="arrow" size={15} />
+          </a>
+        </div>
+      </aside>
+      <div class="results-area">
+        <div class="results-toolbar">
+          <div>
+            <button id="open-filters" class="filter-mobile-button">
+              <Icon name="filter" size={16} /> فیلترها
+            </button>
+            <p id="result-count" aria-live="polite">
+              <strong>{number(skills.length)}</strong> اسکیل برای کشف کردن
+            </p>
+          </div>
+          <div class="results-controls">
+            <div class="page-size-control">
+              <label for="page-size">تعداد در صفحه:</label>
+              <select id="page-size">
+                {[12, 24, 48, 96].map((size) => (
+                  <option value={size}>{number(size)}</option>
+                ))}
+              </select>
+            </div>
+            <div class="sort-control">
+              <label for="sort">مرتب‌سازی:</label>
+              <select id="sort">
+                <option value="relevant">پیشنهادی</option>
+                <option value="name">نام اسکیل</option>
+                <option value="updated">آخرین تغییر منبع</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="favorites-filter-bar">
+          <label>
+            <input type="checkbox" id="favorites-filter" /> فقط علاقه‌مندی‌ها{" "}
+            <span data-favorites-count>۰</span>
+          </label>
+          <p>ذخیره در همین مرورگر</p>
+        </div>
+        <div id="active-filters" class="active-filters"></div>
+        <div class="translation-note">
+          <span class="status-dot"></span>
+          <p>
+            {editorialComplete
+              ? "فارسی، در کنار زبان اصلی. متن‌ها مستقیماً از منبع بازنویسی شده‌اند و همچنان پیش‌نویس‌اند."
+              : translationComplete
+                ? "فارسی، در کنار زبان اصلی. بازنویسی توضیحات برای خوانایی بیشتر در حال انجام است."
+                : "فارسی، در کنار زبان اصلی. ترجمه‌ها در حال تکمیل‌اند؛ موارد بدون ترجمه با نشان EN مشخص شده‌اند."}
+          </p>
+          <a href={base + "about/#translations"}>
+            شفافیت محتوا <span>↗</span>
+          </a>
+        </div>
+        <div id="results" class="cards-grid">
+          {skills.slice(0, 12).map((s) => (
+            <Card skill={s} />
+          ))}
+        </div>
+        <div id="empty-state" class="empty-state" hidden>
+          <Icon name="search" size={36} />
+          <h3>هنوز اسکیل مناسب پیدا نشد</h3>
+          <p>عبارت کوتاه‌تری بنویس یا بعضی فیلترها را بردار.</p>
+          <button class="primary-button" id="reset-all">
+            نمایش همهٔ اسکیل‌ها
+          </button>
+        </div>
+        <div id="load-error" class="empty-state" hidden>
+          <h3>دریافت فهرست کامل انجام نشد</h3>
+          <p>اتصال را بررسی کن و دوباره تلاش کن.</p>
+          <button id="retry-load" class="primary-button">
+            تلاش دوباره
+          </button>
+        </div>
+        <div class="pagination">
+          <button id="prev-page" class="page-button" disabled>
+            قبلی
+          </button>
+          <span id="page-info">صفحهٔ ۱</span>
+          <button id="next-page" class="page-button">
+            بعدی <Icon name="arrow" size={15} />
+          </button>
+        </div>
+        <noscript>
+          <p class="notice">
+            برای جستجو و فیلتر، JavaScript را فعال کنید.{" "}
+            <a href={base + "directory/1/"}>
+              مشاهدهٔ فهرست کامل بدون JavaScript ←
+            </a>
+          </p>
+        </noscript>
+        <p class="results-footnote">
+          هر اسکیل یک امکان تازه است. قبل از استفاده، مستندات و مجوز منبع را
+          بررسی کن.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    import "../scripts/catalog.ts";
+  </script>
+</Layout>

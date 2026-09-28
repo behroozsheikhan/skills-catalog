@@ -1,0 +1,26 @@
+name: Translate public catalog to Persian
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: catalog-translation
+  cancel-in-progress: false
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Translate public descriptions (drafts only)
+        run: python scripts/bulk_translate.py
+      - name: Save progress and translations for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: persian-translations
+          path: translation-output/
+          retention-days: 7
