@@ -8,7 +8,7 @@ Node.js **22.12+** لازم است.
 
 ```bash
 npm ci
-npm run dev                       # http://localhost:4321/skills-catalog/
+npm run dev                       # http://localhost:4321/
 BASE_PATH=/ npm run dev           # پیش‌نمایش روی ریشهٔ دامنه
 npm run check
 npm test
